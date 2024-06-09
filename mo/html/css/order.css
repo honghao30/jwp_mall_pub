@@ -236,7 +236,7 @@ body.modal-open {height: 100%;overflow: hidden;}
 .modal__wrap--bg.is-active {background-color: rgba(0, 0, 0, 0.7);display: block;opacity: 1;transition: opacity 0.3s ease;}
 .modal__wrap--bg .modal__wrap {background-color: #fff;position: fixed;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 2;border-radius: 8px;overflow: hidden;z-index: 105;}
 .modal__wrap--bg .modal__wrap.size-default {width: 100%;max-width: calc(100% - 32px);}
-.modal__wrap--bg .modal__wrap .modal-cont {background-color: #fff;padding: 0;height: 160px;position: relative;}
+.modal__wrap--bg .modal__wrap .modal-cont {background-color: #fff;padding: 0;position: relative;}
 .modal__wrap--bg .modal__wrap .modal-cont .promotion_list {padding: 48px 16px 16px;}
 .modal__wrap--bg .modal__wrap .modal-cont .promotion_list li {border: 1px solid #E1E3E9;padding: 24px 16px;border-radius: 12px;}
 .modal__wrap--bg .modal__wrap .modal-cont .promotion_list li .tit {font-size: 15px;font-weight: 500;line-height: 15px;color: #222222;}
