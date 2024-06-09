@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="ko">
+ <head>  
+  <title>JWP Mall FO</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link href="guide.css" rel="stylesheet" type="text/css">
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var length = $('.sqnc').length;
+			var i;
+			for (i = 0; i < length; i++){
+				var num = i;
+				$('.sqnc').eq(i).find('.num').html(num + 1);
+			}
+		});
+	</script>
+ </head>
+ <body>
+	<div class="guideHeader">
+		<h1>JWP Mall FO 고도화</h1>
+		<div class="g_gnb">
+			<ul class="gnbList">
+				<!-- <li><a href="html/guide.html">PC Guide</a></li> -->
+				<li class="on"><a href="filelist.html">PC list</a></li>
+                <!-- <li><a href="filelist_mo.html">MO List</a></li> -->
+			</ul>
+		</div>
+	</div>
+
+	<div class="guideContainer list">
+		<h2 class="hidden">PC list</h2>
+		
+		<!-- JWP Mall FO -->
+		<h3 class="guideTit3">관리자(BO)</h3>
+		<table class="htmlList">
+			<colgroup>
+				<col style="width:3%">
+				<col style="width:16%">
+				<col style="width:16%">
+				<col style="width:14%">
+				<col style="width:10%">
+				<col style="width:2%">
+				<col style="width:13%">
+				<col style="width:2%">
+				<col style="width:2%">
+				<col style="width:1%">
+				<col >
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" width="">NO</th>
+					<th scope="col" width="">1depth</th>
+					<th scope="col" width="">2depth</th>
+					<th scope="col" width="">3depth</th>
+					<th scope="col" width="">4depth</th>
+					<th scope="col" width="">5depth</th>
+					<th scope="col" width="">파일/링크</th>
+					<th scope="col" width="">작업자</th>
+					<th scope="col" width="">작업일</th>
+					<th scope="col" width="">작업일정</th>
+					<th scope="col" width="20%">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr style="background:hsl(300, 53%, 49%); display:none">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft" style="color:#fff;">공통 html</td><!-- 1depth -->
+					<td class="tleft"></td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft" style="color:#fff;"><a href="html/guide-utill.html" target="_blank">guide-utill.html</a></td><!-- 파일링크 -->
+					<td style="color:#fff;">박성광</td>
+					<td></td>
+					<td></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr style="background:hsl(300, 53%, 49%);">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft" style="color:#fff;">레이아웃 html</td><!-- 1depth -->
+					<td class="tleft"></td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft" style="color:#fff;"><a href="html/레이아웃.html" target="_blank">레이아웃.html</a></td><!-- 파일링크 -->
+					<td style="color:#fff;">박성광</td>
+					<td></td>
+					<td></td>
+					<td class="tleft"></td>
+				</tr>
+				<!-- 로그인 -->
+				<tr class="sqnc" style="display:none">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">로그인</td><!-- 1depth -->
+					<td class="tleft"></td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/로그인.html" target="_blank">로그인.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="wait">대기</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<!-- 메인 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">메인</td><!-- 1depth -->
+					<td class="tleft"></td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/메인.html" target="_blank">메인.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">240524 수정 : tag_box 텍스트 > 이미지로 수정</span>
+					</td>
+				</tr>
+				<!-- 상품 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">상품</td><!-- 1depth -->
+					<td class="tleft">검색 결과 없음</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/상품_결과없음.html" target="_blank">상품_결과없음.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>				
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">가격 비교</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/상품.html" target="_blank">상품.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품_가격비교_재입고알림신청</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/상품_가격비교_재입고알림신청.html" target="_blank">상품_가격비교_재입고알림신청.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품_가격비교_재입고알림해제</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/상품_가격비교_재입고알림해제.html" target="_blank">상품_가격비교_재입고알림해제.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품_가격비교_주문불가</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/상품_가격비교_주문불가.html" target="_blank">상품_가격비교_주문불가.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>												
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품 상세</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/상품_상세.html" target="_blank">상품_상세.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품 상세 팝업</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/상품_상세_팝업.html" target="_blank">상품_상세_팝업.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품 목록</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/일반상품_목록.html" target="_blank">일반상품_목록.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>	
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품 목록 -상품없음</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/일반상품_목록_상품없음.html" target="_blank">일반상품_목록_상품없음.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>	
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품 목록 - 상품없음2</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/일반상품_입점사카테고리_상품없음.html" target="_blank">일반상품_입점사카테고리_상품없음.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>	
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">가격비교</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/일반상품_입점사_가격비교.html" target="_blank">일반상품_입점사_가격비교.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>	
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">브랜드관</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/브랜드관.html" target="_blank">브랜드관.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>		
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품_입점업체선택팝업</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/상품_입점업체선택팝업.html" target="_blank">상품_입점업체선택팝업.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">240607 수정 : 항목 스크롤 수정</span>
+					</td>
+				</tr>																	
+				<!-- 주문결제 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">주문결제</td><!-- 1depth -->
+					<td class="tleft"></td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"></td><!-- 파일링크 -->
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<!-- 즉시할인 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">즉시할인</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/즉시할인.html" target="_blank">즉시할인.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						"2024 고도화 수정" 으로 주석
+						<span class="color01">기획에서 홀딩 요청</span>
+					</td>
+				</tr>
+				<!-- 주문완료 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">주문완료</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/주문완료.html" target="_blank">주문완료.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish type02">홀딩</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span class="color01">기획에서 홀딩 요청</span>
+					</td>
+				</tr>
+				<!-- 주거래약정 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">주거래약정 <span style="color:red">(신규)</span></td><!-- 1depth -->
+					<td class="tleft"></td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/주거래약정.html" target="_blank">주거래약정.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<!-- 주문상품재구매 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">주문상품재구매 <span style="color:red">(신규)</span></td><!-- 1depth -->
+					<td class="tleft"></td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/주문상품재구매.html" target="_blank">주문상품재구매.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<!-- 약가인하보상 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">약가인하보상 <span style="color:red">(신규)</span></td><!-- 1depth -->
+					<td class="tleft">약가인허가보상</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/약가인허가보상.html" target="_blank">약가인허가보상.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">약가인허가보상_상세</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/약가인허가보상_상세.html" target="_blank">약가인허가보상_상세.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>				
+				<!-- 이벤트 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">이벤트</td><!-- 1depth -->
+					<td class="tleft">이벤트리스트</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/이벤트리스트.html" target="_blank">이벤트리스트.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>				
+				<!-- 이벤트 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">이벤트상세</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/이벤트상세.html" target="_blank">이벤트상세.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">종료된이벤트상세</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/종료된이벤트상세.html" target="_blank">종료된이벤트상세.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						"당첨자발표 상세 내용 비슷
+					</td>
+				</tr>
+				</tr>
+				<!-- 기획전 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">기획전</td><!-- 1depth -->
+					<td class="tleft">기획전메인</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/기획전메인.html" target="_blank">기획전메인.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">기획전일반</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/기획전일반.html" target="_blank">기획전일반.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">기획전방명록</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/기획전방명록.html" target="_blank">기획전방명록.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">기획전프로모션</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/기획전프로모션.html" target="_blank">기획전프로모션.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">240523 수정 : 플로팅버튼 수정</span><br>
+						<span style="color:tomato">240603 수정 : 플로팅버튼 수정</span><br>
+						<span style="color:tomato">240604 수정 : 판매가 부분 수정</span>
+					</td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">기획전설문조사</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/기획전설문조사.html" target="_blank">기획전설문조사.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">기획전주워담기,<br>입점사특가</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/기획전주워담기.html" target="_blank">기획전주워담기.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">240523 수정 : 플로팅버튼 수정</span><br>
+						<span style="color:tomato">240603 수정 : 플로팅버튼 수정</span>
+					</td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">기획전묶음세일</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/기획전묶음세일.html" target="_blank">기획전묶음세일.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">240523 수정 : 플로팅버튼 수정</span><br>
+						<span style="color:tomato">240603 수정 : 플로팅버튼 수정</span>
+					</td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">기획전타임세일</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/기획전타임세일.html" target="_blank">기획전타임세일.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">240523 수정 : 플로팅버튼 수정</span><br>
+						<span style="color:tomato">240603 수정 : 플로팅버튼 수정</span>
+					</td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">상품없음</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/상품없음.html" target="_blank">상품없음.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<!-- 예치금구매 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">예치금구매 <span style="color:red">(신규)</span></td><!-- 1depth -->
+					<td class="tleft">예치금 충전</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/예치금구매.html" target="_blank">예치금구매.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">예치금 충전완료</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/예치금충전완료.html" target="_blank">예치금충전완료.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<!-- 마이페이지 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">마이페이지</td><!-- 1depth -->
+					<td class="tleft">메인</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/마이페이지.html" target="_blank">마이페이지.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">240524 수정 : 등급 아이콘 부분 html 수정</span>
+					</td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">에치금 내역 목록</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/마이페이지_예치금내역.html" target="_blank">마이페이지_예치금내역.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">에치금 내역 목록 내역 없음</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/마이페이지_예치금내역없음.html" target="_blank">마이페이지_예치금내역없음.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">거래원장목록</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/마이페이지_거래원장.html" target="_blank">마이페이지_거래원장.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">거래원장 내용없음</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/마이페이지_거래원장_내용없음.html" target="_blank">마이페이지_거래원장_내용없음.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">재입고알림내역</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/마이페이지_재입고알림내역.html" target="_blank">마이페이지_재입고알림내역.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>	
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">멤버쉽안내</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/멤버쉽안내.html" target="_blank">멤버쉽안내.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">쿠폰내역</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/쿠폰내역.html" target="_blank">쿠폰내역.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>				
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">배송안내</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/배송안내.html" target="_blank">배송안내.html</a></td><!-- 파일링크 -->
+					<td>홍성호</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>																						
+				<!-- 검색 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">검색</td><!-- 1depth -->
+					<td class="tleft"></td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/메인.html" target="_blank">메인.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">메인.html 에 포함</td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">검색결과 결과없음,<br>결과내재검색 결과없음</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/검색결과결과없음.html" target="_blank">검색결과결과없음.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">결과내재검색 결과없음 type 포함</span><br>
+						<span style="color:tomato">240524 수정 : 문구수정</span>
+					</td>
+				</tr>
+				<!-- 콘텐츠 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">콘텐츠 <span style="color:red">(신규)</span></td><!-- 1depth -->
+					<td class="tleft">콘텐츠 목록(POP 자료실)</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/콘텐츠.html" target="_blank">콘텐츠.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">결과없음 포함</span><br>
+						<span style="color:tomato">
+							240524 수정 : 탭 type 추가<br>
+							tab_list : 마우스 hover 탭 내용 전환<br>
+							tab_list_click : 마우스 click 탭 내용 전환</span>
+					</td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">콘텐츠 목록(동영상 자료실)</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/콘텐츠동영상.html" target="_blank">콘텐츠동영상.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">결과없음 포함</span>
+					</td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">콘텐츠 상세(POP 자료실)</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/콘텐츠상세.html" target="_blank">콘텐츠상세.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">결과없음 포함</span>
+					</td>
+				</tr>
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft"></td><!-- 1depth -->
+					<td class="tleft">콘텐츠 상세(동영상 자료실)</td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/콘텐츠동영상상세.html" target="_blank">콘텐츠동영상상세.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="finish">완료</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft">
+						<span style="color:tomato">결과없음 포함</span>
+					</td>
+				</tr>
+				<!-- 대시보드 -->
+				<tr class="sqnc">
+					<td class="no num"></td><!-- no -->
+					<td class="tleft">대시보드 <span style="color:red">(신규)</span></td><!-- 1depth -->
+					<td class="tleft"></td><!-- 2depth -->
+					<td class="tleft"></td><!-- 3depth -->
+					<td class="tleft"></td><!-- 4depth -->
+					<td class="tleft"></td><!-- 5depth -->
+					<td class="tleft"><a href="html/대시보드.html" target="_blank">대시보드.html</a></td><!-- 파일링크 -->
+					<td>박성광</td>
+					<td><span class="wait">대기</span></td>
+					<td><span style="color:tomato"></span></td>
+					<td class="tleft"></td>
+				</tr>
+			</tbody>
+        </table>
+	</div>  
+ </body>
+</html>

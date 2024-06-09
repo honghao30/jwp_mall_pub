@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>JWP Mall</title>
+  <!-- 신규 common_new css -->
+  <link rel="stylesheet" href="css/goods.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/common_new.css">
+  <!-- main_new css -->
+  <link rel="stylesheet" href="css/main_new.css">
+  
+  <!-- mCustomScrollbar css -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.sw.css">
+  <!-- REQUIRED SCRIPTS -->
+  <script src="js/jquery-3.2.1.js"></script>
+  <!-- mCustomScrollbar JS -->
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- common.js -->
+  <script src="js/common_new.js"></script>  
+  <script src="js/common_new2.js"></script>
+</head>
+<body>
+<div class="product_detail_popup_wrap">
+    <div class="product_detail_popup_title">
+        상품 상세정보
+        <button type="button" class="btn_close_window"><span class="ir-text">닫기</span></button>
+    </div>
+    <div class="product_detail_wrap">
+      <div class="product_basic_info flex_between">
+          <div class="product_thumbnail_area">
+            <div class="pro_photo">
+              <div class="icons">
+                <!-- 묶음상품일때 -->						
+              </div>
+              <div class="pro_photo_viewer">
+                <img src="./img/sample/product001.jpg" alt="" class="viewer_image" />
+              </div>
+              <!-- <div class="zoom"><a href="../common/zoom_goods_pop.do?gno=9892" class="buttons">확대보기</a></div>-->
+              <div id="pro_photo_slide">
+                <div class="pro_photo_panel">
+                  <ul>
+                    <li><a href="#"><img src="./img/sample/product001.jpg"  alt="" /></a></li>									
+                    <li><a href="#"><img src="./img/sample/product001.jpg" alt="" /></a></li>									
+                  </ul>
+                </div>
+    
+                <!-- 리뉴얼 디자인에 없어서 주석처리함. <a href="#" class="prev"><img src="https://www.jwpmall.co.kr/data/base/imgs/btn/btn_detail_prev.gif" alt="상품 상세사진 이전 목록" /></a>
+                <a href="#" class="next"><img src="https://www.jwpmall.co.kr/data/base/imgs/btn/btn_detail_next.gif" alt="상품 상세사진 다음 목록" /></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="product_information_area">
+              <div class="product_information_title flex_between">
+                  <div class="product_name_area">
+                      <p class="cate">
+                          <span><a href="#">GMC건강</a></span>
+                      </p>
+                      <p class="name">마이코드 비타민C골드 60포 (1개월분)</p>
+                  </div>
+                  <button type="button" class="btnwish active"><span class="ir-text">wish</span></button>
+              </div>
+
+              <div class="product_price_area flex_between">
+                  <div class="sale_percent">23%</div>
+                  <div class="price">
+                      <div class="origin_price"><span>23,000</span>원</div>
+                      <div class="new_price"><span>23,000</span>원</div>
+                  </div>
+                  <!-- <div class="sold_out_text">품절</div> -->
+              </div>
+
+              <div class="product_information_list">
+                  <ul>
+                      <li>제조사 : JW중외제약</li>
+                      <li>품목코드 : G0000132419</li>
+                      <li>포장단위 : BOX</li>
+                      <li>규격/단위 : 2MLX1V/BOX/160EA</li>
+                      <li>최소 주문수량 : 1개 / 최대 주문수량 : 1,000개</li>
+                  </ul>
+              </div>
+
+              <div class="product_order_table">
+                  <table>
+                      <colgroup>
+                          <col width="88" />
+                          <col width="" />
+                      </colgroup>
+                      <tbody>
+                          <tr>
+                              <th scope="row">이벤트/기획전
+                                <a href="#" class="btn_text_arrow_right">자세히 보기</a>
+                              </th>
+                              <td>타임세일 3차 2024-05-01</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">수량할인</th>
+                              <td>
+                                  <p>10개 이상 구매 시 개당 할인 <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong></p>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">배송정보</th>
+                              <td>
+                                  <p>최소주문 금액 30,000원 이상 구매 시 무료배송</p>
+                                  <p>배송방법 : 택배배송 (롯데택배)</p>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">수량</th>
+                              <td>
+                                <div class="count_controller_wrap">
+                                  <div class="count_controller">
+                                    <button type="button" class="btn_minus"></button>
+                                    <input type="text" title="구매수량" value="1" id="quantityInput">
+                                    <button type="button" class="btn_plus"></button>                            
+                                  </div>
+                                  <div class="order_cout_text">주문단위 : 50개</div> 
+                                </div>                                        
+                              </td>
+                          </tr>                                                                                                                              
+                      </tbody>
+                  </table>
+              </div>
+
+              <div class="order_button_wrap flex_between">
+                <!-- <button type="button" class="btn_blue_line">재입고 알림 신청</button> -->
+                <!-- <button type="button" class="btn_blue_line">재입고 알림 헤제</button> -->
+                <button type="button" class="btn_blue_line">장바구니</button>
+                <button type="button" class="btn_blue">바로구매</button>
+              </div>
+          </div>
+
+      </div>
+      <!-- 상품 기본 정보 -->
+      <div class="product_detail_info">
+        <div class="product_detail_tab_menu flex_between">
+          <button type="button" go="detail_basic" class="active" onclick="detailtab(this)">상품 기본정보</button>
+          <button type="button" go="detail_detail" onclick="detailtab(this)">상품설명</button>
+          <button type="button" go="detail_delivery" onclick="detailtab(this)">배송정보</button>
+          <button type="button" go="detail_retun" onclick="detailtab(this)">교환/환불정보</button>
+        </div>
+        <div class="tab-content">
+          <div class="product_detail_tab_cont active" id="detail_basic">
+            <div class="tit_ft18">상품 기본정보</div>
+            <div class="product_table_wrap">
+              <table>
+                <colgroup>
+                  <col width="160" />
+                  <col width="440" />
+                  <col width="160" />
+                  <col width="" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">제품구분</th>
+                    <td colspan="3">전문</td>                                           
+                  </tr>
+                  <tr>
+                    <th scope="row">제품명</th>
+                    <td colspan="3">상공 탈지면(절단솜) 20g 1EA</td>                   
+                  </tr>
+                  <tr>
+                    <th scope="row">포장단위</th>
+                    <td></td>
+                    <th scope="row">규격</th>
+                    <td></td>                        
+                  </tr>
+                  <tr>
+                    <th scope="row">단위</th>
+                    <td  colspan="3">1EA</td>                     
+                  </tr>
+                  <tr>
+                    <th scope="row">부가세</th>
+                    <td colspan="3">과세상품</td>                      
+                  </tr>
+                  <tr>
+                    <th scope="row">낱알수량</th>
+                    <td></td>
+                    <th scope="row">대표코드</th>
+                    <td></td>                        
+                  </tr>                                                                                                              
+                </tbody>
+              </table>
+            </div>
+            <div class="tit_ft18">의약품 상세정보</div>
+            <div class="product_table_wrap">
+              <table>
+                <colgroup>
+                  <col width="160" />
+                  <col width="440" />
+                  <col width="160" />
+                  <col width="" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">제품명(영문)</th>
+                    <td colspan="3">Livalo Tab. 1mg</td>                                           
+                  </tr>
+                  <tr>
+                    <th scope="row">표준코드</th>
+                    <td>-</td>  
+                    <th scope="row">식약처 품목코드</th>
+                    <td>-</td>                                          
+                  </tr>
+                  <tr>
+                    <th scope="row">보험급여코드</th>
+                    <td>-</td>  
+                    <th scope="row">성분</th>
+                    <td>-</td>                                          
+                  </tr>                      
+                  <tr>
+                    <th scope="row">성분함량</th>
+                    <td  colspan="3">-</td>                     
+                  </tr>
+                  <tr>
+                    <th scope="row">KPCI 약효분류</th>
+                    <td colspan="3">-</td>                      
+                  </tr>
+                  <tr>
+                    <th scope="row">ATC코드</th>
+                    <td colspan="3">-</td>                      
+                  </tr>                                                                                                            
+                </tbody>
+              </table>
+            </div>                
+            <div class="tit_ft18">보험약가 정보</div>
+            <div class="product_table_wrap">
+              <table>
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">보험코드</th>                                      
+                    <th scope="col">시행일자</th>
+                    <th scope="col">급여구분</th>
+                    <th scope="col">변경가</th>
+                  </tr>                                                                                                                                 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-c">-</td>
+                    <td class="text-c"></td>
+                    <td class="text-c"></td>
+                    <td class="text-c"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>                 
+            <div class="tit_ft18">의약품 기타 정보</div>                
+            <div class="product_table_wrap">
+              <table>
+                <colgroup>
+                  <col width="160" />
+                  <col width="" />
+                </colgroup>
+                <tbody>                                          
+                  <tr>
+                    <th scope="row">효능/효과</th>
+                    <td>-</td>                     
+                  </tr>
+                  <tr>
+                    <th scope="row">용법/용량</th>
+                    <td>-</td>                      
+                  </tr>
+                  <tr>
+                    <th scope="row">사용상 주의사항</th>
+                    <td>-</td>                      
+                  </tr>                                                                                                            
+                </tbody>
+              </table>
+            </div>                  
+            <div class="tit_ft18">상품정보고시</div>
+            <div class="product_table_wrap">
+              <table>
+                <colgroup>
+                  <col width="160" />
+                  <col width="" />
+                </colgroup>
+                <tbody>                                          
+                  <tr>
+                    <th scope="row">항목1</th>
+                    <td>-</td>                     
+                  </tr>
+                  <tr>
+                    <th scope="row">항목2</th>
+                    <td>-</td>                      
+                  </tr>                                                                                                            
+                </tbody>
+              </table>
+            </div>                  
+          </div>
+          <!-- 상품 기본 정보 -->
+          <div class="product_detail_tab_cont" id="detail_detail">
+            상품설명
+          </div>
+          <div class="product_detail_tab_cont" id="detail_delivery">
+            배송정보
+          </div>  
+          <div class="product_detail_tab_cont" id="detail_retun">
+            교환/환불정보
+          </div>                                 
+        </div>
+      </div>
+      <script>
+          function detailtab(target){
+            var id = $(target).attr('go');
+            $('.product_detail_info .product_detail_tab_menu button').removeClass('active');
+            $('.product_detail_info .product_detail_tab_cont').removeClass('active');
+            $(target).addClass('active');
+            $('#'+id).addClass('active');
+          }
+      </script>
+  </div>
+    <div class="order_button_wrap flex_center">        
+        <button type="button" class="btn_blue">확인</button>
+        <button type="button" class="btn_blue_line">상세페이지로 이동</button>
+    </div>    
+</div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,2775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>JWP Mall</title>
+  <!-- 신규 common_new css -->
+  <link rel="stylesheet" href="css/goods.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/common_new.css">
+  <link rel="stylesheet" href="css/order.css">
+  <!-- main_new css -->
+  <link rel="stylesheet" href="css/main_new.css">
+  <!-- mCustomScrollbar css -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.sw.css">
+  <!-- REQUIRED SCRIPTS -->
+  <script src="js/jquery-3.2.1.js"></script>
+  <!-- mCustomScrollbar JS -->
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- common.js -->
+  <script src="js/common_new.js"></script>
+</head>
+<body>
+<!-- 20231228 수정 : 광고배너 없는경우 no_ad_type 클래스 추가 -->
+<div class="wrap top_banner no_ad_type" id="main_new">
+  <!-- header -->
+  <div class="header">
+    <!-- 상단 띠 배너 -->
+    <div class="top_banner_cont">
+      <div class="inner">
+        <!-- Swiper -->
+        <div class="swiper mySwiper topBanner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img_box">
+                <a href="#">
+                  <img src="img/common/banner/img_top_banner.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <a href="#">
+                  <img src="img/common/banner/img_top_banner.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <a href="#">
+                  <img src="img/common/banner/img_top_banner.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <a href="#">
+                  <img src="img/common/banner/img_top_banner.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          var topBanner = new Swiper(".topBanner.swiper", {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            // spaceBetween: 4,
+            navigation: {
+              nextEl: ".topBanner .swiper-button-next",
+              prevEl: ".topBanner .swiper-button-prev",
+            }
+          });
+        </script>
+      </div>
+    </div>
+    <!-- search_wrap -->
+    <div class="search_wrap">
+      <div class="inner">
+        <a href="#" class="btn_logo_JWPmall">
+          <img src="img/common/logo_JWPmall.png" alt="Jwpmall">
+        </a>
+        <!-- 클래스 on 이 붙으면 보임 -->
+        <span class="search_input">
+          <input type="text">
+          <button class="btn_search"></button>
+          <!-- 검색결과 자동완성 -->
+          <div class="search_total">
+            <p class="total_txt">검색결과:<span class="colorB">32</span>개</p>
+            <div class="search_list">
+              <div class="left_cont">
+                <div class="mCustomScrollbar" data-mcs-theme="minimal-dark" style="height:144px">
+                  <div class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside">
+                    <ul>
+                      <li><a href="#">네블라이저 <span>마스크</span> 멸균</a></li>
+                      <li><a href="#">네블라이저 <span>마스크</span>형키트 (.....)</a></li>
+                      <li><a href="#">닥터클라로 극세사 시트<span>마스크</span></a></li>
+                      <li><a href="#">대한헬스키퍼 방역(황사) <span> 마스크</span></a></li>
+                      <li><a href="#">마취<span>마스크</span>(Anesthesai Msdfsdf)</a></li>
+                      <li><a href="#">대한헬스키퍼 방역(황사) <span> 마스크</span></a></li>
+                      <li><a href="#">마취<span>마스크</span>(Anesthesai Msdfsdf)</a></li>
+                      <li><a href="#">대한헬스키퍼 방역(황사) <span> 마스크</span></a></li>
+                      <li><a href="#">마취<span>마스크</span>(Anesthesai Msdfsdf)</a></li>
+                      <li><a href="#">대한헬스키퍼 방역(황사) <span> 마스크</span></a></li>
+                      <li><a href="#">마취<span>마스크</span>(Anesthesai Msdfsdf)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="right_cont">
+                <!-- Swiper -->
+                <div class="swiper_wrap">
+                  <div class="swiper mySwiper sw03">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="cont_box">
+                          <div class="img_box">
+                            <img src="img/common/banner/img_main_search_banner_01.png" alt="">
+                          </div>
+                          <div>
+                            <p class="tit"><a href="#">포폴주사</a></p>
+                            <p class="sub_tit ellipsis"><a href="#">12ml X 5A..etc etc</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cont_box">
+                          <div class="img_box">
+                            <img src="img/common/banner/img_main_search_banner_01.png" alt="">
+                          </div>
+                          <div>
+                            <p class="tit"><a href="#">포폴주사</a></p>
+                            <p class="sub_tit ellipsis"><a href="#">12ml X 5A..etc etc</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cont_box">
+                          <div class="img_box">
+                            <img src="img/common/banner/img_main_search_banner_01.png" alt="">
+                          </div>
+                          <div>
+                            <p class="tit"><a href="#">포폴주사</a></p>
+                            <p class="sub_tit ellipsis"><a href="#">12ml X 5A..etc etc</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cont_box">
+                          <div class="img_box">
+                            <img src="img/common/banner/img_main_search_banner_01.png" alt="">
+                          </div>
+                          <div>
+                            <p class="tit"><a href="#">포폴주사</a></p>
+                            <p class="sub_tit ellipsis"><a href="#">12ml X 5A..etc etc</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cont_box">
+                          <div class="img_box">
+                            <img src="img/common/banner/img_main_search_banner_01.png" alt="">
+                          </div>
+                          <div>
+                            <p class="tit"><a href="#">포폴주사</a></p>
+                            <p class="sub_tit ellipsis"><a href="#">12ml X 5A..etc etc</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cont_box">
+                          <div class="img_box">
+                            <img src="img/common/banner/img_main_search_banner_01.png" alt="">
+                          </div>
+                          <div>
+                            <p class="tit"><a href="#">포폴주사</a></p>
+                            <p class="sub_tit ellipsis"><a href="#">12ml X 5A..etc etc</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cont_box">
+                          <div class="img_box">
+                            <img src="img/common/banner/img_main_search_banner_01.png" alt="">
+                          </div>
+                          <div>
+                            <p class="tit"><a href="#">포폴주사</a></p>
+                            <p class="sub_tit ellipsis"><a href="#">12ml X 5A..etc etc</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cont_box">
+                          <div class="img_box">
+                            <img src="img/common/banner/img_main_search_banner_01.png" alt="">
+                          </div>
+                          <div>
+                            <p class="tit"><a href="#">포폴주사</a></p>
+                            <p class="sub_tit ellipsis"><a href="#">12ml X 5A..etc etc</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"><img src="img/common/btn_right_02.png" alt=""></div>
+                  <div class="swiper-button-prev"><img src="img/common/btn_left_02.png" alt=""></div>
+                </div>
+                <script>
+                  // search 검색결과 스와이프
+                  var swiper3 = new Swiper(".sw03.swiper", {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    // spaceBetween: 4,
+                    loop: true, // 무한 루프 활성화
+                    navigation: {
+                      nextEl: ".sw03 .swiper-button-next",
+                      prevEl: ".sw03 .swiper-button-prev",
+                    },
+                    // mousewheel: true,
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+          <!-- 검색영역 클릭시 배너 -->
+          <!-- <div class="search_txt_banner">
+            <ul>
+              <li>
+                <img src="img/common/banner/img_search_banner_01.png" alt="">
+                <span class="tit">
+                  <strong class="colorG">에스테틱</strong><br>
+                  온라인 최저가<br>기획전
+                </span>
+                <div class="tag">
+                  <p>#톡신/필러</p>
+                  <p>#스킨부스터</p>
+                  <p>#리프팅</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/common/banner/img_search_banner_02.png" alt="">
+                <span class="tit">
+                  <strong class="colorG">체스트<br>메이트</strong><br>
+                  단독판매 !
+                </span>
+                <div class="tag">
+                  <p>#천식시범사업</p>
+                  <p>#교육필수제품</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/common/banner/img_search_banner_03.png" alt="">
+                <span class="tit">
+                  <strong class="colorG">COVID-19<br>진단키트</strong><br>
+                  특가전
+                </span>
+                <div class="tag">
+                  <p>검사에 필요한</p>
+                  <p>소모품</p>
+                  <p>특가 모음전</p>
+                </div>
+              </li>
+            </ul>
+          </div> -->
+        </span>
+        <script>
+          // 검색 input에 포커싱이 되면 search_input에 active 클래스 추가
+          $(".search_input input").focus(function () {
+            if ($(this).val() === "") {
+              $(".search_input").addClass("active");
+            }
+          });
+
+          // 검색 input에서 포커스가 빠지면 search_input의 active 클래스 제거
+          $(".search_input input").blur(function () {
+            // 입력된 텍스트가 있는지 확인
+            if ($(this).val() === "") {
+              $(".search_input").removeClass("active");
+              $(".search_input").removeClass("on");
+            }
+          });
+
+          // keydown 이벤트가 발생하면 active 클래스 제거하고 on 클래스 추가
+          $(".search_input input").keydown(function () {
+            $(".search_input").removeClass("active").addClass("on");
+          });
+
+          // 입력된 텍스트가 없을 때 on 클래스 제거
+          $(".search_input input").keyup(function () {
+            if ($(this).val() === "") {
+              $(".search_input").removeClass("on");
+            }
+          });
+
+          // 입력된 텍스트가 없을 때 클릭하면 active 클래스 추가
+          $(".search_input input").click(function () {
+            if ($(this).val() === "") {
+              $(".search_input").addClass("active");
+            }
+          });
+
+          // 다른 곳을 클릭하면 on 클래스 제거
+          $(document).on("click", function (event) {
+            if (!$(event.target).closest(".search_input").length) {
+              $(".search_input").removeClass("on");
+            }
+          });// 검색 input에 포커싱이 되면 search_input에 active 클래스 추가
+          $(".search_input input").focus(function () {
+            if ($(this).val() === "") {
+              $(".search_input").addClass("active");
+            }
+          });
+
+          // 검색 input에서 포커스가 빠지면 search_input의 active 클래스 제거
+          $(".search_input input").blur(function () {
+            // 입력된 텍스트가 있는지 확인
+            if ($(this).val() === "") {
+              $(".search_input").removeClass("active");
+              $(".search_input").removeClass("on");
+            }
+          });
+
+          // keydown 이벤트가 발생하면 active 클래스 제거하고 on 클래스 추가
+          $(".search_input input").keydown(function () {
+            $(".search_input").removeClass("active").addClass("on");
+          });
+
+          // 입력된 텍스트가 없을 때 on 클래스 제거
+          $(".search_input input").keyup(function () {
+            if ($(this).val() === "") {
+              $(".search_input").removeClass("on");
+            }
+          });
+
+          // 입력된 텍스트가 없을 때 클릭하면 active 클래스 추가
+          $(".search_input input").click(function () {
+            if ($(this).val() === "") {
+              $(".search_input").addClass("active");
+            }
+          });
+
+          // 다른 곳을 클릭하면 on 클래스 제거
+          $(document).on("click", function (event) {
+            if (!$(event.target).closest(".search_input").length) {
+              $(".search_input").removeClass("on");
+            }
+          });
+        </script>
+
+        <div class="txt_list">
+          <ul>
+            <li>
+              <span class="tit">인기검색어</span>
+              <span class="txt"><span class="num">1</span> covid-19</span>
+              <div class="list">
+                <p class="tit">인기검색어</p>
+                <ol>
+                  <li><a href="#"><span class="num">1</span> 위너프페리</a></li>
+                  <li><a href="#"><span class="num">2</span> 위너프페리</a></li>
+                  <li><a href="#"><span class="num">3</span> 위너프페리위너프페리</a></li>
+                  <li><a href="#"><span class="num">4</span> 위너프페리</a></li>
+                  <li><a href="#"><span class="num">5</span> 위너프페리</a></li>
+                  <li><a href="#"><span class="num">6</span> 위너프페리</a></li>
+                  <li><a href="#"><span class="num">7</span> 위너프페리</a></li>
+                  <li><a href="#"><span class="num">8</span> 위너프페리</a></li>
+                  <li><a href="#"><span class="num">9</span> 위너프페리</a></li>
+                  <li><a href="#"><span class="num">10</span> 위너프페리</a></li>
+                </ol>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="search_menu">
+          <ul>
+            <li><a href="#">공지사항</a><span class="alrim">N</span></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">관심상품</a></li>
+            <li><a href="#">장바구니</a><span class="alrim">12</span></li>
+            <li><a href="#">로그아웃</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //header -->
+
+  <!-- side_menu_cont -->
+  <div class="side_menu_cont">
+    <div class="inner">
+      <!-- 왼쪽컨텐츠 -->
+      <div class="left_cont_area">
+        <div class="lnb_list">
+          <p class="tit">신상 업데이트</p>
+          <ul>
+            <li><a href="#">원내제품</a></li>
+            <li><a href="#">JW신약</a></li>
+            <li><a href="#">내시경처치구</a></li>
+            <li><a href="#">피부/미용/성형</a></li>
+            <li><a href="#">산부인과제품</a></li>
+            <li><a href="#">비케이헬스(택배)</a></li>
+            <li><a href="#">CMG제약</a></li>
+            <li><a href="#">키트</a></li>
+          </ul>
+        </div>
+        <div class="mt10">
+          <!-- Swiper -->
+          <div class="swiper mySwiper left_banner_cont">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <a href="#">
+                    <img src="img/common/banner/img_banner_side_left.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <a href="#">
+                    <img src="img/common/banner/img_banner_side_left.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <a href="#">
+                    <img src="img/common/banner/img_banner_side_left.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <a href="#">
+                    <img src="img/common/banner/img_banner_side_left.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            var left_banner = new Swiper(".left_banner_cont.swiper", {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              // spaceBetween: 4,
+              autoplay: {
+                  delay: 2000, // 자동 플레이 간격을 밀리초 단위로 지정합니다 (예: 3초 = 3000)
+                  disableOnInteraction: false, // 유저 상호작용 후에도 자동 플레이를 유지할지 여부를 설정합니다
+              },
+              loop: true, // 무한 루프 활성화
+              navigation: {
+                nextEl: ".left_banner_cont .swiper-button-next",
+                prevEl: ".left_banner_cont .swiper-button-prev",
+              }
+            });
+          </script>
+        </div>
+      </div>
+      <!-- 오른쪽컨텐츠 -->
+      <div class="right_cont_area">
+        <div class="rnb_list">
+          <div><a href="#none" class="ico_01 btn_quick_01 btn_group" data-target="#document">마이장부</a></div>
+          <div><a href="#none" class="ico_02 btn_quick_02 btn_group" data-target="#basket">장바구니<br>미리보기</a></div>
+          <div><a href="#none" class="ico_03">예치금 충전</a></div>
+          <div><a href="#none" class="ico_04">배송조회</a></div>
+          <div><a href="#none" class="ico_05">고객센터</a></div>
+          <div class="tit">최근 본 상품</div>
+          <div class="sw_cont">
+            <!-- Swiper -->
+            <div class="swiper mySwiper rsw01">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img_box">
+                    <a href="#">
+                      <img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_box">
+                    <a href="#">
+                      <img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_box">
+                    <a href="#">
+                      <img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_box">
+                    <a href="#">
+                      <img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <script>
+              // 우측 side 최근 본 상품 스와이프
+              var rsw01 = new Swiper(".rsw01.swiper", {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                // spaceBetween: 4,
+                loop: true, // 무한 루프 활성화
+                navigation: {
+                  nextEl: ".rsw01 .swiper-button-next",
+                  prevEl: ".rsw01 .swiper-button-prev",
+                },
+                pagination: {
+                  el: '.rsw01 .swiper-pagination',
+                  type: 'fraction', // Pagination type set to 'fraction' for numeric display
+                  clickable: true, // 사용자가 페이지를 클릭하여 슬라이드 이동할 수 있게 함
+                }
+              });
+            </script>
+          </div>
+
+          <!-- 퀵메뉴 버튼 -->
+          <button class="btn_quick_open"></button>
+
+          <!-- 퀵메뉴 열림 -->
+          <div class="quick_menu_area btn_quick_01" data-group="quick" id="document">
+            <p class="quick_tit"><span class="colorB">제이더블유중외제약</span> 님</p>
+            <ul>
+              <li>
+                <!-- 마이장부 -->
+                <div class="title_cont">
+                  <span class="ico_01">마이장부</span>
+                  <a href="#" class="btn_round color">예치금 충전</a>
+                </div>
+                <ul class="sub_list_cont">
+                  <li>
+                    <span class="txt">03월 결제금액</span>
+                    <span class="value">1,586,000<span> 원</span></span>
+                  </li>
+                  <li>
+                    <span class="txt">예치금</span>
+                    <span class="value">112,000<span> 원</span></span>
+                  </li>
+                  <li>
+                    <span class="txt">마이너스잔고</span>
+                    <span class="value">112,000<span> 원</span></span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <!-- 장바구니 미리보기 -->
+                <div class="title_cont">
+                  <span class="ico_02">장바구니 미리보기</span>
+                  <a href="#" class="btn_round">장바구니 보기</a>
+                </div>
+                <div class="table_type01_cont mCustomScrollbar mt20">
+                  <table class="table_type01">
+                    <colgroup>
+                      <col style="width:33%">
+                      <col style="width:33%">
+                      <col>
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>입점사</th>
+                        <th>품목수</th>
+                        <th>주문금액</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>입점사1</td>
+                        <td><strong>1</strong>개</td>
+                        <td class="txt_right">
+                          <strong>62,700</strong>원<br>
+                          <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>입점사2</td>
+                        <td><strong>1</strong>개</td>
+                        <td class="txt_right">
+                          <strong>62,700</strong>원<br>
+                          <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>입점사3</td>
+                        <td><strong>1</strong>개</td>
+                        <td class="txt_right">
+                          <strong>62,700</strong>원<br>
+                          <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>입점사4</td>
+                        <td><strong>1</strong>개</td>
+                        <td class="txt_right">
+                          <strong>62,700</strong>원<br>
+                          <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>입점사5</td>
+                        <td><strong>1</strong>개</td>
+                        <td class="txt_right">
+                          <strong>62,700</strong>원<br>
+                          <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>입점사6</td>
+                        <td><strong>1</strong>개</td>
+                        <td class="txt_right">
+                          <strong>62,700</strong>원<br>
+                          <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                        </td>
+                      </tr>
+                      </tr>
+                      <tr>
+                        <td>입점사7</td>
+                        <td><strong>1</strong>개</td>
+                        <td class="txt_right">
+                          <strong>62,700</strong>원<br>
+                          <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>입점사8</td>
+                        <td><strong>1</strong>개</td>
+                        <td class="txt_right">
+                          <strong>62,700</strong>원<br>
+                          <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <!-- 주문/배송 내역 -->
+                <div class="title_cont">
+                  <a href="#" class="ico_04">주문/배송 내역</a>
+                </div>
+              </li>
+              <li>
+                <!-- 취소/반품 내역 -->
+                <div class="title_cont">
+                  <a href="#" class="ico_06">취소/반품 내역</a>
+                </div>
+              </li>
+              <li>
+                <!-- 1:1 문의 -->
+                <div class="title_cont">
+                  <a href="#" class="ico_07">1:1문의</a>
+                </div>
+              </li>
+            </ul>           
+            <button class="btn_quick_close"></button>
+          </div>
+
+          <!-- 장바구니 미리보기 열림 -->
+          <div class="quick_menu_area btn_quick_02" data-group="quick" id="basket">
+            <p class="quick_tit"><strong>장바구니 미리보기</strong> <button class="ico_refresh"></button></p>
+            <div class="quick_tit_btn_cont txt_right mt20">
+              <a href="#" class="btn_round">장바구니 보기</a>
+              <a href="#" class="btn_round">배송안내</a>
+            </div>
+            <div class="table_style_cont mCustomScrollbar mt20">
+              <div class="st_head">
+                <span>입점사</span>
+                <span>품목수</span>
+                <span>주문금액</span>
+              </div>
+              <!-- no data -->
+              <div class="st_body">
+                <div class="no_data">
+                  장바구니에 담긴 상품이 없습니다.
+                  <div class="mt20">
+                    <a href="#none" class="btn_round ico_arrow">상품 보러가기</a>
+                  </div>
+                </div>
+              </div>
+              <!-- //no data -->
+              <div class="st_body">
+                <div class="st_body_cont">
+                  <div class="st_td_cont">
+                    <span class="st_td"><span class="ellipse">하이맘밴드 이지 텍스트 텍스트 텍스트 텍스트 텍스트</span></span>
+                    <span class="st_td">
+                      <strong>4</strong>개 <button class="btn_sub_cont"></button>
+                    </span>
+                    <span class="st_td txt_right">
+                      <strong>62,700</strong>원<br>
+                      <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                    </span>
+                  </div>
+                  <div class="sub_cont">
+                    <table class="table_type01 bgGray02">
+                      <colgroup>
+                        <col style="width:25%">
+                        <col style="width:20%">
+                        <col style="width:23%">
+                        <col>
+                        <col style="width:10%">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>상품명</th>
+                          <th>가격</th>
+                          <th>수량</th>
+                          <th>주문금액</th>
+                          <th>삭제</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="st_body_cont">
+                  <div class="st_td_cont">
+                    <span class="st_td">한국메디텍</span>
+                    <span class="st_td">
+                      <strong>4</strong>개 <button class="btn_sub_cont"></button>
+                    </span>
+                    <span class="st_td txt_right">
+                      <strong>62,700</strong>원<br>
+                      <span class="s_txt colorB2">주문가능</span>
+                    </span>
+                  </div>
+                  <div class="sub_cont">
+                    <table class="table_type01 bgGray02">
+                      <colgroup>
+                        <col style="width:25%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>상품명</th>
+                          <th>가격</th>
+                          <th>수량</th>
+                          <th>주문금액</th>
+                          <th>삭제</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="st_body_cont">
+                  <div class="st_td_cont">
+                    <span class="st_td">한국메디텍</span>
+                    <span class="st_td">
+                      <strong>4</strong>개 <button class="btn_sub_cont"></button>
+                    </span>
+                    <span class="st_td txt_right">
+                      <strong>62,700</strong>원<br>
+                      <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                    </span>
+                  </div>
+                  <div class="sub_cont">
+                    <table class="table_type01 bgGray02">
+                      <colgroup>
+                        <col style="width:25%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>상품명</th>
+                          <th>가격</th>
+                          <th>수량</th>
+                          <th>주문금액</th>
+                          <th>삭제</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="st_body_cont">
+                  <div class="st_td_cont">
+                    <span class="st_td">한국메디텍</span>
+                    <span class="st_td">
+                      <strong>4</strong>개 <button class="btn_sub_cont"></button>
+                    </span>
+                    <span class="st_td txt_right">
+                      <strong>62,700</strong>원<br>
+                      <span class="s_txt colorR"><strong>156,000</strong> 원 부족</span>
+                    </span>
+                  </div>
+                  <div class="sub_cont">
+                    <table class="table_type01 bgGray02">
+                      <colgroup>
+                        <col style="width:25%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>상품명</th>
+                          <th>가격</th>
+                          <th>수량</th>
+                          <th>주문금액</th>
+                          <th>삭제</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="st_body_cont">
+                  <div class="st_td_cont">
+                    <span class="st_td">한국메디텍</span>
+                    <span class="st_td">
+                      <strong>4</strong>개 <button class="btn_sub_cont"></button>
+                    </span>
+                    <span class="st_td txt_right">
+                      <strong>62,700</strong>원<br>
+                      <span class="s_txt colorB2">주문가능</span>
+                    </span>
+                  </div>
+                  <div class="sub_cont">
+                    <table class="table_type01 bgGray02">
+                      <colgroup>
+                        <col style="width:25%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>상품명</th>
+                          <th>가격</th>
+                          <th>수량</th>
+                          <th>주문금액</th>
+                          <th>삭제</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                        <tr>
+                          <td class="txt_left "><span class="ellipse">하이맘밴드 이지 텍스트텍스트텍스트</span></td>
+                          <td class="txt_right"><strong>1,400</strong>원</td>
+                          <td>
+                            <div class="num_input_box">
+                              <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                <a href="#" class="up">up</a>
+                                <a href="#" class="dn">dn</a>
+                              </span>
+                              <input type="text" class="value" value="10">
+                            </div>
+                          </td>
+                          <td class="txt_right"><strong>14,000</strong>원</td>
+                          <td><button class="btn_del"></button></td>                        
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="total_cont">
+              총 주문 가능 <strong>금액 <span class="colorR">1,586,000</span>원</strong> (할인 <strong class="colorR">0</strong>원)
+            </div>
+            <button class="btn_quick_close"></button>
+          </div>
+        </div>
+        <div class="kakao_link_box mt10">
+          <a href="#"><img src="img/common/banner/img_banner_side_kakao.png" alt=""></a>
+          <div class="tooltip_cont">
+            <div class="txt_cont">
+              <strong class="tag">TIP</strong>
+              <p class="txt">
+                카카오톡으로 빠른 상담을 받을 수 있습니다.<br>
+                버튼을 누르고 모바일을 확인해 주세요.
+              </p>
+              <p class="sub_txt">
+                <span class="bar">실시간 상담</span>
+                <span>평일 오전 9시 ~ 오후 6시</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner_cont">
+          <!-- Swiper -->
+          <div class="swiper mySwiper right_banner_cont">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <a href="#">
+                    <img class="" src="img/common/banner/img_banner_side_right.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <a href="#">
+                    <img class="" src="img/common/banner/img_banner_side_right.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <a href="#">
+                    <img class="" src="img/common/banner/img_banner_side_right.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <a href="#">
+                    <img class="" src="img/common/banner/img_banner_side_right.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            var right_banner = new Swiper(".right_banner_cont.swiper", {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              // spaceBetween: 4,
+              loop: true, // 무한 루프 활성화
+              autoplay: {
+                  delay: 2000, // 자동 플레이 간격을 밀리초 단위로 지정합니다 (예: 3초 = 3000)
+                  disableOnInteraction: false, // 유저 상호작용 후에도 자동 플레이를 유지할지 여부를 설정합니다
+              },
+              //loop: true, // 무한 루프 활성화
+              navigation: {
+                nextEl: ".right_banner_cont .swiper-button-next",
+                prevEl: ".right_banner_cont .swiper-button-prev",
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main_container"> 
+    <!-- tab_link_mypage_wrap -->
+    <div class="tab_link_mypage_wrap">
+      <div class="inner clear">
+        <div class="floatL">
+          <div class="tab_link">
+            <!-- 상품카테고리 -->
+            <div class="nav_wrap">
+              <a href="#none" class="btn_nav ico_menu">상품카테고리</a>
+              <div class="nav">
+                <!-- 1depth -->
+                <div data-depth="1" class="mCustomScrollbar">
+                  <ul>
+                    <li data-group="1"><a href="#none" class="more">1depth 메뉴 1</a></li>
+                    <li data-group="2"><a href="#none" class="more">1depth 메뉴 2</a></li>
+                  </ul>
+                </div>
+                <!-- 2depth -->
+                <div data-depth="2" class="mCustomScrollbar">
+                  <ul data-group="1">
+                    <li data-group="1-1"><a href="#none" class="more">2depth 메뉴 1-1</a></li>
+                    <li data-group="1-2"><a href="#none" class="more">2depth 메뉴 1-2</a></li>
+                    <li data-group="1-3"><a href="#none" class="more">2depth 메뉴 1-3</a></li>
+                    <li data-group="1-4"><a href="#none" class="more">2depth 메뉴 1-4</a></li>
+                    <li data-group="1-5"><a href="#none">2depth 메뉴 1-5</a></li>
+                  </ul>
+                  <ul data-group="2">
+                    <li data-group="2-1"><a href="#none" class="more">2depth 메뉴 2-1</a></li>
+                    <li data-group="2-2"><a href="#none">2depth 메뉴 2-2</a></li>
+                    <li data-group="2-3"><a href="#none">2depth 메뉴 2-3</a></li>
+                    <li data-group="2-4"><a href="#none">2depth 메뉴 2-4</a></li>
+                    <li data-group="2-5"><a href="#none">2depth 메뉴 2-5</a></li>
+                  </ul>
+                </div>
+                <!-- 3depth -->
+                <div data-depth="3" class="mCustomScrollbar">
+                  <ul data-group="1-1">
+                    <li><a href="#none">3depth 메뉴 1-1-1</a></li>
+                    <li><a href="#none">3depth 메뉴 1-1-2</a></li>
+                    <li><a href="#none">3depth 메뉴 1-1-3</a></li>
+                    <li><a href="#none">3depth 메뉴 1-1-4</a></li>
+                    <li><a href="#none">3depth 메뉴 1-1-5</a></li>
+                  </ul>
+                  <ul data-group="1-2">
+                    <li><a href="#none">3depth 메뉴 1-2-1</a></li>
+                    <li><a href="#none">3depth 메뉴 1-2-2</a></li>
+                    <li><a href="#none">3depth 메뉴 1-2-3</a></li>
+                    <li><a href="#none">3depth 메뉴 1-2-4</a></li>
+                    <li><a href="#none">3depth 메뉴 1-2-5</a></li>
+                  </ul>
+                  <ul data-group="1-3">
+                    <li><a href="#none">3depth 메뉴 1-3-1</a></li>
+                    <li><a href="#none">3depth 메뉴 1-3-2</a></li>
+                    <li><a href="#none">3depth 메뉴 1-3-3</a></li>
+                    <li><a href="#none">3depth 메뉴 1-3-4</a></li>
+                    <li><a href="#none">3depth 메뉴 1-3-5</a></li>
+                  </ul>
+                  <ul data-group="1-4">
+                    <li><a href="#none">3depth 메뉴 1-4-1</a></li>
+                    <li><a href="#none">3depth 메뉴 1-4-2</a></li>
+                    <li><a href="#none">3depth 메뉴 1-4-3</a></li>
+                    <li><a href="#none">3depth 메뉴 1-4-4</a></li>
+                    <li><a href="#none">3depth 메뉴 1-4-5</a></li>
+                  </ul>
+                  <ul data-group="2-1">
+                    <li><a href="#none">3depth 메뉴 2-1-1</a></li>
+                    <li><a href="#none">3depth 메뉴 2-1-2</a></li>
+                    <li><a href="#none">3depth 메뉴 2-1-3</a></li>
+                    <li><a href="#none">3depth 메뉴 2-1-4</a></li>
+                    <li><a href="#none">3depth 메뉴 2-1-5</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 입점사 -->
+            <div class="nav_wrap">
+              <a href="#none" class="btn_nav ico_menu">입점사</a>
+              <div class="nav">
+                <!-- 1depth -->
+                <div data-depth="1" class="mCustomScrollbar">
+                  <ul>
+                    <li data-group="1"><a href="#none" class="more">1depth 입점사 메뉴 1</a></li>
+                    <li data-group="2"><a href="#none" class="more">1depth 입점사 메뉴 2</a></li>
+                  </ul>
+                </div>
+                <!-- 2depth -->
+                <div data-depth="2" class="mCustomScrollbar">
+                  <ul data-group="1">
+                    <li data-group="1-1"><a href="#none" class="more">2depth 입점사 메뉴 1-1</a></li>
+                    <li data-group="1-2"><a href="#none" class="more">2depth 입점사 메뉴 1-2</a></li>
+                    <li data-group="1-3"><a href="#none" class="more">2depth 입점사 메뉴 1-3</a></li>
+                    <li data-group="1-4"><a href="#none" class="more">2depth 입점사 메뉴 1-4</a></li>
+                    <li data-group="1-5"><a href="#none">2depth 입점사 메뉴 1-5</a></li>
+                  </ul>
+                  <ul data-group="2">
+                    <li data-group="2-1"><a href="#none" class="more">2depth 입점사 메뉴 2-1</a></li>
+                    <li data-group="2-2"><a href="#none">2depth 입점사 메뉴 2-2</a></li>
+                    <li data-group="2-3"><a href="#none">2depth 입점사 메뉴 2-3</a></li>
+                    <li data-group="2-4"><a href="#none">2depth 입점사 메뉴 2-4</a></li>
+                    <li data-group="2-5"><a href="#none">2depth 입점사 메뉴 2-5</a></li>
+                  </ul>
+                </div>
+                <!-- 3depth -->
+                <div data-depth="3" class="mCustomScrollbar">
+                  <ul data-group="1-1">
+                    <li><a href="#none">3depth 입점사 메뉴 1-1-1</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-1-2</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-1-3</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-1-4</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-1-5</a></li>
+                  </ul>
+                  <ul data-group="1-2">
+                    <li><a href="#none">3depth 입점사 메뉴 1-2-1</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-2-2</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-2-3</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-2-4</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-2-5</a></li>
+                  </ul>
+                  <ul data-group="1-3">
+                    <li><a href="#none">3depth 입점사 메뉴 1-3-1</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-3-2</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-3-3</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-3-4</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-3-5</a></li>
+                  </ul>
+                  <ul data-group="1-4">
+                    <li><a href="#none">3depth 입점사 메뉴 1-4-1</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-4-2</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-4-3</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-4-4</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 1-4-5</a></li>
+                  </ul>
+                  <ul data-group="2-1">
+                    <li><a href="#none">3depth 입점사 메뉴 2-1-1</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 2-1-2</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 2-1-3</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 2-1-4</a></li>
+                    <li><a href="#none">3depth 입점사 메뉴 2-1-5</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- JW중외제약관 -->
+            <div class="nav_wrap">
+              <a href="#none" class="btn_nav"><span class="colorB">JW</span>중외제약관</a>
+              <div class="nav">
+                <!-- 1depth -->
+                <div data-depth="1" class="mCustomScrollbar">
+                  <ul>
+                    <li data-group="1"><a href="#none">1depth 중외제약관 메뉴 1</a></li>
+                    <li data-group="2"><a href="#none">1depth 중외제약관 메뉴 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 브랜드관 -->
+            <div class="nav_wrap">
+              <a href="#none" class="btn_nav">브랜드관</a>
+              <div class="nav">
+                <!-- 1depth -->
+                <div data-depth="1" class="mCustomScrollbar">
+                  <ul>
+                    <li data-group="1"><a href="#none">1depth 브랜드관 메뉴 1</a></li>
+                    <li data-group="2"><a href="#none">1depth 브랜드관 메뉴 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 기획전 -->
+            <div class="nav_wrap">
+              <a href="#none" class="btn_nav">기획전</a>
+              <div class="nav">
+                <!-- 1depth -->
+                <div data-depth="1" class="mCustomScrollbar">
+                  <ul>
+                    <li data-group="1"><a href="#none">1depth 기획전 메뉴 1</a></li>
+                    <li data-group="2"><a href="#none">1depth 기획전 메뉴 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 이벤트 -->
+            <div class="nav_wrap">
+              <a href="#none" class="btn_nav">이벤트</a>
+              <div class="nav">
+                <!-- 1depth -->
+                <div data-depth="1" class="mCustomScrollbar">
+                  <ul>
+                    <li data-group="1"><a href="#none">1depth 이벤트 메뉴 1</a></li>
+                    <li data-group="2"><a href="#none">1depth 이벤트 메뉴 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 콘텐츠 -->
+            <div class="nav_wrap">
+              <a href="#none" class="btn_nav">콘텐츠</a>
+              <div class="nav">
+                <!-- 1depth -->
+                <div data-depth="1" class="mCustomScrollbar">
+                  <ul>
+                    <li data-group="1"><a href="#none">1depth 콘텐츠 메뉴 1</a></li>
+                    <li data-group="2"><a href="#none">1depth 콘텐츠 메뉴 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floatR">
+          <div class="mypage_cont">
+            <a href="#" class="hoverBoxCont">
+              <span class="ico_charge">영업담당자</span>
+              <div class="hoverBox">
+                <ul>
+                  <li><span class="jw">JW중외제약</span><strong>홍선미</strong><span class="ico_phone">010-7758-1801</span></li>
+                  <li><span class="jw">JW신약</span><strong>김병기</strong><span class="ico_phone">010-4751-0555</span></li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- content_wrap -->
+    <div class="content_wrap">
+      <div class="inner">
+        <!-- 컨텐츠 마크업 하는곳 -->
+        <div id="container" style="margin-right:auto;margin-left:auto;">
+
+          <!-- contents -->
+          <div id="contents100">    
+      
+      <script type="text/javascript">
+      var console = window.console || {log:function(){}};
+      
+      var CONST_PAYWAY_CARD = 1; // 신용카드
+      var CONST_PAYWAY_BANK = 2; // 실시간계좌이체
+      var CONST_PAYWAY_VIRTUAL = 4; // 가상계좌
+      var CONST_PAYWAY_ONLINE = 128; // 온라인입금
+      var CONST_PAYWAY_PHONE = 1024; // 휴대폰
+      var CONST_PAYWAY_ETC = 512; // 기타
+      var CONST_PAYWAY_KAKAOPAY = 32; // 카카오페이
+      var CONST_PAYWAY_NAVERPAY = 2048; // 네이버페이
+      var CONST_PAYWAY_SSPAY = 4096; // 삼성페이
+      var CONST_PAYWAY_PAYCO = 64; // 페이코
+      var CONST_PAYWAY_KEYIN = 3; // 간편결제
+      
+      var CONST_DELIVERY_TYPE_PARCEL = 1; // 택배
+      var CONST_DELIVERY_TYPE_DIRECT = 2; // 직배
+      
+      var CONST_DELIVERY_LIMIT_PARCEL = 100000; // 택배주문 최소금액
+      var CONST_DELIVERY_LIMIT_DIRECT = 100000; // 직배주문 최소금액
+      
+      var CONST_DELIVERY_DEFAULT_FREE = 100;	// 기본정책 포함하여 배송비 무료
+      var CONST_DELIVERY_DEFAULT_PREPAY = 104;	// 기본선불
+      var CONST_DELIVERY_MUST = 999;
+      var CONST_DELIVERY_DEFAULT = 990;
+      var CONST_DELIVERY_DEALER = 920;
+      var CONST_DELIVERY_BOX = 916;
+      var CONST_DELIVERY_PRICE = 917;
+      var CONST_DELIVERY_QTY = 918;
+      var CONST_DELIVERY_CATEGORY = 915;
+      var CONST_DELIVERY_GOODS = 910;
+      var CONST_DELIVERY_FREE = 101;
+      var CONST_DELIVERY_PREPAY = 102;
+      var CONST_DELIVERY_COLLECT = 103;
+      
+      var CONST_COUPON_KIND_GOODS = "100";
+      var CONST_COUPON_KIND_CART = "200";
+      var CONST_COUPON_KIND_DELIVERY = "300";
+      
+      var CONST_CMONEY_POLICY_PRICE_SALE = 2; // 적립금-판매가 정률
+      var CONST_CMONEY_POLICY_PRICE_PAY = 4; // 적립금-결제가 정률
+      var CONST_CMONEY_POLICY_AMOUNT = 8; // 적립금-수량 정액
+      
+      var CONST_MILE_POLICY_PRICE_SALE = 1; // 마일리지-판매가 정률
+      var CONST_MILE_POLICY_PRICE_PAY = 2; // 마일리지-결제가 정률
+      var CONST_MILE_POLICY_AMOUNT = 4; // 마일리지-수량 정액
+      
+      var CONST_DEALPROOF_CASH_PER = '101'; // 현금영수증-개인소득공제
+      var CONST_DEALPROOF_CASH_BIZ = '102'; // 현금영수증-사업자지출증빙
+      var CONST_DEALPROOF_TAX = '200'; // 세금계산서
+      
+      var CONST_PRICE_ROUND_UNIT = -1;
+      
+      var CONST_STOCK_LIMITLESS = 0;	// 무제한
+      var CONST_STOCK_QUANTITY = 1;	// 수량(제한)
+      var CONST_STOCK_SOLDOUT = 2;		// 품절
+      
+      var CONST_CATEGORY_MEDICAL_WARE = 0; // 의료용품
+      var CONST_CATEGORY_MEDICAL_CONSUMABLE = 1; // 의료소모품
+      </script>
+      
+      
+      <script type="text/javascript" src="/jscript/order_calc.js?ver=220612"></script>
+      <script type="text/javascript" src="/jscript/order.js?ver=220612"></script>
+      <script type="text/javascript">
+      //<![CDATA[
+      function previous(goodsNo) {
+        location.href = (goodsNo ? "../goods/detail.do?gno="+goodsNo : "cart.do");
+      }
+      
+      $(function() {
+        $(window).on('scroll', function(){
+          var toph = $('#topAd').innerHeight() + $('#header').innerHeight() + $('.order_titlebox').innerHeight();
+          var fooh = $('#customer').offset().top;
+          var limit = $('#customer').outerHeight() + $('#footer').outerHeight();
+          var fi = $('.fixedbox').outerHeight() / 2;
+          
+          if(toph < $(window).scrollTop()) {
+            $('.fixedbox').addClass('fixed');
+            
+            if($(this).scrollTop() >= fooh - limit - fi){
+              $('.fixedbox').addClass('absol');
+            }else{
+              $('.fixedbox').removeClass('absol');
+            }
+          } else {
+            $('.fixedbox').removeClass('fixed');
+          }
+        });
+      });
+      
+      (function() {
+      
+          // doubleFlag는 처음에 false로 초기화 한다.
+          var doubleFlag = false;
+      
+          // 더블 클릭 함수 생성
+          this.doubleCheck = function doubleCheck() {
+            if(doubleFlag == true) {
+              return doubleFlag;
+            } else {
+              doubleFlag = true;
+              return false;
+            }
+          }
+      
+          // 더블 클릭된 이벤트가 발생이후 다시 버튼을 초기화 하기 위해 사용된다.
+          this.clickInitial = function clickInitial() {
+            doubleFlag = false;
+          }
+        })();
+        
+      // 클릭 이벤트
+      function clickSubmit() {
+      
+        // 더블 클릭한 경우
+        if(doubleCheck() == true) {
+      
+      //alert("test1");
+          validOrder();
+      
+      
+      
+          // 다시 정상적으로 클릭이벤트가 발생 할 수 있도록 초기화 요청
+          clickInitial();
+          return;
+        }
+      
+        // 한번만 클릭한 경우
+        else {
+          //alert("test2");
+          validOrder();
+        }
+      }  
+      //]]>
+      </script>
+      
+            <div class="order_titlebox">
+              <h2>주문결제</h2>
+            
+              <ul class="order_process">
+                <li class="step1 on"><span>장바구니</span></li>
+                <li class="step2 on"><span>주문결제</span></li>
+                <li class="step3"><span>주문완료</span></li>
+              </ul>
+            </div>
+      
+      <form id="Frm" name="Frm" method="post">
+      <input type="hidden" name="direct" value="0">
+      <input type="hidden" name="buyerId" value="test02"> <!-- 회원ID -->
+      
+      <input type="hidden" name="payPath" value="/pay">
+      <input type="hidden" name="imgPath" value="https://www.jwpmall.co.kr/data/base"> <!-- 이미지경로 -->
+      
+      <!-- v2 신규 추가 -->
+      <input type="hidden" name="totalOrderPrice" value="4130430"> <!-- 총 주문금액 : (상품단가 + 상품옵션가) * 상품주문수량 합계 -->
+      <input type="hidden" name="totalDeliveryFee" value="0"> <!-- 총 배송비 -->
+      <input type="hidden" name="settlePrice" value="4130430"> <!-- 결제금액 -->
+      
+      <!-- 회원 총 할인 금액 -->
+      <input type="hidden" name="totalMemberDiscountPrice" value="0">
+      
+      <!-- 이벤트 총 할인 금액 -->
+      <input type="hidden" name="totalEventDiscountPrice" value="0">
+      
+      <!-- 총 즉시할인금액 = 회원할인금액 + 이벤트 할인 금액 -->
+      <input type="hidden" name="totalInstantDiscountPrice" value="0"> 
+      
+      <!-- 장바구니 쿠폰 정보 -->
+      <input type="hidden" name="couponCartMemberIdx" value="0">
+      <input type="hidden" name="couponCartDiscountPrice" value="0">
+      
+      <input type="hidden" name="totalSaveCmoney" value=""> 
+      
+      <!-- 적립금 사용 제한 -->
+      <input type="hidden" name="moneyUseLimit" value="10"> <!-- 사용가능 최소 적립금 -->
+      <input type="hidden" name="moneyUseMin" value="10"> <!-- 결제시 최소사용 적립금 -->
+      <input type="hidden" name="moneyUseMax" value="9000000"> <!-- 결제시 최대사용 적립금 -->
+      
+      <!-- 포인트 사용 제한 -->
+      <input type="hidden" name="pmoneyUseLimit" value="0"> <!-- 사용가능 최소 포인트 -->
+      <input type="hidden" name="pmoneyUseMin" value="0"> <!-- 결제시 최소사용 포인트 -->
+      <input type="hidden" name="pmoneyUseMax" value="10000"> <!-- 결제시 최대사용 포인트 -->
+      
+      <!-- v2 신규 추가 완료 -->
+      <input type="hidden" name="memberDiscountValue" value="0">
+      <input type="hidden" name="memberDiscountUnit" value="100"> 
+      
+      
+      <input type="hidden" name="cartsIdxList" id="cartsIdxList" value="_____">
+      
+      <input type="hidden" name="promotion" value="0">
+      
+      <!-- 주문하시는분 -->
+      <input type="hidden" name="OrdNo" value="">
+      <input type="hidden" name="ordName" value="제이더블유중외제약 주식회사">
+      <input type="hidden" name="ordPost" value="06725">
+      <input type="hidden" name="ordAddr" value="서울특별시 서초구 남부순환로">
+      <input type="hidden" name="ordAddrDetail" value="2477(서초동)">
+      <input type="hidden" name="ordTel1" value="010">
+      <input type="hidden" name="ordTel2" value="2641">
+      <input type="hidden" name="ordTel2" value="9300">
+      <input type="hidden" name="ordMobile1" value="010">
+      <input type="hidden" name="ordMobile2" value="6481">
+      <input type="hidden" name="ordMobile3" value="1048">
+      <input type="hidden" name="ordEmailId" value="ken9304">
+      <input type="hidden" name="ordEmailDomain" value="naver.com">
+      
+      <!-- 받는분 -->
+      <input type="hidden" name="rcvName" value="제이더블유중외제약 주식회사">
+      <input type="hidden" name="rcvPost" value="06725">
+      <input type="hidden" name="rcvAddr" value="서울특별시 서초구 남부순환로">
+      <input type="hidden" name="rcvAddrDetail" value="2477(서초동)">
+      <input type="hidden" name="rcvTel1" value="010">
+      <input type="hidden" name="rcvTel2" value="2641">
+      <input type="hidden" name="rcvTel3" value="9300">
+      <input type="hidden" name="rcvMobile1" value="010">
+      <input type="hidden" name="rcvMobile2" value="6481">
+      <input type="hidden" name="rcvMobile3" value="1048">
+      
+            <div class="orderwrap">
+            
+              <div class="section mar_none">
+                <!-- 주문할 상품 -->
+                <h3 class="bigtitle">주문상품
+                   
+                </h3>
+                
+                <a href="#" class="moreview">전체보기</a>
+            
+      
+      
+                <div class="order_list_box active simpleList">
+                  <dl>
+                    <dt>
+                      JW중외제약 (<strong class="roboto red">6</strong>개)
+                    </dt>
+                    <dd>
+                      <table class="order_ver">
+                        <caption>주문할 상품 리스트입니다. </caption>
+                        <colgroup>
+                          <col width="84">
+                          <col width="188">
+                          <col width="84">
+                          <col width="*">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td colspan="4" class="product">
+                              <!-- 2024 고도화 수정 -->
+                              <div class="info_box">
+                                <span class="name">위너프페리-217mL TPN3</span>
+                                <span class="count">외 5건</span>
+                                <a href="#none" class="btn_round bgR colorW size_s">즉시할인</a>
+                              </div>
+                              <!-- //2024 고도화 수정 -->
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="delivery_cell bgdirect">직배</th>
+                            <td class="price_box">
+                              <strong class="roboto">4,130,430</strong>원
+                            </td>
+                            <th class="delivery_cell bgdelivery">택배</th>
+                            <td class="price_box">
+                              <strong class="roboto">0</strong>원
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </dd>
+                  </dl>
+                </div>      
+                <div class="order_list_box">
+                  <dl>
+                    <dt>
+                      JW중외제약 (<strong class="roboto red">6</strong>개)
+                    </dt>
+                    <dd>
+                      <table class="order_ver">
+                        <caption>주문할 상품 리스트입니다. </caption>
+                        <colgroup>
+                          <col width="64">
+                          <col width="80">
+                          <col width="*">
+                          <col width="130">
+                        </colgroup>
+                        <tbody>
+      
+      
+                <tr class="ui-goods">
+              
+                  <td rowspan="6" class="delivery_cell">직배</td>
+              
+                  <td class="img_box">
+                    <a href="https://www.jwpmall.co.kr/goods/detail.do?gno=132419&amp;cate=1639">
+                      <img src="https://www.jwpmall.co.kr/data/base/goods/middle/217_0.jpg" onerror="this.src='https://www.jwpmall.co.kr/data/base/imgs/goods/no.gif'" alt="" class="img">
+                    </a>
+                  </td>
+                  <td class="product">
+                    <div class="info_box">
+                      <span class="name">위너프페리-217mL TPN3</span>
+                    </div>
+                  </td>
+                  <td class="price_box">
+              
+                    <input type="hidden" name="cart" value="216941"> 
+                    <input type="hidden" name="cartNo" value="1"> 
+                    <input type="hidden" name="dealerNo" value="0"> 
+                    <input type="hidden" name="goodsNo" value="132419">
+                    <input type="hidden" name="goodsName" value="위너프페리-217mL TPN3">
+                    <input type="hidden" name="price" value="22000">
+                    <input type="hidden" name="optionPrice" value="0"> 
+                    <input type="hidden" name="memberDiscountPrice" value="0">
+                    <input type="hidden" name="eventDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice2" value="">
+                    <input type="hidden" name="ea" value="8"> 
+                    <input type="hidden" name="purePrice" value="22000"> 
+                    <input type="hidden" name="pureOrderPrice" value="176000">
+                    <input type="hidden" name="couponGoodsMemberIdx" value="0"> 
+                    <input type="hidden" name="couponGoodsDiscountPrice" value="0">
+                    <input type="hidden" name="couponDeliMemberIdx" value="0"> 
+                    <input type="hidden" name="couponDeliDiscountPrice" value="0">
+                    <input type="hidden" name="couponCartDiscountPrice" value="0">
+                    <input type="hidden" name="deliveryType" value="2"> 
+                    <input type="hidden" name="deliveryPolicy" value="999"> 
+                    <input type="hidden" name="deliveryMethod" value="101"> 
+                    <input type="hidden" name="deliveryFee" value="0" real="0"> 
+                        
+                      <input type="hidden" name="deliveryLimit" value="100000">
+                    
+                    <input type="hidden" name="cateDlvrIdx" value="0">
+                    <input type="hidden" name="cateDlvrLimit" value="">
+                    <input type="hidden" name="saveMilePolicy" value="0">
+                    <input type="hidden" name="saveMileValue" value="0.0">
+                    <input type="hidden" name="cateGubun" value="0">
+                    <input type="hidden" name="deliveryBox" value="0">
+                    <input type="hidden" name="dlvrtimeCode" value="">
+                    <input type="hidden" name="dlvrtimeOrder" value="0">
+      
+                  
+                    <strong class="roboto">176,000</strong>원
+                    <div class="ea">수량 : <strong class="roboto">8</strong>개</div>
+                  </td>
+                </tr>
+      
+            
+      
+                <tr class="ui-goods">
+              
+                  <td class="img_box">
+                    <a href="https://www.jwpmall.co.kr/goods/detail.do?gno=141916&amp;cate=1642">
+                      <img src="https://www.jwpmall.co.kr/data/base/goods/middle/위너프페리_1450_0.jpg" onerror="this.src='https://www.jwpmall.co.kr/data/base/imgs/goods/no.gif'" alt="" class="img">
+                    </a>
+                  </td>
+                  <td class="product">
+                    <div class="info_box">
+                      <span class="name">(R)위너프페리-1450ML TPN2</span>
+                    </div>
+                  </td>
+                  <td class="price_box">
+              
+                    <input type="hidden" name="cart" value="224746"> 
+                    <input type="hidden" name="cartNo" value="2"> 
+                    <input type="hidden" name="dealerNo" value="0"> 
+                    <input type="hidden" name="goodsNo" value="141916">
+                    <input type="hidden" name="goodsName" value="(R)위너프페리-1450ML TPN2">
+                    <input type="hidden" name="price" value="45678">
+                    <input type="hidden" name="optionPrice" value="0"> 
+                    <input type="hidden" name="memberDiscountPrice" value="0">
+                    <input type="hidden" name="eventDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice2" value="">
+                    <input type="hidden" name="ea" value="4"> 
+                    <input type="hidden" name="purePrice" value="45678"> 
+                    <input type="hidden" name="pureOrderPrice" value="182712">
+                    <input type="hidden" name="couponGoodsMemberIdx" value="0"> 
+                    <input type="hidden" name="couponGoodsDiscountPrice" value="0">
+                    <input type="hidden" name="couponDeliMemberIdx" value="0"> 
+                    <input type="hidden" name="couponDeliDiscountPrice" value="0">
+                    <input type="hidden" name="couponCartDiscountPrice" value="0">
+                    <input type="hidden" name="deliveryType" value="2"> 
+                    <input type="hidden" name="deliveryPolicy" value="999"> 
+                    <input type="hidden" name="deliveryMethod" value="101"> 
+                    <input type="hidden" name="deliveryFee" value="0" real="0"> 
+                        
+                      <input type="hidden" name="deliveryLimit" value="100000">
+                    
+                    <input type="hidden" name="cateDlvrIdx" value="0">
+                    <input type="hidden" name="cateDlvrLimit" value="">
+                    <input type="hidden" name="saveMilePolicy" value="0">
+                    <input type="hidden" name="saveMileValue" value="0.0">
+                    <input type="hidden" name="cateGubun" value="0">
+                    <input type="hidden" name="deliveryBox" value="0">
+                    <input type="hidden" name="dlvrtimeCode" value="">
+                    <input type="hidden" name="dlvrtimeOrder" value="0">
+      
+                  
+                    <strong class="roboto">182,712</strong>원
+                    <div class="ea">수량 : <strong class="roboto">4</strong>개</div>
+                  </td>
+                </tr>
+      
+            
+      
+                <tr class="ui-goods">
+              
+                  <td class="img_box">
+                    <a href="https://www.jwpmall.co.kr/goods/detail.do?gno=9841&amp;cate=1638">
+                      <img src="https://www.jwpmall.co.kr/data/base/goods/middle/NS100(Bag).jpg" onerror="this.src='https://www.jwpmall.co.kr/data/base/imgs/goods/no.gif'" alt="" class="img">
+                    </a>
+                  </td>
+                  <td class="product">
+                    <div class="info_box">
+                      <span class="name">엔에스주-100ML</span>
+                    </div>
+                  </td>
+                  <td class="price_box">
+              
+                    <input type="hidden" name="cart" value="225204"> 
+                    <input type="hidden" name="cartNo" value="3"> 
+                    <input type="hidden" name="dealerNo" value="0"> 
+                    <input type="hidden" name="goodsNo" value="9841">
+                    <input type="hidden" name="goodsName" value="엔에스주-100ML">
+                    <input type="hidden" name="price" value="1064">
+                    <input type="hidden" name="optionPrice" value="0"> 
+                    <input type="hidden" name="memberDiscountPrice" value="0">
+                    <input type="hidden" name="eventDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice2" value="">
+                    <input type="hidden" name="ea" value="1650"> 
+                    <input type="hidden" name="purePrice" value="1064"> 
+                    <input type="hidden" name="pureOrderPrice" value="1755600">
+                    <input type="hidden" name="couponGoodsMemberIdx" value="0"> 
+                    <input type="hidden" name="couponGoodsDiscountPrice" value="0">
+                    <input type="hidden" name="couponDeliMemberIdx" value="0"> 
+                    <input type="hidden" name="couponDeliDiscountPrice" value="0">
+                    <input type="hidden" name="couponCartDiscountPrice" value="0">
+                    <input type="hidden" name="deliveryType" value="2"> 
+                    <input type="hidden" name="deliveryPolicy" value="999"> 
+                    <input type="hidden" name="deliveryMethod" value="101"> 
+                    <input type="hidden" name="deliveryFee" value="0" real="0"> 
+                        
+                      <input type="hidden" name="deliveryLimit" value="100000">
+                    
+                    <input type="hidden" name="cateDlvrIdx" value="0">
+                    <input type="hidden" name="cateDlvrLimit" value="">
+                    <input type="hidden" name="saveMilePolicy" value="0">
+                    <input type="hidden" name="saveMileValue" value="0.0">
+                    <input type="hidden" name="cateGubun" value="0">
+                    <input type="hidden" name="deliveryBox" value="0">
+                    <input type="hidden" name="dlvrtimeCode" value="">
+                    <input type="hidden" name="dlvrtimeOrder" value="0">
+      
+                  
+                    <strong class="roboto">1,755,600</strong>원
+                    <div class="ea">수량 : <strong class="roboto">1,650</strong>개</div>
+                  </td>
+                </tr>
+      
+            
+      
+                <tr class="ui-goods">
+              
+                  <td class="img_box">
+                    <a href="https://www.jwpmall.co.kr/goods/detail.do?gno=40547&amp;cate=2225">
+                      <img src="https://www.jwpmall.co.kr/data/base/goods/middle/1_2.jpg" onerror="this.src='https://www.jwpmall.co.kr/data/base/imgs/goods/no.gif'" alt="" class="img">
+                    </a>
+                  </td>
+                  <td class="product">
+                    <div class="info_box">
+                      <span class="name">체스트메이트(폐활량측정기)</span>
+                    </div>
+                  </td>
+                  <td class="price_box">
+              
+                    <input type="hidden" name="cart" value="242079"> 
+                    <input type="hidden" name="cartNo" value="4"> 
+                    <input type="hidden" name="dealerNo" value="0"> 
+                    <input type="hidden" name="goodsNo" value="40547">
+                    <input type="hidden" name="goodsName" value="체스트메이트(폐활량측정기)">
+                    <input type="hidden" name="price" value="1870000">
+                    <input type="hidden" name="optionPrice" value="0"> 
+                    <input type="hidden" name="memberDiscountPrice" value="0">
+                    <input type="hidden" name="eventDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice2" value="">
+                    <input type="hidden" name="ea" value="1"> 
+                    <input type="hidden" name="purePrice" value="1870000"> 
+                    <input type="hidden" name="pureOrderPrice" value="1870000">
+                    <input type="hidden" name="couponGoodsMemberIdx" value="0"> 
+                    <input type="hidden" name="couponGoodsDiscountPrice" value="0">
+                    <input type="hidden" name="couponDeliMemberIdx" value="0"> 
+                    <input type="hidden" name="couponDeliDiscountPrice" value="0">
+                    <input type="hidden" name="couponCartDiscountPrice" value="0">
+                    <input type="hidden" name="deliveryType" value="2"> 
+                    <input type="hidden" name="deliveryPolicy" value="999"> 
+                    <input type="hidden" name="deliveryMethod" value="101"> 
+                    <input type="hidden" name="deliveryFee" value="0" real="0"> 
+                        
+                      <input type="hidden" name="deliveryLimit" value="100000">
+                    
+                    <input type="hidden" name="cateDlvrIdx" value="0">
+                    <input type="hidden" name="cateDlvrLimit" value="">
+                    <input type="hidden" name="saveMilePolicy" value="0">
+                    <input type="hidden" name="saveMileValue" value="0.0">
+                    <input type="hidden" name="cateGubun" value="0">
+                    <input type="hidden" name="deliveryBox" value="0">
+                    <input type="hidden" name="dlvrtimeCode" value="">
+                    <input type="hidden" name="dlvrtimeOrder" value="0">
+      
+                  
+                    <strong class="roboto">1,870,000</strong>원
+                    <div class="ea">수량 : <strong class="roboto">1</strong>개</div>
+                  </td>
+                </tr>
+      
+            
+      
+                <tr class="ui-goods">
+              
+                  <td class="img_box">
+                    <a href="https://www.jwpmall.co.kr/goods/detail.do?gno=141548&amp;cate=1642">
+                      <img src="https://www.jwpmall.co.kr/data/base/goods/middle/Peri_-241ml_0_0.jpg" onerror="this.src='https://www.jwpmall.co.kr/data/base/imgs/goods/no.gif'" alt="" class="img">
+                    </a>
+                  </td>
+                  <td class="product">
+                    <div class="info_box">
+                      <span class="name">위너프페리-241mL TPN3</span>
+                    </div>
+                  </td>
+                  <td class="price_box">
+              
+                    <input type="hidden" name="cart" value="246777"> 
+                    <input type="hidden" name="cartNo" value="5"> 
+                    <input type="hidden" name="dealerNo" value="0"> 
+                    <input type="hidden" name="goodsNo" value="141548">
+                    <input type="hidden" name="goodsName" value="위너프페리-241mL TPN3">
+                    <input type="hidden" name="price" value="16820">
+                    <input type="hidden" name="optionPrice" value="0"> 
+                    <input type="hidden" name="memberDiscountPrice" value="0">
+                    <input type="hidden" name="eventDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice2" value="">
+                    <input type="hidden" name="ea" value="8"> 
+                    <input type="hidden" name="purePrice" value="16820"> 
+                    <input type="hidden" name="pureOrderPrice" value="134560">
+                    <input type="hidden" name="couponGoodsMemberIdx" value="0"> 
+                    <input type="hidden" name="couponGoodsDiscountPrice" value="0">
+                    <input type="hidden" name="couponDeliMemberIdx" value="0"> 
+                    <input type="hidden" name="couponDeliDiscountPrice" value="0">
+                    <input type="hidden" name="couponCartDiscountPrice" value="0">
+                    <input type="hidden" name="deliveryType" value="2"> 
+                    <input type="hidden" name="deliveryPolicy" value="999"> 
+                    <input type="hidden" name="deliveryMethod" value="101"> 
+                    <input type="hidden" name="deliveryFee" value="0" real="0"> 
+                        
+                      <input type="hidden" name="deliveryLimit" value="100000">
+                    
+                    <input type="hidden" name="cateDlvrIdx" value="0">
+                    <input type="hidden" name="cateDlvrLimit" value="">
+                    <input type="hidden" name="saveMilePolicy" value="0">
+                    <input type="hidden" name="saveMileValue" value="0.0">
+                    <input type="hidden" name="cateGubun" value="0">
+                    <input type="hidden" name="deliveryBox" value="0">
+                    <input type="hidden" name="dlvrtimeCode" value="">
+                    <input type="hidden" name="dlvrtimeOrder" value="0">
+      
+                  
+                    <strong class="roboto">134,560</strong>원
+                    <div class="ea">수량 : <strong class="roboto">8</strong>개</div>
+                  </td>
+                </tr>
+      
+            
+      
+                <tr class="ui-goods">
+              
+                  <td class="img_box">
+                    <a href="https://www.jwpmall.co.kr/goods/detail.do?gno=9892&amp;cate=1637">
+                      <img src="https://www.jwpmall.co.kr/data/base/goods/middle/페린젝트2케이스.jpg" onerror="this.src='https://www.jwpmall.co.kr/data/base/imgs/goods/no.gif'" alt="" class="img">
+                    </a>
+                  </td>
+                  <td class="product">
+                    <div class="info_box">
+                      <span class="name">페린젝트주(100mg) 2mLx1V</span>
+                    </div>
+                  </td>
+                  <td class="price_box">
+              
+                    <input type="hidden" name="cart" value="246780"> 
+                    <input type="hidden" name="cartNo" value="6"> 
+                    <input type="hidden" name="dealerNo" value="0"> 
+                    <input type="hidden" name="goodsNo" value="9892">
+                    <input type="hidden" name="goodsName" value="페린젝트주(100mg) 2mLx1V">
+                    <input type="hidden" name="price" value="11558">
+                    <input type="hidden" name="optionPrice" value="0"> 
+                    <input type="hidden" name="memberDiscountPrice" value="0">
+                    <input type="hidden" name="eventDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice" value="0">
+                    <input type="hidden" name="financialDiscountPrice2" value="">
+                    <input type="hidden" name="ea" value="1"> 
+                    <input type="hidden" name="purePrice" value="11558"> 
+                    <input type="hidden" name="pureOrderPrice" value="11558">
+                    <input type="hidden" name="couponGoodsMemberIdx" value="0"> 
+                    <input type="hidden" name="couponGoodsDiscountPrice" value="0">
+                    <input type="hidden" name="couponDeliMemberIdx" value="0"> 
+                    <input type="hidden" name="couponDeliDiscountPrice" value="0">
+                    <input type="hidden" name="couponCartDiscountPrice" value="0">
+                    <input type="hidden" name="deliveryType" value="2"> 
+                    <input type="hidden" name="deliveryPolicy" value="999"> 
+                    <input type="hidden" name="deliveryMethod" value="101"> 
+                    <input type="hidden" name="deliveryFee" value="0" real="0"> 
+                        
+                      <input type="hidden" name="deliveryLimit" value="100000">
+                    
+                    <input type="hidden" name="cateDlvrIdx" value="0">
+                    <input type="hidden" name="cateDlvrLimit" value="">
+                    <input type="hidden" name="saveMilePolicy" value="0">
+                    <input type="hidden" name="saveMileValue" value="0.0">
+                    <input type="hidden" name="cateGubun" value="0">
+                    <input type="hidden" name="deliveryBox" value="0">
+                    <input type="hidden" name="dlvrtimeCode" value="">
+                    <input type="hidden" name="dlvrtimeOrder" value="0">
+      
+                  
+                    <strong class="roboto">11,558</strong>원
+                    <div class="ea">수량 : <strong class="roboto">1</strong>개</div>
+                  </td>
+                </tr>
+      
+            
+                        </tbody>
+                      </table>
+                    </dd>
+                  </dl>
+        
+                </div>
+      
+               </div><!-- //section -->
+      
+      
+      
+              <div class="section use_money_box">
+        
+        
+        <!--				
+                <div class="group mar_none">
+                  <h3>예치금 정보</h3>
+                  <div class="priceinfo">보유 예치금 <span class="price"><strong class="roboto">112,070</strong>원</span></div>
+                  <table>
+                    <caption></caption>
+                    <colgroup>
+                       <col width="123" />
+                      <col width="" />
+                    </colgroup>
+                    <tr>
+                      <th>예치금</th>
+                      <td>
+                        <div class="useinput">
+                          <input type="hidden" name="useCmoney" has="112070" min="10" max="9000000" limit="10" />
+                          <span class="box">
+                            <input type="text" name="useCmoneyInput" class="ui-reserve-input" />
+                          </span>
+                          <button type="button" class="btn_reserve_apply">사용</button>
+                          <button type="button" class="all btn_reserve_whole">전액사용</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <ul class="noti_list">
+                    <li>· 예치금 사용은 <span>10원이상</span>부터 가능합니다.
+                      <span>( 최소 예치금 : 10 원 이상 / 최대 예치금 : 9,000,000 원 이하 )</span>
+                    </li>
+                  </ul>
+                </div>
+        
+        -->
+        
+                <div class="group">
+                  <h3>마이너스 잔고 정보
+                    <div class="qbox">
+                      <img src="https://www.jwpmall.co.kr/data/base/imgs/order/icon_qbox.png" alt="">
+                      <span class="hoverbox">마이너스 잔고는 JWP MALL 상품에서만 사용이 가능합니다.</span> 
+                    </div>
+                  </h3>
+                  <div class="priceinfo">잔고 <span class="price red"><strong class="roboto">-500,000</strong>원</span></div>
+                  <table>
+                    <caption></caption>
+                    <colgroup>
+                       <col width="123">
+                      <col width="">
+                    </colgroup>
+                    <tbody><tr>
+                      <th>마이너스 잔고</th>
+                      <td>
+                        <div class="useinput">
+                          <input type="hidden" name="useBmoney" has="500000" value="0">
+                          <span class="box">
+                            <input type="text" name="useBmoneyInput" class="ui-reserve-input">
+                          </span>
+                          <button type="button" class="btn_reserve_apply">사용</button>
+                          <button type="button" class="all btn_reserve_whole">전액사용</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </div>
+                
+                <div class="group">
+                  <h3>여신 정보
+                    <div class="qbox">
+                      <img src="https://www.jwpmall.co.kr/data/base/imgs/order/icon_qbox.png" alt="">
+                      <span class="hoverbox">여신은 JWP MALL 상품에서만 사용이 가능합니다.</span> 
+                    </div>
+                  </h3>
+                  <div class="priceinfo">여신 금액 <span class="price"><strong class="roboto">999,999</strong>원</span></div>
+                  <table>
+                    <caption></caption>
+                    <colgroup>
+                       <col width="123">
+                      <col width="">
+                    </colgroup>
+                    <tbody><tr>
+                      <th>여신</th>
+                      <td>
+                        <div class="useinput">
+                          <input type="hidden" name="useLmoney" has="999999" value="0">
+                          <span class="box">
+                            <input type="text" name="useLmoneyInput" class="ui-reserve-input">
+                          </span>
+                          <button type="button" class="btn_reserve_apply">사용</button>
+                          <button type="button" class="all btn_reserve_whole">전액사용</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </div>
+        
+      
+              </div><!-- //use_money_box -->
+              
+      
+      
+              <!-- 결제수단/거래증빙서류 -->
+              
+      
+            <!-- 결제수단 선택 -->
+            <div id="box_pay_method" class="section">
+              <h3 class="bigtitle">결제수단</h3>
+              
+              <div class="savepay">
+                <label class="check">
+                  <input type="checkbox" name="savePayway" value="1" class="checkbox">
+                  <span class="label">결제 방법 저장</span>
+                </label>
+              </div>
+              
+              <div class="payment_select_box">
+                <ul class="paymethod">
+      <!-- 2022.04.18 수정 -->
+      
+                  <li>
+                    <label class="radio naverpay">
+                      <input type="radio" name="payway" id="payway_naverpay" class="radio" value="2048">
+                      <span class="label">네이버페이</span>
+                    </label>
+                  </li>
+      
+                  <li>
+                    <label class="radio kakaopay">
+                      <input type="radio" name="payway" id="payway_kakaopay" class="radio" value="32">
+                      <span class="label">카카오페이</span>
+                    </label>
+                  </li>
+      
+                  <li>
+                    <label class="radio samsungpay">
+                      <input type="radio" name="payway" id="payway_sspay" class="radio" value="4096">
+                      <span class="label">삼성페이</span>
+                    </label>
+                  </li>
+      
+      <!-- //2022.04.18 수정 -->
+      
+      
+                  <li>
+                    <label class="radio payco">
+                      <input type="radio" name="payway" id="payway_payco" class="radio" value="64">
+                      <span class="label">PAYCO</span>
+                    </label>
+                  </li>
+      
+                  <li>
+                    <label class="radio litecard">
+                      <input type="radio" id="payway_litecard" name="payway" class="radio" value="3">
+                      <span class="label">간편결제</span>
+                      <!-- 2024 고도화 수정 -->
+                      <span class="btn_round bgR colorW size_s">즉시할인</span>
+                    </label>
+                  </li>
+      
+                  <li>
+                    <label class="radio card">
+                      <input type="radio" id="payway_card" name="payway" class="radio" value="1">
+                      <span class="label">신용카드</span>
+                    </label>
+                    
+                  </li>
+      
+                  <li>
+                    <label class="radio virtual">
+                      <input type="radio" name="payway" id="payway_virtual" class="radio" value="4">
+                      <span class="label">가상계좌</span>
+                    </label>
+                  </li>
+      
+                </ul>
+                
+      
+        
+                <div id="lite_card_area" class="lite_card_area" style="display:none">
+                  <h4>간편 결제하기</h4>
+                  <a href="javascript:;" onclick="openCard(); return false;" class="btnliteCard">간편결제 신청</a>
+                  <dl>
+                    <dt>카드선택</dt>
+                    <dd>
+                      <select style="width:230px;" id="cardIdx" name="cardIdx">
+                        <option value="">카드 선택</option>
+                        
+                          <option value="251">비씨1234-****-****-12*</option>
+                        
+                          <option value="351">현대9490-****-****-143*</option>
+                        
+                          <option value="665">비씨5371-****-****-337*</option>
+                        
+                          <option value="957">삼성5366-****-****-521*</option>
+                        
+                      </select>
+                      <select style="width:230px;" id="CardQuota" name="CardQuota">
+                        <option value="">할부기간 선택</option>
+                        <option value="00">일시불</option>
+                        <option value="02">2개월</option>
+                        <option value="03">3개월</option>
+                        <option value="04">4개월</option>
+                        <option value="05">5개월</option>
+                        <option value="06">6개월</option>
+                        <option value="07">7개월</option>
+                        <option value="08">8개월</option>
+                        <option value="09">9개월</option>
+                        <option value="10">10개월</option>
+                        <option value="11">11개월</option>
+                        <option value="12">12개월</option>
+                      </select>
+                    </dd>
+                  </dl>
+                </div>
+      
+      
+                <ul class="noti_list">
+                  <!--li>· 신용카드 결제인 경우 카드전표가 거래증빙으로 대체됩니다.</li-->
+                  <!-- <li>세금계산서와 현금영수증을 동시에 신청하실 수 없습니다.</li -->
+                  <li>※ 하나카드, 삼성카드 제외한 전체 카드 5만원 이상 결제시 2~3개월 무이자 할부 제공 됩니다.</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;단, 법인/기업/체크/선불/은행계열 및 카드사 정책으로 무이자 제공이 불가한 경우</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;상세한 내용은 해당 카드사로 직접 문의 바랍니다.</li>
+                  <li>※ 매월 카드사별 무이자 혜택이 변경되며 사전고지 없이 변경될 수 있으니 상세 내용은 카드사로 문의 바랍니다</li>
+                </ul>
+      
+        
+              </div><!-- //payment_select_box -->
+            </div><!-- //section -->
+            
+              
+              <!-- //결제수단 선택 -->
+              
+              
+      
+      
+              <!-- 2024 고도화 수정 -->
+              <div class="fixedbox">
+                <div class="section">
+                  <div class="deliveryinfo">
+                    <h3 class="bigtitle mgt30">주문자 정보</h3>
+                    <dl>
+                      <dt>배송지</dt>
+                      <dd>
+                        서울특별시 서초구 남부순환로2477(서초동)
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>메모</dt>
+                      <dd class="editbtn">
+                        <div>&nbsp;</div>
+                        <a href="#">변경</a>
+                      </dd>
+                      <dd class="editmemo">
+                        <input type="hidden" name="demand">
+                        <textarea name="demandInput" onkeyup="checkTextLen(this, 50)"></textarea>
+                        <div class="actbtn">
+                          <!-- button type="button" class="inbtn cancel">취소</button-->
+                          <button type="button" class="inbtn confirm">확인</button>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+      
+                  
+                  <div class="tit bgR">즉시할인 결제</div>
+                  <div class="totalpriceinfo">
+                    <h3 class="blind">결제금액 계산</h3>
+                    <div class="result_con">
+                      <dl>
+                        <dt>주문금액</dt>
+                        <dd><strong class="roboto">4,130,430</strong>원</dd>
+                      </dl>
+                      <dl>
+                        <dt>배송비</dt>
+                        <dd><strong class="roboto" id="label_delivery_fee">0</strong>원</dd>
+                      </dl>
+                      <dl>
+                        <dt>포인트</dt>
+                        <dd><strong class="roboto red" id="label_use_bmoney">0</strong>원</dd>
+                      </dl>
+                      
+      <!--
+                      <dl>
+                        <dt>예치금</dt>
+                        <dd><strong class="roboto red" id="label_use_cmoney">0</strong>원</dd>
+                      </dl> 
+      -->							
+      
+                      <dl>
+                        <dt>마이너스 잔고</dt>
+                        <dd><strong class="roboto red" id="label_use_bmoney">0</strong>원</dd>
+                      </dl>
+                      <dl>
+                        <dt>여신</dt>
+                        <dd><strong class="roboto red" id="label_use_lmoney">0</strong>원</dd>
+                      </dl>
+                      <dl>
+                        <dt>마일리지</dt>
+                        <dd><strong class="roboto red" id="label_use_lmoney">0</strong>원</dd>
+                      </dl>
+                      <!-- 2023.07.19 금융할인 추가  -->
+                      <div class="financial_discount">
+                          <dl class="financial_dc_btn">
+                              <dt>금융할인</dt>
+                              <dd><strong class="roboto red" id="label_use_financial">0</strong>원</dd>
+                          </dl>
+                          <ul class="list-group">
+                              <li>
+                                  <p class="title">대상상품</p>
+                                  <dl>
+                                      <dt><span id="span_financial_lbl">0</span>원</dt>
+                                      <dd><strong class="roboto red" id="span_use_financial">0</strong>원</dd>
+                                  </dl>
+                              </li>
+                              <li>
+                                  <p class="title">비대상상품</p>
+                                  <dl>
+                                      <dt><span id="span_non_financial_lbl">4,130,430</span>원</dt>
+                                      <dd><strong class="roboto red" id="label_use_mileage">0</strong>원</dd>
+                                  </dl>
+                              </li>
+                          </ul>
+                      </div>
+                      <!-- //2023.07.19 금융할인 추가  -->                      
+                      <dl>
+                        <dt>즉시할인</dt>
+                        <dd><strong class="roboto red" id="label_use_lmoney">0</strong>원</dd>
+                      </dl>
+                      <dl>
+                        <dt>결제예상금액</dt>
+                        <dd><strong class="roboto" id="label_delivery_fee">000,000</strong>원</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tit">일반 결제</div>
+                  <div class="totalpriceinfo">
+                    <h3 class="blind">결제금액 계산</h3>
+                    <div class="result_con">
+                      <dl>
+                        <dt>주문금액</dt>
+                        <dd><strong class="roboto">4,130,430</strong>원</dd>
+                      </dl>
+                      <dl>
+                        <dt>배송비</dt>
+                        <dd><strong class="roboto" id="label_delivery_fee">0</strong>원</dd>
+                      </dl>
+                      
+      <!--
+                      <dl>
+                        <dt>예치금</dt>
+                        <dd><strong class="roboto red" id="label_use_cmoney">0</strong>원</dd>
+                      </dl> 
+      -->							
+      
+      
+                      <dl>
+                        <dt>포인트</dt>
+                        <dd><strong class="roboto red" id="label_use_lmoney">0</strong>원</dd>
+                      </dl>
+                      <dl>
+                        <dt>마이너스 잔고</dt>
+                        <dd><strong class="roboto red" id="label_use_bmoney">0</strong>원</dd>
+                      </dl>
+                      <dl>
+                        <dt>여신</dt>
+                        <dd><strong class="roboto red" id="label_use_lmoney">0</strong>원</dd>
+                      </dl>
+                      <dl>
+                        <dt>마일리지</dt>
+                        <dd><strong class="roboto red" id="label_use_lmoney">0</strong>원</dd>
+                      </dl>
+                      <!-- 2023.07.19 금융할인 추가  -->
+                      <div class="financial_discount">
+                          <dl class="financial_dc_btn">
+                              <dt>금융할인</dt>
+                              <dd><strong class="roboto red" id="label_use_financial">0</strong>원</dd>
+                          </dl>
+                          <ul class="list-group">
+                              <li>
+                                  <p class="title">대상상품</p>
+                                  <dl>
+                                      <dt><span id="span_financial_lbl">0</span>원</dt>
+                                      <dd><strong class="roboto red" id="span_use_financial">0</strong>원</dd>
+                                  </dl>
+                              </li>
+                              <li>
+                                  <p class="title">비대상상품</p>
+                                  <dl>
+                                      <dt><span id="span_non_financial_lbl">4,130,430</span>원</dt>
+                                      <dd><strong class="roboto red" id="label_use_mileage">0</strong>원</dd>
+                                  </dl>
+                              </li>
+                          </ul>
+                      </div>
+                      <!-- //2023.07.19 금융할인 추가  -->
+                      <dl>
+                        <dt>결제예상금액</dt>
+                        <dd><strong class="roboto" id="label_delivery_fee">000,000</strong>원</dd>
+                      </dl>
+      
+                      <dl class="total">
+                        <dt>총 결제예상금액</dt>
+                        <dd><strong class="roboto" id="label_settle_price">4,130,430</strong>원</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="section noti_list_order">
+                  <ul>
+                    <li>결제예상금액이 '0'원인 경우 결제하기를 선택하면 정상적으로 주문처리 됩니다.</li>
+                    <!-- li>계산서에는 판매가에서 상품할인 금액 (약정할인/수량할인)을 제외한 금액이 표기됩니다.</li-->
+                  </ul>
+                </div>
+                
+                <div class="btn_con">
+                  <div id="order_payment_button">
+                    <button type="button" onclick="clickSubmit()" disabled="disabled">결제하기</button>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- //2024 고도화 수정 -->
+            </div><!-- //orderwrap -->
+      
+      <!-- 결제필드 -->
+      
+      <!-- script src="https://web.nicepay.co.kr/flex/js/nicepay_tr_utf.js" type="text/javascript"></script -->
+      <script src="https://web.nicepay.co.kr/v3/webstd/js/nicepay-3.0.js"></script>
+      <script type="text/javascript">
+      function nicepayStart(pgInfo) {
+        var f = document.Frm;
+          var payPath = f.payPath.value;
+          var payway = getRadio(f.payway).toNumeric();
+          
+        f.payOrdNo.value = pgInfo['Moid'];
+        for (key in pgInfo) {
+          f[key].value = pgInfo[key];
+        }
+        f.SignData.value = f.EncryptData.value;
+        //alert(f.EdiDate.value);
+        //alert(f.SignData.value);
+        //alert(f.MID.value);
+        //alert(f.Amt.value);
+        //alert(f.Moid.value);
+        //alert(f.settlePriceForPG2.value);
+        //alert(f.settlePriceForPG3.value);
+          if (payway==CONST_PAYWAY_KEYIN) {
+            f.EncodeParameters.value = "";
+            f.target = "_self";
+            f.action = SECURE_URL+payPath+"/nice/payKeyinResult.do";
+            f.submit() ;
+          } else {
+            goPay(f);	
+          }
+      }
+      
+      //결제 최종 요청시 실행됩니다. <<'nicepaySubmit()' 이름 수정 불가능>>
+      function nicepaySubmit(){
+        var f = document.Frm;
+        var payPath = f.payPath.value;
+        
+        f.target = "_self";
+        f.action = SECURE_URL+payPath+"/nice/pay_result.do";
+        f.submit();
+      }
+      
+      //결제창 종료 함수 <<'nicepayClose()' 이름 수정 불가능>>
+      function nicepayClose(){
+        alert("결제가 취소 되었습니다");
+      }
+      </script>
+      
+      <iframe id="frmPay" name="frmPay" src="../dummy.htm" width="0" height="0" style="display:none"></iframe>
+      
+      <input type="hidden" name="payOrdNo" value="">
+      <input type="hidden" name="payGoodsNo" value="132419">
+      <input type="hidden" name="payGoodsCd" value="">
+      <input type="hidden" name="payGoodsNm" value="위너프페리-217mL TPN3">
+      
+      
+      
+      <!-- IP -->
+      <input type="hidden" name="UserIP" value="172.20.191.59">    <!-- 회원사고객IP -->
+      <input type="hidden" name="MallIP" value="172.20.182.22">      <!-- 상점서버IP -->
+                    
+      <!-- 옵션 -->
+      <input type="hidden" name="VbankExpDate" id="VbankExpDate">                         <!-- 가상계좌입금만료일 -->
+      <input type="hidden" name="CharSet" value="EUC-KR">                   <!-- 인코딩 설정 -->               
+      <input type="hidden" name="BuyerEmail" id="BuyerEmail" value="ken9304@naver.com">            <!-- 구매자 이메일 -->				  
+      <input type="hidden" name="SocketYN" value="Y">                 <!-- 소켓이용유무 -->
+      <input type="hidden" name="GoodsCl" value="1">                              <!-- 상품구분(실물(1),컨텐츠(0)) -->
+      <input type="hidden" name="TransType" value="0">                            <!-- 일반(0)/에스크로(1) --> 
+      
+      <!-- 변경 불가능 -->
+      <input type="hidden" name="EncodeParameters" value="CardNo,CardExpire,CardPwd"> <!-- 암호화대상항목 -->
+      <input type="hidden" name="EdiDate">                   <!-- 전문 생성일시 -->
+      <input type="hidden" name="EncryptData">            <!-- 해쉬값	-->
+      <input type="hidden" name="SignData">
+      <input type="hidden" name="TrKey">                                 <!-- 필드만 필요 -->
+      
+      <!-- 취소관련 정보 -->
+      <input type="hidden" name="CancelAmt" value="">
+      <input type="hidden" name="CancelMSG" value="내부오류">    
+      
+      <!-- 정보 -->
+      
+      <input type="hidden" name="PayMethod" value="">
+      <input type="hidden" name="GoodsName" id="GoodsName" value="위너프페리-217mL TPN3 외 5">
+      <input type="hidden" name="GoodsCnt" id="GoodsCnt" value="1">
+      <input type="hidden" name="Amt" id="Amt" value="">
+      <input type="hidden" name="BuyerName" id="BuyerName" value="제이더블유중외제약 주식회사">
+      <input type="hidden" name="BuyerTel" id="BuyerTel" value="01064811048">
+      <input type="hidden" name="Moid" id="Moid" value="">
+      <input type="hidden" name="MID" id="MID" value="">
+      <input type="hidden" name="settlePriceForPG1" id="settlePriceForPG1" value="4130430">
+      <input type="hidden" name="settlePriceForPG2" id="settlePriceForPG2" value="0">
+      <input type="hidden" name="settlePriceForPG3" id="settlePriceForPG3" value="0">
+      <!-- 간편결제 관련 추가 -->
+      <input type="hidden" name="CardInterest" value="0">                      <!-- 카드 무이자(1:YES, 0:NO)-->
+      
+      <input type="hidden" name="DirectShowOpt" id="DirectShowOpt" value="">
+      <input type="hidden" name="NicepayReserved" id="NicepayReserved" value="">
+      <input type="hidden" name="DirectEasyPay" id="DirectEasyPay" value="">
+      <input type="hidden" name="EasyPayMethod" id="EasyPayMethod" value="">
+      
+      
+      </form>
+      
+      
+      
+          </div>
+          <!-- //contents -->
+        </div>
+        <!-- 컨텐츠 마크업 하는곳 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div id="footer">
+		<div class="menubox">
+			<div class="inner">
+				<ul class="link">
+						<li class="">
+							<a href="http://www.jw-pharma.co.kr/pharma/ko/intro/pharma.jsp"  target="_blank">
+								회사소개
+							</a>
+						</li>
+						<li class="">
+							<a href="https://www.jwpmall.co.kr/etc/guide.do"  target="_self">
+								이용안내
+							</a>
+						</li>
+						<li class="">
+							<a href="https://www.jwpmall.co.kr/etc/delivery.do"  target="_self">
+								배송/결제안내
+							</a>
+						</li>
+						<li class="">
+							<a href="https://www.jwpmall.co.kr/cscenter/inquiry.do"  target="_self">
+								1:1문의
+							</a>
+						</li>
+						<li class="">
+							<a href="https://www.jwpmall.co.kr/etc/licensing.do"  target="_self">
+								이용약관
+							</a>
+						</li>
+						<li class="">
+							<a href="https://www.jwpmall.co.kr/etc/privacy.do" class="colorG" target="_self">
+								개인정보처리방침
+							</a>
+						</li>
+						<li class="">
+							<a href="https://www.jwpmall.co.kr/cscenter/faq.do"  target="_self">
+								FAQ
+							</a>
+						</li>
+						<li class="mar_none pad_none bg_none">
+							<a href="https://www.jwpmall.co.kr/board/list.do?board=notice"  target="_self">
+								공지사항
+							</a>
+						</li>
+				</ul>
+				<div class="familsite" >
+					<a href="javascript:;" onclick="familyopen()" class="on"><span>FAMILY SITE</span></a>
+					<div class="">
+						<ul class="list">
+							<li><a href="https://www.jw-pharma.co.kr" target="_blank" title="새창열림">JW중외제약</a></li>
+							<li><a href="http://www.jw-holdings.co.kr" target="_blank" title="새창열림">JW홀딩스</a></li>
+							<li><a href="http://www.jw-shinyak.co.kr" target="_blank" title="새창열림">JW신약</a></li>
+							<li><a href="http://www.jw-lifescience.co.kr" target="_blank" title="새창열림">JW생명과학</a></li>
+							<li><a href="http://www.jw-medical.co.kr" target="_blank" title="새창열림">JW메디칼</a></li>
+							<li><a href="http://www.jw-bioscience.co.kr" target="_blank" title="새창열림">JW바이오사이언스</a></li>
+							<li><a href="http://jw-industrial.co.kr/" target="_blank" title="새창열림">JW산업</a></li>
+							<li><a href="http://www.creagene.com" target="_blank" title="새창열림">JW크레아젠</a></li>
+							<li><a href="http://www.chemitown.co.kr" target="_blank" title="새창열림">JW케미타운</a></li>
+							<li><a href="http://www.cnclab.co.kr" target="_blank" title="새창열림">C&amp;C신약연구소</a></li>
+							<li><a href="http://www.theriacpharm.com" target="_blank" title="새창열림">JW Theriac 연구소</a></li>
+							<li><a href="http://jwfoundation.or.kr/" target="_blank" title="새창열림">중외학술복지재단</a></li>
+							<li><a href="http://www.jwellday.com" target="_blank" title="새창열림">J웰데이</a></li>
+						</ul>
+						<a href="javascript:;" onClick="familyclose()"><span>FAMILY SITE</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inner infobox">
+			<div class="info">
+        <div class="left_cont">
+          <span class="footer_logo">
+            <img src="https://www.jwpmall.co.kr/data/base/imgs/global/footer_logo.png" alt="" />
+          </span>
+          <address>
+            <!-- JW중외제약㈜  <span>|</span>  주소 : (13840)&nbsp;경기도 과천시 과천대로7길 38 (갈현동)&nbsp;JW과천사옥  <span>|</span>  대표자 : 신영섭  <span>|</span>  대표번호 : 02-840-6907<br />
+            사업자등록번호 118-81-02477  <span>|</span>  통신판매업신고 제2012-서울서초-1380호  <span>|</span>  건강식품판매신고 동작 제00008호  <span>|</span>  의료기기판매업신고 동작 제 166호 -->
+            <span class="bar">대표자명 : 신영섭</span>사업자등록번호 : 118-81-02477<br>
+            <span class="bar">TEL : 02-840-6907</span>주소 : (13840) 경기도 과천시 과천대로7길 38 (갈현동) JW과천사옥<br>
+            <span class="bar">통신판매업신고 : 제2012-서울서초-1380호</span><span class="bar">건강식품판매신고 : 동작 제00008호</span>의료기기판매업신고 : 동작 제166호
+          </address>
+          <p class="mt20">ⓒ 2020 JW중외제약 All rights reserved.</p>
+        </div>
+        <div class="right_cont">
+          <div class="txt_cont">
+            <p class="tit">고객센터</p>
+            <p class="num"><strong>02-840-6907</strong> (유료)</p>
+            <p class="time">
+              평일 <strong>09:00 ~ 18:00</strong><br>
+              점심시간 <strong>12:00 ~ 13:00</strong><br>
+              <span>(토/일/공휴일 휴무)</span>
+            </p>
+          </div>
+          <div class="qrcode">
+            <img src="https://www.jwpmall.co.kr/data/base/imgs/global/qrcode.png" width="76px" height="76px" alt="" />
+            <span>JWP MALL 모바일</span>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+</div>
+</body>
+</html>
+
+
+
+
+
