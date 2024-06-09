@@ -747,6 +747,7 @@ input[type="checkbox"]:checked {background-color: #0072BC; border-color: #0072BC
 .delivery_wrap .tab-group.touchscrollwrap.type05 .tab-menu.no_scroll li.tab-item1.active {position: relative; color: #0072BC;}
 .delivery_wrap .tab-group.touchscrollwrap.type05 .tab-menu.no_scroll li.tab-item1.active::after {position: absolute; width: 100%; height: 4px; background-color: #0072BC; content: ''; bottom: -2px; left: 0;}
 .delivery_cont {margin-top: 32px;}
+.delivery_cont.pd16 {padding: 0 16px;}
 .delivery_title {font-size: 18px; font-weight: 500; line-height: 18px; letter-spacing: -0.72px; margin-bottom: 24px;}
 .delivery_cont dl {display: flex; flex-direction: column; border-top: 1px solid #AEB7C6;}
 .delivery_cont dl >div {display: flex; }
