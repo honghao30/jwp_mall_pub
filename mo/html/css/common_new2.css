@@ -532,6 +532,7 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Pretendard', 'Malgu
 .order_floating_bottom .order_util_area .add_cart_list ul:not(.time_sals) li {border: 1px solid #E1E3E9;border-radius: 12px;padding: 16px;margin-bottom: 16px;position: relative;}
 .order_floating_bottom .order_util_area .add_cart_list li .cate {font-size: 12px;font-weight: 400;line-height: 12px;color: #717B8A;}
 .order_floating_bottom .order_util_area .add_cart_list li .prod_name {font-size: 15px;font-weight: 500;line-height: 15px;margin-top: 8px;}
+.order_floating_bottom .order_util_area .add_cart_list li .list_bottom+.add_basket_wrap{margin-top:12px;}
 .order_floating_bottom .order_util_area .add_cart_list li .btn_remove_x {position: absolute;right: 16px;top:16px; width:16px;height:16px;background: url('../img/ico/ico_del_box32.png') no-repeat center;background-size: 16px auto;}
 .list_bottom {margin-top: 12px;display: flex;justify-content: space-between;align-items: center;border-top: 1px solid #E1E3E9;padding-top: 12px;}
 .list_bottom .price_wrap {display: flex;gap:8px;align-items: center;}
