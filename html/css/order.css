@@ -75,13 +75,13 @@
 .delivery_total .delivery {position:absolute;left:38px;top:0;padding-left:22px;background:url(../imgs/icon/ico_clock.png) left center no-repeat;}
 
 /* 장바구니 */
-.cartresultprice_wrap {padding-top:207px;position:relative;}
+.cartresultprice_wrap {padding-top:227px;position:relative;}
 .cartresultprice_wrap:before {content:'';position:absolute;left:50%;top:0;z-index:0;width:1920px;height:119px;margin-left:-960px;background:#e6f5fb;}
 .cartresultprice_wrap.fixed .cartresultprice {position:fixed;top:10px;left:50%;margin-left:-550px;}
-.cartresultprice {position:absolute;width:1098px;left:0;top:67px;z-index:1;border-radius:10px;border:solid 1px #059ad9;background-color:#fff;overflow:hidden;padding:34px 0;}
+.cartresultprice {position:absolute;width:1200px;left:0;top:67px;z-index:1;border-radius:10px;border:solid 1px #059ad9;background-color:#fff;overflow:hidden;padding:34px 0;}
 .cartresultprice:before {content:'';width:100%;height:4px;background-color:#059ad9;position:absolute;left:0;top:0;}
 .cartresultprice:after {content:'';clear:both;display:block;}
-.cartresultprice .pricebox {float:left;width:676px;height:70px;margin-right:30px;padding-left:21px;border-right:solid 1px #e5e5e5;overflow:hidden;}
+.cartresultprice .pricebox {float:left;width:676px;height:90px;margin-right:30px;padding-left:70px;border-right:solid 1px #e5e5e5;overflow:hidden;}
 .cartresultprice .pricebox dl {float:left;width:170px;padding-left:12px;padding-top:13px;position:relative;}
 .cartresultprice .pricebox dl dt,
 .cartresultprice .pricebox dl dd {text-align:center;color:#000;text-align:center;line-height:16px;}
@@ -340,3 +340,6 @@
 .finishbox .finishpayinfo ul li.total .sum dd {color:#0cabef;}
 .finishbox .finishpayinfo ul li .sum {height:60px;border-bottom:solid 1px #f0f0f0;}
 .finishbox .finishpayinfo ul li .sum dd strong {font-size:20px;}
+
+.charge_button_container { width: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+.charge_button_container .charge_button_wrapper { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }

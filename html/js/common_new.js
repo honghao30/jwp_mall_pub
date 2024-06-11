@@ -490,16 +490,15 @@ $(document).ready(function() {
   // 퀵메뉴 닫기 버튼 클릭 이벤트
   $('.btn_quick_close').click(function() {
     $('.btn_quick_open').removeClass('on');
-    $('.quick_menu_area').removeClass('on');
+    // $('.quick_menu_area').removeClass('on');
   });
 
   // 퀵메뉴 열기 버튼 클릭 이벤트
   $('.btn_quick_open').click(function() {
     $(this).addClass('on');
-    $('.quick_menu_area.btn_quick_01').addClass('on');
+    // $('.quick_menu_area.btn_quick_01').addClass('on');
   });
 });
-
 
 // load 퀵메뉴 컨텐츠 class="on"
 // if( $(".quick_menu_area.on").length > 0 ){
@@ -668,7 +667,7 @@ $(document).ready(function (){
 // });
 
 // 퀵메뉴 장바구니 미리보기 (중복되지 않는 경우)
-$(document).ready(function(){
+/*$(document).ready(function(){
   $(".btn_sub_cont").click(function(){
       var stBodyCont = $(this).closest(".st_body_cont");
       var btnSubCont = $(this);
@@ -689,7 +688,7 @@ $(document).ready(function(){
           btnSubCont.removeClass("on");
       }
   });
-});
+});*/
 
 
 // 레이어팝업
