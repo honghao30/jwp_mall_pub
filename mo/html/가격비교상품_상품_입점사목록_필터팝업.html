@@ -1837,7 +1837,7 @@
                             입점사 필터
                         </div>
                         <div class="filter_store_search">
-                            <input type="text" placeholder="" />
+                            <input type="text" placeholder="입점사를 검색해보세요" />
                             <button type="button">
                                 <span class="ir-text">검색</span>
                             </button>
@@ -1938,44 +1938,136 @@
                         </div>
                         <div class="filter_store_result">                        
                             <div class="selectd_tag_wap">
-                                <div class="mo_tit_ft18">선택한 입점사</div>
-                                <div class="tag_wrap">
-                                    <span class="tag_box selected">
-                                        <button type="button" class="btn_tag_name">태전약국</button>
-                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>
-                                    </span>
-                                    <span class="tag_box selected">
-                                        <button type="button" class="btn_tag_name">JW제약</button>
-                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>
-                                    </span>
-                                    <span class="tag_box selected">
-                                        <button type="button" class="btn_tag_name">JW</button>
-                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>
-                                    </span>       
+                                <div class="flex_justfy mb24">
+                                    <div class="mo_tit_ft18 mb0">선택한 입점사</div>
+                                    <button type="button" class="btn_clear_all_text">전체삭제</button>
+                                </div>                                
+                                <div class="tag_wrap">   
+                                    <div class="no-select">입점사를 선택해주세요.</div>  
                                 </div>                                                 
                             </div>
                             <div class="tag_list_wap">
                                 <div class="mo_tit_ft18">입점사 전체 목록</div>
                                 <div class="tag_wrap">
-                                    <span class="tag_box2">
-                                        <button type="button" class="btn_tag_name">서울약사신협</button>                                
+                                    <span class="tag_box">
+                                        <button type="button" class="btn_tag_name">중외제약</button>                              
+                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>  
                                     </span>
-                                    <span class="tag_box2">
-                                        <button type="button" class="btn_tag_name">보덕메디팜</button>                                
+                                    <span class="tag_box">
+                                        <button type="button" class="btn_tag_name">보덕메디팜</button>                        
+                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>        
                                     </span>       
-                                    <span class="tag_box2">
-                                        <button type="button" class="btn_tag_name">보덕</button>                                
+                                    <span class="tag_box">
+                                        <button type="button" class="btn_tag_name">메디필</button>      
+                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>                          
                                     </span>
+                                    <span class="tag_box">
+                                        <button type="button" class="btn_tag_name">서울약사신협</button> 
+                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>                               
+                                    </span>
+                                    <span class="tag_box">
+                                        <button type="button" class="btn_tag_name">보덕메디팜</button>    
+                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>                            
+                                    </span>       
+                                    <span class="tag_box">
+                                        <button type="button" class="btn_tag_name">세안약국</button>  
+                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>                              
+                                    </span>                                    
                                 </div>
                             </div> 
                             <div class="order_button_wrap flex_justfy">                        
-                                <button type="button" class="btn_blue" onclick="modalControl('c')" >필터적용</button>
+                                <button type="button" class="btn_blue">필터적용</button>
                             </div>                 
                         </div>
-                        <button type="button" class="btn_close" onclick="modalControl('c')">
+                        <button type="button" class="btn_close">
                             <span class="ir-text">닫기</span>
                         </button>
-                    </div>         
+                    </div>   
+                    <!-- 태그 선택 스크립트 -->
+                    <script>
+                            const tagAll = document.querySelectorAll('.tag_list_wap .btn_tag_name');
+                            const selectedTagWrap = document.querySelector('.selectd_tag_wap .tag_wrap');
+                            const originalTagWrap = document.querySelector('.tag_list_wap .tag_wrap');
+                            const noSelectMsg = document.querySelector('.no-select');
+                            const removeAllBtn = document.querySelector('.btn_clear_all_text');
+                            
+                            tagAll.forEach((tag, index) => {
+                                tag.addEventListener('click', () => {
+                                    moveToSelected(tag, index);
+                                });
+                            });
+
+                            function addRemoveEvent(removeBtn) {
+                                removeBtn.addEventListener('click', () => {
+                                    moveToOriginal(removeBtn);
+                                });
+                            }
+
+                            function moveToSelected(tag, index) {
+                                const newTag = tag.parentElement.cloneNode(true);
+                                newTag.classList.add('selected');
+                                newTag.setAttribute('data-original-index', index);
+                                selectedTagWrap.appendChild(newTag);
+                                tag.parentElement.remove();
+                                addRemoveEvent(newTag.querySelector('.btn_remove_x'));
+                                noSelectMsg.classList.add('hide');
+                            }
+
+                            function moveToOriginal(removeBtn) {
+                                const parentTag = removeBtn.parentElement;
+                                const originalIndex = parentTag.getAttribute('data-original-index');
+                                parentTag.classList.remove('selected');
+                                const originalTag = parentTag.cloneNode(true);
+                                originalTag.removeAttribute('data-original-index');
+                                originalTag.querySelector('.btn_remove_x').remove();
+                                insertTagAtOriginalPosition(originalTag, originalIndex);
+                                parentTag.remove();
+                                addTagEvent(originalTag.querySelector('.btn_tag_name'));
+                                checkNoSelectMsg();
+                            }
+
+                            function insertTagAtOriginalPosition(tag, index) {
+                                const allTags = originalTagWrap.children;
+                                if (index >= allTags.length) {
+                                    originalTagWrap.appendChild(tag);
+                                } else {
+                                    originalTagWrap.insertBefore(tag, allTags[index]);
+                                }
+                            }
+
+                            function addTagEvent(tag) {
+                                tag.addEventListener('click', () => {
+                                    const originalIndex = tag.parentElement.getAttribute('data-original-index');
+                                    moveToSelected(tag, originalIndex);
+                                });
+                            }
+
+                            function checkNoSelectMsg() {
+                                if (selectedTagWrap.children.length === 1) {
+                                    noSelectMsg.classList.remove('hide');
+                                }
+                            }
+                            
+                            document.querySelectorAll('.selectd_tag_wap .btn_remove_x').forEach(removeBtn => {
+                                addRemoveEvent(removeBtn);
+                            });
+                            
+                            removeAllBtn.addEventListener('click', () => {
+                                const selectedTags = selectedTagWrap.querySelectorAll('.selected');                                
+                                selectedTags.forEach(tag => {
+                                    const originalIndex = tag.getAttribute('data-original-index');
+                                    console.log(tag);
+                                    tag.classList.remove('selected');
+                                    const originalTag = tag.cloneNode(true);
+                                    originalTag.removeAttribute('data-original-index');
+                                    insertTagAtOriginalPosition(originalTag, originalIndex);                                    
+                                    tag.remove();
+                                    addTagEvent(originalTag.querySelector('.btn_tag_name'));  
+                                });
+                                noSelectMsg.classList.remove('hide');
+                            });           
+                    </script>
+                    <!-- //태그 선택 스크립트 -->
                 </div>
             </section>
             <!-- //html 마크업 -->

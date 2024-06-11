@@ -1160,7 +1160,7 @@
                     <button type="button" class="btn_go_back">
                         <span class="ir-text">뒤로가기</span>
                     </button>
-                    <div class="cate_tit_top">입점사별 상품목록</div>
+                    <div class="cate_tit_top">카테고리명</div>
                 </div>
                 <div class="top_header_right">
                     <button type="button" class="btn_search_top" onclick="searchLayer(this);">
@@ -1488,7 +1488,121 @@
                             </ul>
                         </div>                        
                         <div class="tab-content">
-                            <div class="tab-pane1 active">                                
+                            <div class="tab-pane1 active">       
+                                <div class="recommend_product">
+                                    <div class="mo_tit_ft18">MD추천상품</div>
+                                    <div class="recommend_slide_wrap">
+                                        <div class="swiper_wrap">
+                                            <div class="swiper mySwiper good_product_slider">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div class="thumb_img">
+                                                                <img src="./img/sample/product_sample_img.png" alt="" />
+                                                            </div>
+                                                        </a>
+                                                        <div class="goods_info">
+                                                            <div class="cate">JW중외제약</div>
+                                                            <div class="goods_name">
+                                                                <a href="#">하이맘밴드 이지베이직 대형15매X20</a>
+                                                            </div>
+                                                            <div class="price_box flex_justfy">
+                                                                <div class="sals">23%</div>
+                                                                <div class="price">
+                                                                    <strong>23,000</strong> 원
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div class="thumb_img">
+                                                                <img src="./img/sample/product_sample_img.png" alt="" />
+                                                            </div>
+                                                        </a>
+                                                        <div class="goods_info">
+                                                            <div class="cate">JW중외제약</div>
+                                                            <div class="goods_name">
+                                                                <a href="#">하이맘밴드 이지베이직 대형15매X20</a>
+                                                            </div>
+                                                            <div class="price_box flex_justfy">
+                                                                <div class="sals">23%</div>
+                                                                <div class="price">
+                                                                    <strong>23,000</strong> 원
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div class="thumb_img">
+                                                                <img src="./img/sample/product_sample_img.png" alt="" />
+                                                            </div>
+                                                        </a>
+                                                        <div class="goods_info">
+                                                            <div class="cate">JW중외제약</div>
+                                                            <div class="goods_name">
+                                                                <a href="#">하이맘밴드 이지베이직 대형15매X20</a>
+                                                            </div>
+                                                            <div class="price_box flex_justfy">
+                                                                <div class="sals">23%</div>
+                                                                <div class="price">
+                                                                    <strong>23,000</strong> 원
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div class="thumb_img">
+                                                                <img src="./img/sample/product_sample_img.png" alt="" />
+                                                            </div>
+                                                        </a>
+                                                        <div class="goods_info">
+                                                            <div class="cate">JW중외제약</div>
+                                                            <div class="goods_name">
+                                                                <a href="#">하이맘밴드 이지베이직 대형15매X20</a>
+                                                            </div>
+                                                            <div class="price_box flex_justfy">
+                                                                <div class="sals">23%</div>
+                                                                <div class="price">
+                                                                    <strong>23,000</strong> 원
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                                                                                                                                                                                    
+                                                </div>
+                                                <div class="goods_control_box">                                                    
+                                                    <div class="button-prev"><span class="ir-text">이전</span></div>
+                                                    <div class="pagination"></div>
+                                                    <div class="button-next"><span class="ir-text">다음</span></div>                                                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            var medical_banner_01 = new Swiper(".good_product_slider.swiper", {
+                                                slidesPerView: 3,
+                                                slidesPerGroup: 1,
+                                                spaceBetween: 10,
+                                                pagination: {
+                                                el: ".good_product_slider .pagination",
+                                                type: "fraction",
+                                                },
+                                                loop: true,
+                                                navigation: {
+                                                nextEl: ".good_product_slider .button-next",
+                                                prevEl: ".good_product_slider .button-prev",
+                                                },
+                                                autoplay: {
+                                                delay: 3000, // Autoplay delay in milliseconds
+                                                disableOnInteraction: false, // Autoplay continues after user interaction
+                                                },
+                                            });
+                                            
+                                            </script>                                            
+                                    </div>
+                                </div>
+                                <!-- md 추천 상품 -->                                                         
                                 <!-- // 결과 내 검색 -->
                                 <div class="search_result_option flex_justfy">
                                     <div class="total_count_box">
@@ -1781,13 +1895,20 @@
 <!--// 메인리뉴얼 - 수정 -->
 
 
-    <ul id="fixedMenu">
-        <li><a href="javascript:left();">카테고리</a></li>
-        <li class="search"><a href="javascript:searchLayer(this);">검색</a></li>
-        <li class="active"><a href="https://m.jwpmall.co.kr/mw/">홈</a></li>
-        <li><a href="https://m.jwpmall.co.kr/mw/mypage">마이페이지</a></li>
-        <li><a href="https://m.jwpmall.co.kr/mw/order/cart.do">장바구니</a></li>
-    </ul>
+<ul id="fixedMenu">
+    <!-- <li><a href="javascript:left();">카테고리</a></li>
+    <li class="search"><a href="javascript:searchLayer(this);">검색</a></li>
+    <li class="active"><a href="https://m.jwpmall.co.kr/mw/">홈</a></li>
+    <li><a href="https://m.jwpmall.co.kr/mw/mypage">마이페이지</a></li>
+    <li><a href="https://m.jwpmall.co.kr/mw/order/cart.do">장바구니</a></li> -->
+
+    <li class="ico_category"><a href="javascript:left();">카테고리</a></li>
+    <li class="ico_book"><a href="#none">마이장부</a></li>
+    <!-- <li class="ico_search"><a href="javascript:searchLayer(this);">검색</a></li> -->
+    <li class="ico_home active"><a href="#none">홈</a></li>
+    <li class="ico_interest"><a href="#none">관심상품</a></li>
+    <li class="ico_mypage"><a href="#none">마이</a></li>
+</ul>
     <!--div id="dim" onclick="leftClose()">
 </div>
 <div id="dim_mask" onclick="areaClose()">
