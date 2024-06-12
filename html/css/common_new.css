@@ -131,6 +131,7 @@
   width:48px;
   height:48px;
 }
+/* 기존 */
 .product_list .swiper-slide{
   opacity: 0.5;
 }
@@ -356,9 +357,12 @@
 .find_product_area .tab-menu{padding-right:200px;}
 .find_product_area .product_list{
   margin-top:0;
-  padding-top:40px;
+  padding-bottom:20px;
   position:relative;
 }
+.find_product_area .swiper-button-prev{right:40px !important;bottom:0;}
+.find_product_area .swiper-button-next{right:0 !important;bottom:0;}
+
 .find_product_area .product_list .btn_more{
   position:absolute;
   top:35px;
@@ -377,6 +381,17 @@
   top:15px;
   right:0;
 }
+.find_product_area .btn_area{
+  border-top: 1px solid #E1E3E9;
+  width: 100%;
+  height: 70px;
+}
+
+.find_product_area .swiper_wrap.type03 .swiper-slide{
+  display: flex;
+  justify-content: flex-start;
+}
+
 .ico_category{
   color: #717B8A;
   font-size: 16px;
@@ -567,6 +582,7 @@
 }
 .product_list.type03 .products .info_box{
   padding:0;
+  width:100%;
 }
 .product_list.type03 .products .price_cont{
   text-align:right;
@@ -1523,6 +1539,8 @@
   letter-spacing: -0.64px;
 
   position:relative;
+  border-radius: 12px;
+  overflow:hidden;
 }
 .user_info_wrap .mem_label{
   position:absolute;
@@ -2377,7 +2395,7 @@ input {
   border-bottom: 1px solid #E1E3E9;
 }
 #main_new.top_banner{
-  padding-top: 174px;
+  padding-top: 173px;
 }
 #main_new {
   position: relative;
@@ -2685,8 +2703,9 @@ input {
   width:100%;
   margin-top:24px;
   padding-top:24px;
-  /* border-top:1px solid #E1E3E9; */
+  border-top:1px solid #E1E3E9;
 }
+.search_wrap .search_total .bar:after{display:none;}
 
 .search_wrap .search_total .search_list ul li+li{margin-top:16px;}
 .search_wrap .search_total .search_list ul li span{color:#FF4949;}
@@ -3613,6 +3632,54 @@ input {
 .sub_product .img_box .soldoutbox:after{background-size:90%;}
 .brand_content .img_box .soldoutbox:after{background-size:90%;}
 
+/* soldout */
+.soldout .img_box:after {
+	content: 'SOLD OUT';
+	position: absolute;
+	
+	color: #222;
+	text-align: center;
+	font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+	letter-spacing: 1.28px;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product_list .products .soldout .img_box:after {
+  font-size: 28px;
+  line-height: 28px;
+}
+.product_list .soldout .img_box:after {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.soldout .img_box:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.85;
+  border-radius: 12px;
+  overflow:hidden;
+}
+.soldout .img_box:before{z-index:1;}
+.soldout .img_box:after{z-index:2;}
+.soldout .img_box:hover .over{display:none;}
+/* //soldout */
+
 /* 고도화 */
 .search_menu{position:absolute;right:0;top:1px; display:inline-block;vertical-align: middle;}
 .search_menu .alrim{
@@ -3777,6 +3844,11 @@ input {
    border-top: 1px solid #0072BC; /* 선 두께 */
    border-right: 1px solid #0072BC; /* 선 두께 */
  }
+
+.banner_type [data-depth="1"] .banner_cont{position:absolute;bottom:0;left:0;width:100%;padding:30px;}
+.banner_type [data-depth="1"] .banner_cont .swiper_wrap a{padding: 0;}
+.banner_type [data-depth="1"] .mCustomScrollbar{height:400px !important;}
+
 
 .swiper-pagination-current{font-weight: 700;color:#222;}
 .content_wrap{
@@ -4522,6 +4594,7 @@ input {
 .search_list_box .l_cont{width:100%;}
 .search_list_box.banner_type .l_cont{float:left;width:45%;}
 .search_list_box.banner_type .r_cont{float:left;width:55%;}
+.search_list_box.banner_type .r_cont .banner_cont{border-radius: 12px;overflow:hidden;}
 .search_list_box .tit_cont{margin:0 0 24px;}
 .search_list_box.banner_type .tit_cont{margin:16px 0 32px;}
 .search_list_box .tit_cont .tit{
@@ -5519,5 +5592,6 @@ position:relative;
   margin-left:5px;
 }
 
-.filter_gray{filter: grayscale(1);}
+.filter_gray{filter: grayscale(1);position:relative;}
+.filter_gray:after{content:'';width:100%;height:100%;background:#000;opacity:0.3;position:absolute;top:0;left:0;}
 .find_product_list{max-height: 300px;}
