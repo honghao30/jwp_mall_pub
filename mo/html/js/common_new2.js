@@ -57,6 +57,14 @@ document.addEventListener("DOMContentLoaded", function() {
           });
         });
 
+        //관심상품
+        const addFavorites = document.querySelectorAll('.add-favorite');
+        addFavorites & addFavorites.forEach(addFavorite => {
+          addFavorite.addEventListener("click", function (e) {
+                addFavorite.classList.toggle('is-active');
+          });
+        });
+
       // product list select tab
         const tabItems = document.querySelectorAll('.tab-menu-item');
         tabItems && tabItems.forEach(tab => {
