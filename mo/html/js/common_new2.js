@@ -27,6 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     const selectedValue = option.getAttribute('data-option');
             selectedOptionButton.textContent = selectedValue;
 
+            const bankSearch = selectedOptionButton.closest('.bank-search');
+            const dataPicked = bankSearch.querySelector('.data_period_picker');
+            if (selectedValue === "직접입력" && dataPicked) {
+              dataPicked.style.display = "flex";
+            }
+
                     menu.querySelectorAll('.dropdown_list li').forEach(item => {
                         item.classList.remove('is-active');
             });

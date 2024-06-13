@@ -646,8 +646,8 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Pretendard', 'Malgu
 
 /* 마이페이지 */
 .dropdown_menu_wrap .btn-dropdown {font-size: 13px; line-height: 13px; letter-spacing: -0.52px;}
-.mypage_infobox {background-color: #F2F5FA; padding: 32px 16px 16px 16px;}
-.mypage_info-title {display: flex; gap: 4px; justify-content: flex-start; align-items: center;}
+.mypage_infobox {background-color: #F2F5FA; padding: 0px 16px 16px 16px;}
+.mypage_info-title {display: flex; gap: 4px; justify-content: flex-start; align-items: center;padding: 24px 0;}
 .content_wrap .mypage_info-title>img {width: 28px; height: 28px; display: block;}
 .mypage_info-title p {font-size: 16px; font-weight: 400; line-height: 32px; letter-spacing: -0.64px; color: #000000;}
 .mypage_info-title .mypage_name {color:#0072BC;}
@@ -729,6 +729,7 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Pretendard', 'Malgu
 .bank-search .data_period_picker {position: relative; display: flex; align-items: center;}
 .bank-search .data_period_picker input {padding: 8px 8px 8px 12px;text-align: left; width: calc(50% - 12.15px); background-color: #fff; height: 36px; line-height: 13px; border: 1px solid #E1E0E5; font-size: 13px; font-weight: 400; color:#000;}
 .bank-search .data_period_picker #datepicker_end {margin-left: 34px;}
+.bank-search .data_period_picker .end_data {margin-left: 34px;}
 .bank-search .data_period_picker img {width:20px; height:20px; margin-left: -29px;}
 .bank-search .data_period_picker span {position: absolute; top: 50%; transform: translateY(-50%); left: 50%;}
 .ui-datepicker-title {display: flex; align-items: center; justify-content: center; margin: 0;}
