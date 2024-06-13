@@ -132,3 +132,18 @@ $(document).ready(function(){
       $('.order_floating_bottom').toggleClass('active');
   });
 });
+
+// 즐겨찾기
+$(document).ready(function() {
+  // link_wish 클래스가 있는 a 태그를 클릭했을 때
+  $("a.link_wish").click(function(e) {
+    e.preventDefault(); // 기본 클릭 이벤트 방지
+
+    // 클릭된 요소에 active 클래스 추가 및 제거
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+    } else {
+      $(this).addClass("active"); // 클릭된 요소에 active 클래스 추가
+    }
+  });
+});

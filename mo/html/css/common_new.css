@@ -1041,7 +1041,6 @@ input[type="checkbox"]:checked:after {
 	content: 'SOLDOUT';
 	position: absolute;
 	
-	
 	color: #222;
 	text-align: center;
 	font-family: Montserrat;
@@ -1070,6 +1069,41 @@ input[type="checkbox"]:checked:after {
 	font-weight: 400;
 	line-height: 14px; /* 100% */
 	letter-spacing: -1.12px;
+}
+.soldout .img_box {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #FFF;
+    border: 1px solid #EFF3F9;
+    position: relative;
+    overflow: hidden;
+	box-sizing: border-box;
+}
+.soldout .img_box:before{z-index:1;}
+.soldout .img_box:after{z-index:2;}
+.soldout .img_box.no_radius{border-radius: 0;border: 0;}
+.soldout .img_box.no_radius:before{border-radius: 0;border: 0;}
+
+.wish_box{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+.link_wish{
+	background:url(../img/ico/ico_heart_off.png) 50% no-repeat;
+	background-size:24px auto;
+	width:24px;
+	height:24px;
+	display: inline-block;
+}
+.link_wish.active{
+	background:url(../img/ico/ico_heart_on.png) 50% no-repeat;
+	background-size:24px auto;
+	width:24px;
+	height:24px;
+	display: inline-block;
 }
 
 /* 고도화 */

@@ -411,7 +411,7 @@ body{min-width:1100px}
 .summay{font-size:16px; color:#000; margin:30px 0; line-height:24px;}
 
 /* navi */
-#navi{height:49px;clear:both;width:100%;}
+#navi{height:49px;clear:both;width:100%;margin-top:30px;}
 #navi:after {content:'';clear:both;display:block;}
 #navi>li{float:left;height:22px;position:relative;font-size:13px;line-height:15px;background:url(../imgs/icon/bul_navi.png) left top no-repeat; padding:0 12px 0 16px;color:#979797;}
 #navi>li.home{background:url(../imgs/icon/home_navi.png) left top no-repeat;padding-left:22px;}

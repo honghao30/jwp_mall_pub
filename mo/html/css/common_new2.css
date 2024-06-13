@@ -374,7 +374,7 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Pretendard', 'Malgu
 .recommend_product {background: #F2F5FA;padding:32px 16px;position: relative;margin-top:12px;}
 .good_product_slider {position: relative;}
 .recommend_slide_wrap {margin-top: 24px;}
-.swiper-slide:only-child {max-width: 30%;}
+/* .swiper-slide:only-child {max-width: 30%;} */
 .recommend_slide_wrap .thumb_img {width:104px;height:104px;border-radius: 12px;overflow: hidden;border:1px solid #EFF3F9;background-color: #fff;}
 .recommend_slide_wrap .thumb_img img {max-width: 100%;object-fit: cover;}
 .recommend_slide_wrap .goods_info {margin-top: 12px;}

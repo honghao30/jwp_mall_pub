@@ -1468,16 +1468,41 @@
             <!-- html 마크업 -->
             <div class="product_detail_wrap">
                 <div class="product_slider_wrap">
-                    <div class="swiper_wrap">
-                        <div class="badge_area">
+                    <div class="swiper_wrap img_box">
+                        <div class="tag_box">
+                            <span><img src="img/badge/badge_best.png" alt=""></span>
+                            <span><img src="img/badge/badge_md.png" alt=""></span>
+                            <span><img src="img/badge/badge_new1.png" alt=""></span>
+                        </div>
+                        <!-- <div class="badge_area">
                             <span class="badge badge_best">베스트</span>
                             <span class="badge badge_md">MD추천</span>
                             <span class="badge badge_new_prod">신상품</span>
-                        </div>                        
+                        </div>                         -->
                         <div class="swiper mySwiper goods_imgs">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><a href="#"><img src="./img/sample/product_sample_img.png" alt=""></a></div>                                                               
-                                <div class="swiper-slide"><a href="#"><img src="./img/sample/product_sample_img.png" alt=""></a></div> 
+                            <div class="swiper-wrapper soldout">
+                                <div class="swiper-slide img_box no_radius">
+                                    <a href="#"><img src="./img/sample/product_sample_img.png" alt=""></a>
+                                    <div class="tag_box">
+                                        <span><img src="img/badge/badge_best.png" alt=""></span>
+                                        <span><img src="img/badge/badge_md.png" alt=""></span>
+                                        <span><img src="img/badge/badge_new1.png" alt=""></span>
+                                    </div>
+                                    <div class="wish_box">
+                                        <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="./img/sample/product_sample_img.png" alt=""></a>
+                                    <div class="tag_box">
+                                        <span><img src="img/badge/badge_best.png" alt=""></span>
+                                        <span><img src="img/badge/badge_md.png" alt=""></span>
+                                        <span><img src="img/badge/badge_new1.png" alt=""></span>
+                                    </div>
+                                    <div class="wish_box">
+                                        <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="swiper_control_box">
                                 <div class="pagination"></div>
@@ -1497,10 +1522,10 @@
                                     nextEl: ".goods_imgs .button-next",
                                     prevEl: ".goods_imgs .button-prev",
                                 },
-                                autoplay: {
-                                delay: 2000, // Autoplay delay in milliseconds
-                                disableOnInteraction: false, // Autoplay continues after user interaction
-                                },
+                                // autoplay: {
+                                // delay: 2000, // Autoplay delay in milliseconds
+                                // disableOnInteraction: false, // Autoplay continues after user interaction
+                                // },
                             });
                             </script>                          
                     </div>
