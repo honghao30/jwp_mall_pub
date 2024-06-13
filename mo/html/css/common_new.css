@@ -1800,12 +1800,12 @@ input[type="checkbox"]:checked:after {
 	line-height: 15px; /* 100% */
 	letter-spacing: -1.2px;
 }
+.categorybox .list li>a.no_arrow{background-image:none;}
 .categorybox .list li>a.active{
 	color: #0072BC;
 	background-color:#fff;
 }
 .categorybox .list li>a.active+ul{display:block;}
-.categorybox .list li{}
 .categorybox .list li>ul{
 	display:none;
 	position:absolute;

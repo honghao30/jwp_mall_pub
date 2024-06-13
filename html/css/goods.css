@@ -457,7 +457,7 @@ h2.event{text-align:center; color:#ff5a63; border-bottom:1px solid #e0e0e0;paddi
   font-weight: 600;
   line-height: 18px;
   letter-spacing: -0.72px;
-  padding: 40px 0 16px;
+  padding: 20px 0 16px;
   border-top: 1px solid #e1e3e9;
 }
 .find_product_area.choice-area .choice-top {
@@ -473,6 +473,9 @@ h2.event{text-align:center; color:#ff5a63; border-bottom:1px solid #e0e0e0;paddi
   font-weight: 300;
   line-height: 14px;
   letter-spacing: -0.56pxs;
+}
+.find_product_area.choice-area .choice-top .mCustomScrollbar{
+  max-height: 120px;
 }
 .find_product_area.choice-area .find_product_title {
   border-top: 0;

@@ -490,15 +490,25 @@ $(document).ready(function() {
   // 퀵메뉴 닫기 버튼 클릭 이벤트
   $('.btn_quick_close').click(function() {
     $('.btn_quick_open').removeClass('on');
-    // $('.quick_menu_area').removeClass('on');
+    $('.quick_menu_area').removeClass('on');
   });
 
   // 퀵메뉴 열기 버튼 클릭 이벤트
   $('.btn_quick_open').click(function() {
-    $(this).addClass('on');
-    // $('.quick_menu_area.btn_quick_01').addClass('on');
+    var isActive = $(this).hasClass('on');
+    
+    if (isActive) {
+      // btn_quick_open에 on 클래스가 있는 상태에서 클릭 시, quick_menu_area에서 on 클래스 제거
+      $('.quick_menu_area.btn_quick_01, .quick_menu_area.btn_quick_02').removeClass('on');
+      $(this).removeClass('on');
+    } else {
+      // 기본 동작
+      $(this).addClass('on');
+      $('.quick_menu_area.btn_quick_01').addClass('on');
+    }
   });
 });
+
 
 // load 퀵메뉴 컨텐츠 class="on"
 // if( $(".quick_menu_area.on").length > 0 ){
