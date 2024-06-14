@@ -150,6 +150,7 @@
 .items_link_list{display:block;}
 .items_link_list_cont{position:relative;}
 .items_link_list {background-color: #F7F8FA;padding: 20px 50px 20px 18px;border-top:1px solid #E1E3E9;gap:16px ;font-size: 18px;font-weight: 600;line-height: 18px;color:#222;}
+.items_link_list.active {background-color: rgba(0, 114, 188, 0.1);}
 .items_link_list:hover {background-color: rgba(0, 114, 188, 0.1);}
 .items_link_list .btn_heart {width: 22px;height: 22px;background: url('../img/common/ico/ico_heart_22.png') no-repeat center;}
 .items_link_list .btn_heart.is-active {background: url('../img/common/ico/ico_heart_on_22.png') no-repeat center;}
@@ -250,10 +251,15 @@
 
 .product_name_area .name {font-size: 24px;font-weight: 600;line-height: 32px;color:#222;margin-top:4px;}
 .product_information_area {flex:1;}
-.product_information_title {align-items: flex-start;margin-bottom: 24px;}
-.product_information_title .btnwish {width:32px;height:32px;background: url('../img/common/ico/ico_heart_22.png') no-repeat center;}
+.product_information_title {
+  align-items: flex-start;
+  margin-bottom: 24px;
+  position: relative;
+  padding-top: 25px;
+}
+.product_information_title .btnwish {width:32px;height:32px;background: url('../img/common/ico/ico_heart_22.png') no-repeat center;position:absolute;top:-5px;right:-3px;}
 .product_information_title .btnwish.active {background: url('../img/common/ico/ico_heart_on_22.png') no-repeat center;}
-.product_name_area .cate {font-size: 14px;font-weight: 300;line-height: 14px;color:#222;}
+.product_name_area .cate {font-size: 14px;font-weight: 300;line-height: 14px;color:#222;position:absolute;top:0;left:0;}
 .product_name_area .cate span {display: inline-block;padding-right: 15px;background: url('../img/common/ico/ico_right_right_12.png') no-repeat right center;}
 
 .product_price_area {font-family: 'Montserrat';font-size: 18px;font-weight: 600;line-height: 18px;}
@@ -306,9 +312,9 @@
 
 /* // 팝업 */
 .product_detail_popup_wrap {padding: 24px;}
-.product_detail_popup_title {font-size: 20px;font-weight: 600;line-height: 20px;color:#222; border-bottom: 1px solid #717B8A;position: relative;padding:6px 0 17px;margin-bottom: 40px;}
+.product_detail_popup_title {font-size: 20px;font-weight: 600;line-height: 20px;color:#222; border-bottom: 1px solid #717B8A;position: relative;padding:20px 0 17px;margin-bottom: 40px;}
 .product_detail_popup_title .btn_close_window {width:32px;height:32px;background: url('../img/common/ico/ico_close_x_black.png') no-repeat center;position: absolute;right: 0;top: 0;}
-.product_detail_popup_wrap .order_button_wrap button {max-width: 240px;}
+.product_detail_popup_wrap .order_button_wrap button {max-width: 240px;right: 0px;top: 0px;}
 
 /* //모달 */
 .modal_n_body.filter_modal {border-radius: 12px;border:1px solid #AEB7C6;overflow: hidden;}

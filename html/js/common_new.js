@@ -479,11 +479,9 @@ $(document).ready(function() {
     if ($(i).hasClass("on")) {
       $(".content_wrap").addClass("on");
       $(".left_cont_area").addClass("on");
-      $(".btn_quick_open").addClass("on"); // btn_quick_open에 on 클래스 추가
     } else {
       $(".content_wrap").removeClass("on");
       $(".left_cont_area").removeClass("on");
-      $(".btn_quick_open").removeClass("on"); // btn_quick_open에서 on 클래스 제거
     }
   });
 
@@ -494,21 +492,47 @@ $(document).ready(function() {
   });
 
   // 퀵메뉴 열기 버튼 클릭 이벤트
-  $('.btn_quick_open').click(function() {
-    var isActive = $(this).hasClass('on');
-    
-    if (isActive) {
-      // btn_quick_open에 on 클래스가 있는 상태에서 클릭 시, quick_menu_area에서 on 클래스 제거
-      $('.quick_menu_area.btn_quick_01, .quick_menu_area.btn_quick_02').removeClass('on');
-      $(this).removeClass('on');
-    } else {
-      // 기본 동작
-      $(this).addClass('on');
-      $('.quick_menu_area.btn_quick_01').addClass('on');
-    }
+  $(document).ready(function() {
+    // btn_quick_open 버튼 클릭 이벤트
+    $('.btn_quick_open').click(function() {
+      $(this).toggleClass('on'); // btn_quick_open에 on 클래스 토글
+  
+      if ($(this).hasClass('on')) {
+        // on 클래스가 추가될 때 rnb_list에도 on 클래스 추가
+        $('.rnb_list').addClass('on');
+        $('.quick_menu_area').removeClass('on');
+      } else {
+        // on 클래스가 제거될 때 rnb_list에서도 on 클래스 제거
+        $('.rnb_list').removeClass('on');
+        $('.content_wrap').removeClass('on');
+        $('.left_cont_area').removeClass('on');
+      }
+    });
+  
+    // rnb_list에서 on 클래스가 제거될 때, 관련 클래스에서도 on 클래스 제거
+    $('.rnb_list').on('classChange', function() {
+      if (!$(this).hasClass('on')) {
+        $('.content_wrap').removeClass('on');
+        $('.left_cont_area').removeClass('on');
+      }
+    });
+  
+    // rnb_list 클래스 변경 감지
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.attributeName === 'class') {
+          $(mutation.target).trigger('classChange');
+        }
+      });
+    });
+  
+    $('.rnb_list').each(function() {
+      observer.observe(this, {
+        attributes: true
+      });
+    });
   });
 });
-
 
 // load 퀵메뉴 컨텐츠 class="on"
 // if( $(".quick_menu_area.on").length > 0 ){
@@ -714,4 +738,14 @@ $(document).ready(function(){
   });
 });
 
-
+// 탑버튼
+$(document).ready(function() {
+  // 'top' 버튼 클릭 시 화면 최상단으로 스크롤
+  $('#top').click(function() {
+    window.scroll({
+       top: 0,
+       left: 0,
+       behavior: "smooth"
+     });
+  });
+});

@@ -461,67 +461,45 @@
       <!-- 오른쪽컨텐츠 -->
       <div class="right_cont_area">
         <div class="rnb_list">
-          <div><a href="#none" class="ico_01 btn_quick_01 btn_group" data-target="#document">마이장부</a></div>
-          <div><a href="#none" class="ico_02 btn_quick_02 btn_group" data-target="#basket">장바구니<br>미리보기</a></div>
-          <div><a href="#none" class="ico_03">예치금 충전</a></div>
-          <div><a href="#none" class="ico_04">배송조회</a></div>
-          <div><a href="#none" class="ico_05">고객센터</a></div>
-          <div class="tit">최근 본 상품</div>
-          <div class="sw_cont">
-            <!-- Swiper -->
-            <div class="swiper mySwiper rsw01">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="img_box">
-                    <a href="#">
-                      <img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                    </a>
-                  </div>
+          <div class="list_cont">
+            <div><a href="#none" class="ico_01 btn_quick_01 btn_group" data-target="#document">마이장부</a></div>
+            <div><a href="#none" class="ico_02 btn_quick_02 btn_group" data-target="#basket">장바구니<br>미리보기</a></div>
+            <div><a href="#none" class="ico_03">예치금 충전</a></div>
+            <div><a href="#none" class="ico_04">배송조회</a></div>
+            <div><a href="#none" class="ico_05">고객센터</a></div>
+            <div class="tit">최근 본 상품</div>
+            <div class="sw_cont">
+              <!-- Swiper -->
+              <div class="swiper mySwiper rsw01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
+                  <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
+                  <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
+                  <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="img_box">
-                    <a href="#">
-                      <img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img_box">
-                    <a href="#">
-                      <img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img_box">
-                    <a href="#">
-                      <img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
+              <script>
+                // 우측 side 최근 본 상품 스와이프
+                var rsw01 = new Swiper(".rsw01.swiper", {
+                  slidesPerView: 1,
+                  slidesPerGroup: 1,
+                  // spaceBetween: 4,
+                  loop: true, // 무한 루프 활성화
+                  navigation: {
+                    nextEl: ".rsw01 .swiper-button-next",
+                    prevEl: ".rsw01 .swiper-button-prev",
+                  },
+                  pagination: {
+                    el: '.rsw01 .swiper-pagination',
+                    type: 'fraction', // Pagination type set to 'fraction' for numeric display
+                    clickable: true, // 사용자가 페이지를 클릭하여 슬라이드 이동할 수 있게 함
+                  }
+                });
+              </script>
             </div>
-            <script>
-              // 우측 side 최근 본 상품 스와이프
-              var rsw01 = new Swiper(".rsw01.swiper", {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-                // spaceBetween: 4,
-                loop: true, // 무한 루프 활성화
-                navigation: {
-                  nextEl: ".rsw01 .swiper-button-next",
-                  prevEl: ".rsw01 .swiper-button-prev",
-                },
-                pagination: {
-                  el: '.rsw01 .swiper-pagination',
-                  type: 'fraction', // Pagination type set to 'fraction' for numeric display
-                  clickable: true, // 사용자가 페이지를 클릭하여 슬라이드 이동할 수 있게 함
-                }
-              });
-            </script>
           </div>
 
           <!-- 퀵메뉴 버튼 -->
@@ -1576,181 +1554,182 @@
         </div>
         <!-- // 카테고리 타이틀 -->
         
+        <!-- 240614 수정 -->
         <!-- 카테고리 목록 -->
         <div class="category_list_wrap">
-          <!-- option -->
-          <div class="option_cont line_bottom mt30 pb10">
-            <div class="category_view_option">
-              <div class="dropdown_menu_wrap">
-                <button type="button" class="btn-dropdown">판매인기순</button>
-                <ul class="dropdown_list">
-                  <li><button type="button" data-option="판매인기순">판매인기순</button></li>
-                  <li><button type="button" data-option="제품명">제품명</button></li>
-                  <li><button type="button" data-option="제조사">제조사</button></li>
-                  <li><button type="button" data-option="높은가격순">높은가격순</button></li>
-                  <li><button type="button" data-option="낮은가격순">낮은가격순</button></li>
-                </ul>
-              </div>
-              <div class="dropdown_menu_wrap">
-                <button type="button" class="btn-dropdown">20개 보기</button>
-                <ul class="dropdown_list">
-                  <li><button type="button" data-option="20개 보기">20개 보기</button></li>
-                  <li><button type="button" data-option="30개 보기">30개 보기</button></li>
-                  <li><button type="button" data-option="50개 보기">50개 보기</button></li>
-                </ul>
-              </div>   
-              <button type="button" class="btn_store_info">입점사</button>
+          <div class="category_view_option">
+            <div class="dropdown_menu_wrap">
+              <button type="button" class="btn-dropdown">판매인기순</button>
+              <ul class="dropdown_list">
+                <li><button type="button" data-option="판매인기순">판매인기순</button></li>
+                <li><button type="button" data-option="제품명">제품명</button></li>
+                <li><button type="button" data-option="제조사">제조사</button></li>
+                <li><button type="button" data-option="높은가격순">높은가격순</button></li>
+                <li><button type="button" data-option="낮은가격순">낮은가격순</button></li>
+              </ul>
             </div>
+            <div class="dropdown_menu_wrap">
+              <button type="button" class="btn-dropdown">20개 보기</button>
+              <ul class="dropdown_list">
+                <li><button type="button" data-option="20개 보기">20개 보기</button></li>
+                <li><button type="button" data-option="30개 보기">30개 보기</button></li>
+                <li><button type="button" data-option="50개 보기">50개 보기</button></li>
+              </ul>
+            </div>   
+            <button type="button" class="btn_store_info">입점사</button>
           </div>
-          <div class="no_data_cont pt80">
-            <p class="no_txt">검색어와 일치하는 내용이 없습니다.</p>
-            
-            <!-- 인기 검색어 -->
-            <div class="search_list_box banner_type">
-              <div class="l_cont">
-                <div class="tit_cont">
-                  <strong class="tit">인기 검색어</strong>
-                </div>
-                <div class="interest_list_box">
-                  <div class="interest_list">
-                    <ul>
-                      <li>
-                        <a href="#" class="txt"><strong>1.</strong>수액세트</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>2.</strong>수액</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>3.</strong>모아랩밴드</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>4.</strong>독감</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>5.</strong>위너프</a>
-                      </li>
-                    </ul>
+
+          <div class="product_list_wrap">
+            <div class="no_data_cont pt80">
+              <p class="no_txt">검색어와 일치하는 내용이 없습니다.</p>
+              
+              <!-- 인기 검색어 -->
+              <div class="search_list_box banner_type">
+                <div class="l_cont">
+                  <div class="tit_cont">
+                    <strong class="tit">인기 검색어</strong>
                   </div>
-                  <div class="interest_list">
-                    <ul>
-                      <li>
-                        <a href="#" class="txt"><strong>6.</strong>플루</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>7.</strong>수액세트</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>8.</strong>수액</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>9.</strong>모아랩밴드</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>10.</strong>독감</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="r_cont">
-                <div class="banner_cont">
-                  <!-- Swiper -->
-                  <div class="swiper_wrap type03">
-                    <div class="swiper mySwiper search_banner_01">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="#"><img src="img/common/banner/img_banner_side_left.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img class="" src="img/common/banner/img_banner_side_right.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/common/banner/banner_search_pop.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/common/banner/banner_search_pop.png" alt=""></a></div>
-                      </div>
-                      <div class="swiper-button-next"><img src="img/common/btn_right_b.png" alt=""></div>
-                      <div class="swiper-button-prev"><img src="img/common/btn_left_b.png" alt=""></div>
-                      <div class="swiper-pagination type01"></div>
-                      <div class="swiper-autoplay-button">
-                        <img src="img/common/btn_pause_b.png" alt="" class="pause">
-                        <img src="img/common/btn_play_b.png" alt="" class="play">
-                      </div>
+                  <div class="interest_list_box">
+                    <div class="interest_list">
+                      <ul>
+                        <li>
+                          <a href="#" class="txt"><strong>1.</strong>수액세트</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>2.</strong>수액</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>3.</strong>모아랩밴드</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>4.</strong>독감</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>5.</strong>위너프</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="interest_list">
+                      <ul>
+                        <li>
+                          <a href="#" class="txt"><strong>6.</strong>플루</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>7.</strong>수액세트</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>8.</strong>수액</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>9.</strong>모아랩밴드</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>10.</strong>독감</a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  <script>
-                    var search_banner_01 = new Swiper(".search_banner_01.swiper", {
-                      slidesPerView: 1,
-                      slidesPerGroup: 1,
-                      // spaceBetween: 4,
-                      pagination: {
-                        el: ".swiper-pagination",
-                        type: "fraction",
-                      },
-                      loop: true,
-                      navigation: {
-                        nextEl: ".search_banner_01 .swiper-button-next",
-                        prevEl: ".search_banner_01 .swiper-button-prev",
-                      },
-                      autoplay: {
-                        delay: 2000, // Autoplay delay in milliseconds
-                        disableOnInteraction: false, // Autoplay continues after user interaction
-                      },
-                    });
-                  
-                    // Pause/Play button functionality
-                    $(".search_banner_01 .swiper-autoplay-button").click(function(){
-                      $(this).toggleClass("paused");
-                      if( $(this).is(".paused") ){
-                        search_banner_01.autoplay.stop();
-                      }
-                      else{
-                        search_banner_01.autoplay.start();
-                      };
-                    });
-                  </script>
+                </div>
+                <div class="r_cont">
+                  <div class="banner_cont">
+                    <!-- Swiper -->
+                    <div class="swiper_wrap type03">
+                      <div class="swiper mySwiper search_banner_01">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="#"><img src="img/common/banner/img_banner_side_left.png" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img class="" src="img/common/banner/img_banner_side_right.png" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="img/common/banner/banner_search_pop.png" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="img/common/banner/banner_search_pop.png" alt=""></a></div>
+                        </div>
+                        <div class="swiper-button-next"><img src="img/common/btn_right_b.png" alt=""></div>
+                        <div class="swiper-button-prev"><img src="img/common/btn_left_b.png" alt=""></div>
+                        <div class="swiper-pagination type01"></div>
+                        <div class="swiper-autoplay-button">
+                          <img src="img/common/btn_pause_b.png" alt="" class="pause">
+                          <img src="img/common/btn_play_b.png" alt="" class="play">
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      var search_banner_01 = new Swiper(".search_banner_01.swiper", {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                        // spaceBetween: 4,
+                        pagination: {
+                          el: ".swiper-pagination",
+                          type: "fraction",
+                        },
+                        loop: true,
+                        navigation: {
+                          nextEl: ".search_banner_01 .swiper-button-next",
+                          prevEl: ".search_banner_01 .swiper-button-prev",
+                        },
+                        autoplay: {
+                          delay: 2000, // Autoplay delay in milliseconds
+                          disableOnInteraction: false, // Autoplay continues after user interaction
+                        },
+                      });
+                    
+                      // Pause/Play button functionality
+                      $(".search_banner_01 .swiper-autoplay-button").click(function(){
+                        $(this).toggleClass("paused");
+                        if( $(this).is(".paused") ){
+                          search_banner_01.autoplay.stop();
+                        }
+                        else{
+                          search_banner_01.autoplay.start();
+                        };
+                      });
+                    </script>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- 인기 검색어 -->
-            <div class="search_list_box">
-              <div class="l_cont">
-                <div class="tit_cont">
-                  <strong class="tit">인기 검색어</strong>
-                </div>
-                <div class="interest_list_box">
-                  <div class="interest_list">
-                    <ul>
-                      <li>
-                        <a href="#" class="txt"><strong>1.</strong>수액세트</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>2.</strong>수액</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>3.</strong>모아랩밴드</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>4.</strong>독감</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>5.</strong>위너프</a>
-                      </li>
-                    </ul>
+              <!-- 인기 검색어 -->
+              <div class="search_list_box">
+                <div class="l_cont">
+                  <div class="tit_cont">
+                    <strong class="tit">인기 검색어</strong>
                   </div>
-                  <div class="interest_list">
-                    <ul>
-                      <li>
-                        <a href="#" class="txt"><strong>6.</strong>플루</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>7.</strong>수액세트</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>8.</strong>수액</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>9.</strong>모아랩밴드</a>
-                      </li>
-                      <li>
-                        <a href="#" class="txt"><strong>10.</strong>독감</a>
-                      </li>
-                    </ul>
+                  <div class="interest_list_box">
+                    <div class="interest_list">
+                      <ul>
+                        <li>
+                          <a href="#" class="txt"><strong>1.</strong>수액세트</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>2.</strong>수액</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>3.</strong>모아랩밴드</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>4.</strong>독감</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>5.</strong>위너프</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="interest_list">
+                      <ul>
+                        <li>
+                          <a href="#" class="txt"><strong>6.</strong>플루</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>7.</strong>수액세트</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>8.</strong>수액</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>9.</strong>모아랩밴드</a>
+                        </li>
+                        <li>
+                          <a href="#" class="txt"><strong>10.</strong>독감</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

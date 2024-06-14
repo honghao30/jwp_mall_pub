@@ -50,6 +50,8 @@
             }
           });
         </script>
+        <!-- 버튼 -->
+        <button type="button" class="layerclosebtn">확인</button>
       </div>
     </div>
 
@@ -852,43 +854,51 @@ $(document).on("click", function (event) {
       <!-- 오른쪽컨텐츠 -->
       <div class="right_cont_area">
         <div class="rnb_list">
-          <div><a href="#none" class="ico_01 btn_quick_01 btn_group" data-target="#document">마이장부</a></div>
-          <div><a href="#none" class="ico_02 btn_quick_02 btn_group" data-target="#basket">장바구니<br>미리보기</a></div>
-          <div><a href="#none" class="ico_03">예치금 충전</a></div>
-          <div><a href="#none" class="ico_04">배송조회</a></div>
-          <div><a href="#none" class="ico_05">고객센터</a></div>
-          <div class="tit">최근 본 상품</div>
-          <div class="sw_cont">
-            <!-- Swiper -->
-            <div class="swiper mySwiper rsw01">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
+          <div class="list_cont">
+            <div><a href="#none" class="ico_01 btn_quick_01 btn_group" data-target="#document">마이장부</a></div>
+            <div><a href="#none" class="ico_02 btn_quick_02 btn_group" data-target="#basket">장바구니<br>미리보기</a></div>
+            <div><a href="#none" class="ico_03">예치금 충전</a></div>
+            <div><a href="#none" class="ico_04">배송조회</a></div>
+            <div><a href="#none" class="ico_05">고객센터</a></div>
+            <div>
+              <button id="top" class="btn_top">TOP<span class="hidden">맨위로</span></button>
             </div>
-            <script>
-              // 우측 side 최근 본 상품 스와이프
-              var rsw01 = new Swiper(".rsw01.swiper", {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-                // spaceBetween: 4,
-                loop: true, // 무한 루프 활성화
-                navigation: {
-                  nextEl: ".rsw01 .swiper-button-next",
-                  prevEl: ".rsw01 .swiper-button-prev",
-                },
-                pagination: {
-                  el: '.rsw01 .swiper-pagination',
-                  type: 'fraction', // Pagination type set to 'fraction' for numeric display
-                  clickable: true, // 사용자가 페이지를 클릭하여 슬라이드 이동할 수 있게 함
-                }
-              });
-            </script>
+          </div>
+            
+          <div class="list_cont mt10">
+            <div class="tit">최근 본 상품</div>
+            <div class="sw_cont">
+              <!-- Swiper -->
+              <div class="swiper mySwiper rsw01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
+                  <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
+                  <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
+                  <div class="swiper-slide"><a href="#"><img class="" src="https://www.jwpmall.co.kr/data/base/goods/middle/후리아민8.5.jpg" alt=""></a></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <script>
+                // 우측 side 최근 본 상품 스와이프
+                var rsw01 = new Swiper(".rsw01.swiper", {
+                  slidesPerView: 1,
+                  slidesPerGroup: 1,
+                  // spaceBetween: 4,
+                  loop: true, // 무한 루프 활성화
+                  navigation: {
+                    nextEl: ".rsw01 .swiper-button-next",
+                    prevEl: ".rsw01 .swiper-button-prev",
+                  },
+                  pagination: {
+                    el: '.rsw01 .swiper-pagination',
+                    type: 'fraction', // Pagination type set to 'fraction' for numeric display
+                    clickable: true, // 사용자가 페이지를 클릭하여 슬라이드 이동할 수 있게 함
+                  }
+                });
+              </script>
+            </div>
           </div>
 
           <!-- 퀵메뉴 버튼 -->
@@ -5210,6 +5220,8 @@ $(document).on("click", function (event) {
                   </ul>
                   <!-- <div class="swiper-button-next"><img src="img/common/brand/btn_brand_right.png" alt=""></div>
                   <div class="swiper-button-prev"><img src="img/common/brand/btn_brand_left.png" alt=""></div> -->
+                  <div class="swiper-button-next"><img src="img/common/brand/btn_brand_right_w.png" alt=""></div>
+                  <div class="swiper-button-prev"><img src="img/common/brand/btn_brand_left_w.png" alt=""></div>
                   <div class="swiper-pagination"></div>
                 </div>
               </div>
@@ -5885,6 +5897,56 @@ $(document).on("click", function (event) {
                                     </div>
                                     <div class="info_box">
                                       <div class="product_txt">
+                                        <p class="shop">JW중외제약</p>
+                                        <p class="tit"><a href="#">sdf111 MD추천상품 프리베나13주 0.5ml 프리베나13주 0.5ml 프리베나13주 0.5ml</a></p>
+                                      </div>
+                                      <div class="price_cont">
+                                        <p class="price">132,000원</p>
+                                        <span class="sale">45%</span>
+                                        <p class="marketPrice">33,000원</p>
+                                        <a href="#" class="ico_cart"></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product_list type02 mode02">
+                                  <div class="products">
+                                    <div class="img_box">
+                                      <div class="edge_tag_box">
+                                        <img class="img" src="img/sample/sample_product_01.png" alt="">
+                                        <div class="tag_box">
+                                          <span class="edge_tag bgG">세일</span>
+                                        </div>
+                                        <div class="wish_box">
+                                          <span class="ico_wish"></span>
+                                        </div>
+                                        <div class="over">
+                                          <div class="linkbox">
+                                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
+                                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
+                                          </div>
+                                          <div class="amountbox">
+                                            <dl>
+                                              <dt>수량 (주문단위 10개)</dt>
+                                              <dd class="num_nav_box">
+                                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
+                                                  <a href="#" class="up">up</a>
+                                                  <a href="#" class="dn">dn</a>
+                                                </span>
+                                                <input type="text" class="value" value="10">
+                                              </dd>
+                                            </dl>
+                                          </div>
+                                          <div class="orderbox">
+                                            <a href="#" class="n_btn">장바구니</a>
+                                            <a href="#" class="n_btn">바로구매</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="info_box">
+                                      <div class="product_txt">
+                                        <p class="shop">JW중외제약</p>
                                         <p class="tit"><a href="#">111 MD추천상품 프리베나13주 0.5ml 프리베나13주 0.5ml 프리베나13주 0.5ml</a></p>
                                       </div>
                                       <div class="price_cont">
@@ -5933,54 +5995,7 @@ $(document).on("click", function (event) {
                                     </div>
                                     <div class="info_box">
                                       <div class="product_txt">
-                                        <p class="tit"><a href="#">111 MD추천상품 프리베나13주 0.5ml 프리베나13주 0.5ml 프리베나13주 0.5ml</a></p>
-                                      </div>
-                                      <div class="price_cont">
-                                        <p class="price">132,000원</p>
-                                        <span class="sale">45%</span>
-                                        <p class="marketPrice">33,000원</p>
-                                        <a href="#" class="ico_cart"></a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="product_list type02 mode02">
-                                  <div class="products">
-                                    <div class="img_box">
-                                      <div class="edge_tag_box">
-                                        <img class="img" src="img/sample/sample_product_01.png" alt="">
-                                        <div class="tag_box">
-                                          <span class="edge_tag bgG">세일</span>
-                                        </div>
-                                        <div class="wish_box">
-                                          <span class="ico_wish"></span>
-                                        </div>
-                                        <div class="over">
-                                          <div class="linkbox">
-                                            <a href="#" class="link_blank"><span class="hidden">상세보기</span></a>
-                                            <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                                          </div>
-                                          <div class="amountbox">
-                                            <dl>
-                                              <dt>수량 (주문단위 10개)</dt>
-                                              <dd class="num_nav_box">
-                                                <span class="num_nav" data-buyqty="50" data-minqty="1" data-maxqty="100000">
-                                                  <a href="#" class="up">up</a>
-                                                  <a href="#" class="dn">dn</a>
-                                                </span>
-                                                <input type="text" class="value" value="10">
-                                              </dd>
-                                            </dl>
-                                          </div>
-                                          <div class="orderbox">
-                                            <a href="#" class="n_btn">장바구니</a>
-                                            <a href="#" class="n_btn">바로구매</a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="info_box">
-                                      <div class="product_txt">
+                                        <p class="shop">JW중외제약</p>
                                         <p class="tit"><a href="#">111 MD추천상품 프리베나13주 0.5ml 프리베나13주 0.5ml 프리베나13주 0.5ml</a></p>
                                       </div>
                                       <div class="price_cont">
@@ -7829,7 +7844,7 @@ $(document).on("click", function (event) {
               <span class="tit">약가인하 공지</span>
               <a href="#none" class="btn_more ico_more">더보기</a>
             </div>
-            <table class="noti_table">
+            <!-- <table class="noti_table">
               <colgroup>
                 <col>
                 <col style="width:100px">
@@ -7856,7 +7871,11 @@ $(document).on("click", function (event) {
                   <td class="txt_right">2024-01-26</td>
                 </tr>
               </tbody>
-            </table>
+            </table> -->
+
+            <div class="no_data_txt">
+              <span class="txt">공지사항이 없습니다.</span>
+            </div>
           </div>
         </div>
       </div>
@@ -8087,8 +8106,8 @@ $(document).on("click", function (event) {
             <div class="swiper-slide"><a href="#none"><img src="img/common/banner/banner_foot_01.png" alt=""></a></div>
             <div class="swiper-slide"><a href="#none"><img src="img/common/banner/banner_foot_02.png" alt=""></a></div>
           </div>
-          <div class="swiper-button-next"><img src="img/common/btn_right.png" alt=""></div>
-          <div class="swiper-button-prev"><img src="img/common/btn_left.png" alt=""></div>
+          <div class="swiper-button-next"><img src="img/common/btn_right_b.png" alt=""></div>
+          <div class="swiper-button-prev"><img src="img/common/btn_left_b.png" alt=""></div>
         </div>
         <p class="foot_btn">
           <span class="bar"><a href="#none">오늘 하루 그만 보기</a></span><span><a href="#none" data-target="btn_close">닫기</a></span>
@@ -8124,7 +8143,7 @@ $(document).on("click", function (event) {
   <!-- 클래스에 modal_on 넣으면 열림 -->
   <section class="modal_new modal_overlay" id="main_layer_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
     <div class="modal_n_wrap">
-        <div class="modal_n_body" style="width:420px">
+        <div class="modal_n_body">
             <div class="pop_cont pop_round_type">
                 <!--  -->
                 <!-- popContent -->
