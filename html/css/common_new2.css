@@ -62,6 +62,8 @@
 .category_title_area .mypage_title .tit.blue_type {color:#0072BC;font-weight: 700;}
 .category_title_area .member_level {display:inline-block;vertical-align: middle;margin-right: 8px; width:32px;height: 32px;background: url('../img/common/ico/ico_membership_vip.png') no-repeat center;}
 
+.category_title_area .mypage_title{margin-top:50px;}
+
 /* 카테고리 검색 결과 없음 */
 .category_list_wrap {margin-top: 32px;}
 .category_list_wrap .product_list_wrap {margin-top: 8px;border-top: 1px solid #222;}
@@ -172,6 +174,7 @@
 .item_summary_info.mini-size .mini_tit {font-size: 15px;font-weight: 300;line-height: 15px;color:#717B8A;border-bottom: 1px solid #E1E3E9;padding-bottom: 16px;}
 .search_result_right_side {flex:1;}
 .right_side_top_full {gap: 16px;align-items: flex-start;}
+.right_side_top_full .item_summary_info .product_info{width:144px;}
 .product_summary_top {width:268px;}
 
 .tit_ft18 {font-size: 18px;font-weight: 600;line-height: 18px;color:#222;}
@@ -387,6 +390,7 @@
 .product_list.type-list > ul {display: flex;align-items: center;flex-direction: column;border-top: 1px solid #222222;}
 .product_list.type-list > ul > li {padding:32px 0;border-bottom: 1px solid #E1E3E9; width: 100%;display: flex;align-items: center;justify-content: space-between;}
 .product_list.type-list ul li .img_box {width:160px;height:160px;position: relative;border: 1px solid #EFF3F9;border-radius: 12px;overflow: hidden;display:flex;align-items: center;justify-content: center;}
+.product_list.type-list ul li .img_box img{max-height:160px;width:auto;}
 .product_list.type-list ul li .img_box.sold_out {pointer-events: none;}
 .product_list.type-list ul li .img_box.sold_out::after {content: 'SOLD OUT';font-size: 18px;font-weight: 700;color:#222222;text-align: center;line-height:160px ; display: block;width: 100%;height: 100%;position: absolute;left:0;top:0;background-color: rgba(255,255,255,0.6);z-index: 10;}
 .product_list.type-list ul li .img_box .over {padding: 58px 10px;}
@@ -471,7 +475,7 @@
 .mypage_gray_rbox.search_option .search_option_items .dropdown_menu_wrap {height: 35px;background-color: #fff;width: 296px;}
 .mypage_gray_rbox.search_option .search_option_items .dropdown_menu_wrap button {width: 100%;height: 100%;text-align: left;display: flex; justify-content: space-between;}
 .mypage_gray_rbox.search_option .search_option_items .tit { font-size: 15px;font-weight: 700;line-height: 15px;color:#000;width: 70px;}
-.mypage_gray_rbox.search_option .data_period {border: 1px solid #E1E0E5;display: flex;}
+.mypage_gray_rbox.search_option .data_period {border: 1px solid #E1E0E5;display: flex;border-radius: 4px;overflow:hidden;}
 .mypage_gray_rbox.search_option .data_period button {height: 35px;width: 59px;line-height: 35px;text-align: center;font-size: 14px;font-weight: 400;color:#979797;background-color: #fff;}
 .mypage_gray_rbox.search_option .data_period button.is-active {background-color: #0072BC;border:1px solid #0072BC;color:#fff;}
 .mypage_gray_rbox.search_option .data_period button+button {border-left:1px solid #E1E0E5 }

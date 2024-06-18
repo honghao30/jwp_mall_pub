@@ -749,3 +749,33 @@ $(document).ready(function() {
      });
   });
 });
+
+// 슬라이드 1장일때 버튼 숨김
+// $(document).ready(function() {
+//   // swiper_wrap 중에 swiper-button-lock 클래스를 포함하는 요소 찾기
+//   $('.swiper_wrap').each(function() {
+//     if ($(this).find('.swiper-button-lock').length > 0) {
+//       // swiper-button-lock 클래스가 있으면 해당 swiper_wrap에 no_btn 클래스 추가
+//       $(this).addClass('no_btn');
+//     }
+//   });
+// });
+
+// 슬라이드 위에  슬라이드
+$(document).ready(function() {
+  // sw 클래스 요소에 hover 이벤트 추가
+  $('.brand_content .sw').hover(
+    function() {
+      // 마우스가 올라갔을 때
+      $(this).addClass('hover');
+      $(this).siblings('.banner_cont').addClass('none');
+    },
+    function() {
+      // 마우스가 빠졌을 때
+      $(this).removeClass('hover');
+      $(this).siblings('.banner_cont').removeClass('none');
+    }
+  );
+});
+
+

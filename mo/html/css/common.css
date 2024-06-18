@@ -23,7 +23,7 @@ ul,li,ol{list-style-type:none}
 li,p,dt,dd,div,span{white-space:normal}
 button{*overflow:visible;font-family:'NotoSans','Apple-Gothic','애플고딕',Droid Sans,Helvetica,Tahoma,sans-serif;font-weight:400;padding:0;margin:0;border:0 none;background:transparent;cursor:pointer;outline:none;}
 button::-moz-focus-inner{border:0;padding:0}
-a{text-decoration:none; color:#333;}
+a{text-decoration:none; color:inherit;}
 i{font-style:normal;}
 label{cursor:pointer}
 img{max-width:100%}

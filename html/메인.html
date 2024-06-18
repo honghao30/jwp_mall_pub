@@ -2421,6 +2421,58 @@ $(document).on("click", function (event) {
         </script>
       </div>
       
+      <div class="inner mt30">
+        <!-- Swiper -->
+        <div class="swiper_wrap type01">
+          <div class="swiper mySwiper ad_mid_banner2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="img/common/banner/img_mid_full_banner.png" alt=""></a></div>
+              <!-- <div class="swiper-slide"><a href="#"><img src="img/common/banner/img_mid_full_banner.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/common/banner/img_mid_full_banner.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/common/banner/img_mid_full_banner.png" alt=""></a></div> -->
+            </div>
+            <div class="swiper-button-next"><img src="img/common/btn_right.png" alt=""></div>
+            <div class="swiper-button-prev"><img src="img/common/btn_left.png" alt=""></div>
+            <div class="swiper-pagination type01"></div>
+            <div class="swiper-autoplay-button">
+              <img src="img/common/btn_pause.png" alt="" class="pause">
+              <img src="img/common/btn_play.png" alt="" class="play">
+            </div>
+          </div>
+        </div>
+        <script>
+          var ad_mid_banner2 = new Swiper(".ad_mid_banner2.swiper", {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            // spaceBetween: 4,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "fraction",
+            },
+            loop: true,
+            navigation: {
+              nextEl: ".ad_mid_banner2 .swiper-button-next",
+              prevEl: ".ad_mid_banner2 .swiper-button-prev",
+            },
+            autoplay: {
+              delay: 2000, // Autoplay delay in milliseconds
+              disableOnInteraction: false, // Autoplay continues after user interaction
+            },
+          });
+        
+          // Pause/Play button functionality
+          $(".ad_mid_banner2 .swiper-autoplay-button").click(function(){
+            $(this).toggleClass("paused");
+            if( $(this).is(".paused") ){
+              ad_mid_banner2.autoplay.stop();
+            }
+            else{
+              ad_mid_banner2.autoplay.start();
+            };
+          });
+        </script>
+      </div>
+      
       <!-- 중단 배너1,2,3 -->
       <div class="inner mt30">
         <ul class="mid_banner_cont">
@@ -5248,8 +5300,63 @@ $(document).on("click", function (event) {
                 <div class="tab-pane active">
                   <div class="brand_content">
                     <div class="cont">
+                      <!-- 브랜드관 슬라이드 -->
+                       <!-- banner -->
+                      <div class="banner_cont">
+                        <!-- Swiper -->
+                        <div class="swiper_wrap type03">
+                          <div class="swiper mySwiper brand_banner_sw">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="#"><img src="img/common/best/best_banner_01.png" alt=""></a></div>
+                              <div class="swiper-slide"><a href="#"><img src="img/common/best/best_banner_01.png" alt=""></a></div>
+                              <div class="swiper-slide"><a href="#"><img src="img/common/best/best_banner_01.png" alt=""></a></div>
+                              <div class="swiper-slide"><a href="#"><img src="img/common/best/best_banner_01.png" alt=""></a></div>
+                            </div>
+                            <div class="swiper-button-next"><img src="img/common/btn_right_b.png" alt=""></div>
+                            <div class="swiper-button-prev"><img src="img/common/btn_left_b.png" alt=""></div>
+                            <div class="swiper-pagination type01"></div>
+                            <div class="swiper-autoplay-button">
+                              <img src="img/common/btn_pause_b.png" alt="" class="pause">
+                              <img src="img/common/btn_play_b.png" alt="" class="play">
+                            </div>
+                          </div>
+                        </div>
+                        <script>
+                          var brand_banner_sw = new Swiper(".brand_banner_sw.swiper", {
+                            slidesPerView: 1,
+                            slidesPerGroup: 1,
+                            // spaceBetween: 4,
+                            pagination: {
+                              el: ".swiper-pagination",
+                              type: "fraction",
+                            },
+                            loop: true,
+                            navigation: {
+                              nextEl: ".brand_banner_sw .swiper-button-next",
+                              prevEl: ".brand_banner_sw .swiper-button-prev",
+                            },
+                            autoplay: {
+                              delay: 2000, // Autoplay delay in milliseconds
+                              disableOnInteraction: false, // Autoplay continues after user interaction
+                            },
+                          });
+                        
+                          // Pause/Play button functionality
+                          $(".brand_banner_sw .swiper-autoplay-button").click(function(){
+                            $(this).toggleClass("paused");
+                            if( $(this).is(".paused") ){
+                              brand_banner_sw.autoplay.stop();
+                            }
+                            else{
+                              brand_banner_sw.autoplay.start();
+                            };
+                          });
+                        </script>
+                      </div>
+                      <!-- //브랜드관 슬라이드 -->
+
                       <!-- Swiper -->
-                      <div class="swiper_wrap">
+                      <div class="swiper_wrap sw">
                         <div class="swiper mySwiper sw_brand_01">
                           <ul class="swiper-wrapper">
                             <li class="swiper-slide">
@@ -5713,7 +5820,7 @@ $(document).on("click", function (event) {
                       </script>                    
                     </div>
 
-                    <div class="inner overflow mt40">
+                    <div class="inner overflow mt40" style="display:none">
                       <!-- banner -->
                       <div class="banner_cont">
                         <!-- Swiper -->

@@ -485,7 +485,7 @@ border-radius: 100%;
 }
 .txt_new{
 	display:inline-block;
-	vertical-align: middle;
+	vertical-align: 1px;
 	text-align:center;
 	border-radius: 50%;
 	background: #FF4949;
@@ -496,6 +496,7 @@ border-radius: 100%;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 17px;
+	margin-right:5px;
 }
 .noti_cont .num{
 	position:relative;
@@ -1249,12 +1250,12 @@ input[type="checkbox"]:checked:after {
 .swiper-button-prev img,
 .swiper-button-next img{width:12px !important;height:auto !important;}
 .swiper_wrap.type01 .swiper-button-prev img,
-.swiper_wrap.type01 .swiper-button-next img{width:16px !important;height:auto !important;vertical-align: -2;}
+.swiper_wrap.type01 .swiper-button-next img{width:16px !important;height:auto !important;vertical-align: -2px;}
 
 
 /* 스와이프 */
-.swiper_wrap.type01 .swiper .swiper-button-next{position:initial;width:16px;height:16px;z-index:1;display:inline-block;}
-.swiper_wrap.type01 .swiper .swiper-button-prev{position:initial;width:16px;height:16px;z-index:1;display:inline-block;}
+.swiper_wrap.type01 .swiper .swiper-button-next{position:initial;width:16px;height:16px;z-index:1;display:inline-block;vertical-align: 1px;}
+.swiper_wrap.type01 .swiper .swiper-button-prev{position:initial;width:16px;height:16px;z-index:1;display:inline-block;vertical-align: 1px;}
 
 .swiper_wrap.type01 .swiper .swiper-button-next:before{display:none;}
 .swiper_wrap.type01 .swiper .swiper-button-prev:before{display:none;}
@@ -1270,9 +1271,9 @@ input[type="checkbox"]:checked:after {
 	font-style: normal;
 	line-height: 12px;
 	width:40px;
-	vertical-align: 1;
+	vertical-align: 3px;
 }
-.swiper_wrap.type01 .swiper .swiper-autoplay-button{display:inline-block;width:16px;height:16px;vertical-align:-2;}
+.swiper_wrap.type01 .swiper .swiper-autoplay-button{display:inline-block;width:16px;height:16px;vertical-align:-1px;}
 .swiper_wrap.type01 .swiper-autoplay-button .pause{display:block;}
 .swiper_wrap.type01 .swiper-autoplay-button .play{display:none;}
 .swiper_wrap.type01 .swiper-autoplay-button.paused .pause{display:none;}
@@ -1410,7 +1411,7 @@ input[type="checkbox"]:checked:after {
 	border: 1px solid #0072BC;
 	background: #0072BC;
 }
-.btn.btn_O{
+.btn.btn_o{
 	color: #FF4949;
 	border: 1px solid #FF4949;
 	background: #FFF;
@@ -1683,7 +1684,7 @@ input[type="checkbox"]:checked:after {
 	position: fixed;
     width: 80px;
     z-index: 1;
-    bottom: 320px;
+    bottom: 100px;
     right: 0;
 }
 .fixed_cont .btn_top{

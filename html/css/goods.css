@@ -447,10 +447,10 @@ h2.event{text-align:center; color:#ff5a63; border-bottom:1px solid #e0e0e0;paddi
 }
 .category_title_area.prod_type .category_title {
 }
-.category_title_area.prod_type .category_title .tit {
+/* .category_title_area.prod_type .category_title .tit {
   width: auto;
   line-height: 24px;
-}
+} */
 .find_product_area .find_product_title {
   font-family: Pretendard;
   font-size: 18px;
