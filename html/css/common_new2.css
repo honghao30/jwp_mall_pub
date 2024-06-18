@@ -356,7 +356,7 @@
 .recommended_cont {margin-top: 16px;}
 .product_swiper .swiper-slide {position: relative;opacity: 0.5;}
 .product_swiper .product_list .products {height:254px;}
-.product_swiper .product_list .products .img_box {height: 160px;}
+.product_swiper .product_list .products .img_box {height: 160px;width:160px;}
 .find_product_area .product_swiper .product_list .edge_tag_box {height: auto !important;}
 .product_swiper .product_list .products .info_box {margin-top: -33px;}
 .find_product_area .product_swiper .product_list {padding-top: 0;}
@@ -622,7 +622,6 @@
 .mypage_order_box .order_button_wrap {display: flex;align-items: center;justify-content: flex-end;gap:8px;}
 .mypage_order_box .order_button_wrap button {width: 160px;}
 
-/* 주거래 약정 */
 /* 주거래 약정 */
 .agreement_wrap {
     margin-top: 72px;
