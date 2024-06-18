@@ -2288,62 +2288,74 @@
 
                             // 탭 클릭 이벤트
                             $(document).ready(function () {
-                              //선택된 항목이 있는지 확인
-                              var $selectItems = $(".tab-menu.filter-option .tab-item.active");
-                              var $nodataMsg = $(".tab-menu.filter-option li.no-select");
-                            
-                              if($selectItems.length === 0 ) {
-                                $(".find_product_area.choice-area .clear-all").addClass("hide");
-                              }
+                                  // 선택된 항목이 있는지 확인
+                                  var $selectItems = $(".tab-menu.filter-option .tab-item.active");
+                                  var $nodataMsg = $(".tab-menu.filter-option li.no-select");
 
-                              $(".tab-menu-type2 .tab-item").click(function () {
-                                var $tabMenu = $(this).closest(".tab-menu-type2");
-                                var index = $(this).index();
-                                var tabText = $(this).text();
+                                  if($selectItems.length === 0) {
+                                      $(".find_product_area.choice-area .clear-all").addClass("hide");
+                                  }
 
-                                // Add active class to clicked tab item and corresponding tab pane
-                                $tabMenu.find(".tab-item").removeClass("active");
-                                $(this).addClass("active");
-                                $tabMenu.siblings(".tab-content").children(".tab-pane").removeClass("active");
-                                $tabMenu.siblings(".tab-content").children(".tab-pane").eq(index).addClass("active");
+                                  $(".tab-menu-type2 .tab-item").click(function () {
+                                      var $tabMenu = $(this).closest(".tab-menu-type2");
+                                      var index = $(this).index();
+                                      var tabText = $(this).text();
 
-                                // choice_product_area에 클릭된 tab-item 추가
-                                var $choiceProductArea = $(".find_product_area.choice-area .tab-menu");                               
+                                      // Add active class to clicked tab item and corresponding tab pane
+                                      // $tabMenu.find(".tab-item").removeClass("active");
+                                      $(this).addClass("active");
+                                      $tabMenu.siblings(".tab-content").children(".tab-pane").removeClass("active");
+                                      $tabMenu.siblings(".tab-content").children(".tab-pane").eq(index).addClass("active");
 
-                                // 동일한 항목이 이미 추가되어 있는지 확인
-                                var existingTab = $choiceProductArea.find(".tab-item:contains('" + tabText + "')");
-                                if (existingTab.length === 0) {
-                                  var $newTabItem = $("<li>").addClass("tab-item active").text(tabText);
-                                  var $removeIcon = $("<span>").addClass("choice-remove");
+                                      // choice_product_area에 클릭된 tab-item 추가
+                                      var $choiceProductArea = $(".find_product_area.choice-area .tab-menu");
 
-                                  $newTabItem.append($removeIcon);
-                                  $choiceProductArea.append($newTabItem);
+                                      // 동일한 항목이 이미 추가되어 있는지 확인
+                                      var existingTab = $choiceProductArea.find(".tab-item:contains('" + tabText + "')");
+                                      if (existingTab.length === 0) {
+                                          var $newTabItem = $("<li>").addClass("tab-item active").text(tabText);
+                                          var $removeIcon = $("<span>").addClass("choice-remove");
 
-                                  $(".find_product_area.choice-area .clear-all").removeClass("hide");
-                                  $nodataMsg.addClass("hide");
+                                          $newTabItem.append($removeIcon);
+                                          $choiceProductArea.append($newTabItem);
 
-                                  // 삭제 아이콘 클릭 이벤트
-                                  $removeIcon.click(function () {
-                                    $(this).parent().remove();
+                                          $(".find_product_area.choice-area .clear-all").removeClass("hide");
+                                          $nodataMsg.addClass("hide");
 
-                                    // 선택된 항목이 없을 때 clear-all 클래스 제거
-                                    if ($choiceProductArea.find(".tab-item").length === 0) {
+                                          // 삭제 아이콘 클릭 이벤트
+                                          $removeIcon.click(function () {
+                                              var removedTabText = $(this).parent().text();
+                                              $(this).parent().remove();
+
+                                              // 원래 탭 메뉴에서 active 클래스 제거
+                                              $(".tab-menu-type2 .tab-item").filter(function() {
+                                                  return $(this).text() === removedTabText;
+                                              }).removeClass("active");
+
+                                              // 선택된 항목이 없을 때 clear-all 클래스 제거
+                                              if ($choiceProductArea.find(".tab-item").length === 0) {
+                                                  $(".find_product_area.choice-area .clear-all").addClass("hide");
+                                                  $nodataMsg.removeClass("hide");
+                                              }
+                                          });
+                                      } else {
+                                          // 이미 있는 항목이면 active 상태로 만들기
+                                          existingTab.addClass("active");
+                                      }
+                                  });
+
+                                  // 전체삭제 클릭 이벤트
+                                  $(".choice-top .clear-all").click(function () {
+                                      var $choiceProductArea = $(".find_product_area.choice-area .tab-menu");
+                                      $choiceProductArea.children().not($nodataMsg).remove();
                                       $(".find_product_area.choice-area .clear-all").addClass("hide");
                                       $nodataMsg.removeClass("hide");
-                                    }
+
+                                      // 모든 탭 항목에서 active 클래스 제거
+                                      $(".tab-menu-type2 .tab-item").removeClass("active");
                                   });
-                                } else {
-                                  // 이미 있는 항목이면 active 상태로 만들기
-                                  existingTab.addClass("active");
-                                }
                               });
-                               // 전체삭제 클릭 이벤트
-                                $(".choice-top .clear-all").click(function () {
-                                  $(".find_product_area.choice-area .tab-menu").children().not($nodataMsg).remove();
-                                  $(".find_product_area.choice-area .clear-all").addClass("hide");
-                                  $nodataMsg.removeClass("hide");
-                                });
-                            });
+
                           </script>  
                           <div class="find_product_area choice-area">
                             <div class="choice-top">

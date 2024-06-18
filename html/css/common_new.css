@@ -1336,8 +1336,8 @@
 .brand_content .swiper-button-prev{left:-30px;margin-top:-70px;}
 .brand_content .swiper-button-next{right:-30px;margin-top:-70px;}
 
-.product_list .swiper-button-prev{left:-30px;margin-top:-70px;}
-.product_list .swiper-button-next{right:-30px;margin-top:-70px;}
+.product_list .swiper-button-prev{left:16px;margin-top:-70px;}
+.product_list .swiper-button-next{right:16px;margin-top:-70px;}
 
 .recommend_cont .swiper-button-prev{left:0;margin-top:-70px;}
 .recommend_cont .swiper-button-next{right:0;margin-top:-70px;}

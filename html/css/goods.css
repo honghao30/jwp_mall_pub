@@ -466,6 +466,7 @@ h2.event{text-align:center; color:#ff5a63; border-bottom:1px solid #e0e0e0;paddi
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #e1e3e9;
+  position: relative;
 }
 .find_product_area.choice-area .choice-top > span {
   font-family: Pretendard;
@@ -487,6 +488,9 @@ h2.event{text-align:center; color:#ff5a63; border-bottom:1px solid #e0e0e0;paddi
   position: relative;
   margin-right: 16px;
 }
+.find_product_area.choice-area .tab-menu[data-target='tab-category'] li  {
+  margin-right: 24px;
+}
 .find_product_area.choice-area .choice-remove {
   width: 16px;
   height: 16px;
@@ -498,4 +502,5 @@ h2.event{text-align:center; color:#ff5a63; border-bottom:1px solid #e0e0e0;paddi
 }
 .find_product_area.choice-area .clear-all {
   color: #717b8a;
+  margin-top:2px;
 }
