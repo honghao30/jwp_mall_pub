@@ -50,100 +50,6 @@
 		url("../font/NotoSansKR-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
-/* Roboto */
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 300;
-	src: local("Roboto-Light"),
-		url("../font/Roboto-Light.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../font/Roboto-Light.woff") format("woff"), /* Modern Browsers */
-		url("../font/Roboto-Light.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 500;
-	src: local("Roboto-Regular"),
-		url("../font/Roboto-Regular.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../font/Roboto-Regular.woff") format("woff"), /* Modern Browsers */
-		url("../font/Roboto-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 600;
-	src: local("Roboto-Medium"),
-		url("../font/Roboto-Medium.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../font/Roboto-Medium.woff") format("woff"), /* Modern Browsers */
-		url("../font/Roboto-Medium.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 700;
-	src: local("Roboto-Bold"),
-		url("../font/Roboto-Bold.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../font/Roboto-Bold.woff") format("woff"), /* Modern Browsers */
-		url("../font/Roboto-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-/* GmarketSans */
-@font-face {
-	font-family: "GmarketSans";
-	font-style: normal;
-	font-weight: 300;
-	src: local("GmarketSansTTFLight"),
-		url("../font/GmarketSansTTFLight.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../font/GmarketSansTTFLight.woff") format("woff"), /* Modern Browsers */
-		url("../font/GmarketSansTTFLight.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-@font-face {
-	font-family: "GmarketSans";
-	font-style: normal;
-	font-weight: 400;
-	src: local("GmarketSansTTFMedium"),
-		url("../font/GmarketSansTTFMedium.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../font/GmarketSansTTFMedium.woff") format("woff"), /* Modern Browsers */
-		url("../font/GmarketSansTTFMedium.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-@font-face {
-	font-family: "GmarketSans";
-	font-style: normal;
-	font-weight: 700;
-	src: local("GmarketSansTTFBold"),
-		url("../font/GmarketSansTTFBold.ttf") format("woff2"), /* Super Modern Browsers */
-		url("../font/GmarketSansTTFBold.woff") format("woff"), /* Modern Browsers */
-		url("../font/GmarketSansTTFBold.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-
-/* Pretendard */
-@font-face {
-	font-family: "Pretendard";
-	font-style: normal;
-	font-weight: 300;
-	src: local("Pretendard-Light"),
-		url("../font/Pretendard-Light.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../font/Pretendard-Light.woff") format("woff"), /* Modern Browsers */
-		url("../font/Pretendard-Light.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-@font-face {
-	font-family: "Pretendard";
-	font-style: normal;
-	font-weight: 500;
-	src: local("Pretendard-Light"),
-		url("../font/Pretendard-Regular.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../font/Pretendard-Regular.woff") format("woff"), /* Modern Browsers */
-		url("../font/Pretendard-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-@font-face {
-	font-family: "Pretendard";
-	font-style: normal;
-	font-weight: 600;
-	src: local("Pretendard-SemiBold"),
-		url("../font/Pretendard-SemiBold.woff2") format("woff2"), /* Super Modern Browsers */
-		url("../font/Pretendard-SemiBold.woff") format("woff"), /* Modern Browsers */
-		url("../font/Pretendard-SemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
-}
 /* Montserrat */
 @font-face {
 	font-family: "Montserrat";
@@ -173,7 +79,7 @@
 		url("../font/Montserrat-SemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
-body { min-height: 100%; color: #333; font-size:16px; font-family: 'Pretendard', 'NotoSans', 'Malgun Gothic', '돋움', 'Dotum', Arial, Sans-serif; letter-spacing: -0.5px; word-break: break-all; word-wrap: break-word; }
+body { min-height: 100%; color: #333; font-size:16px; font-family: 'NotoSans', 'Malgun Gothic', '돋움', 'Dotum', Arial, Sans-serif; letter-spacing: -0.5px; word-break: break-all; word-wrap: break-word; }
 
 /* margin-top */
 .mt-1 {margin-top: -1px !important;}
@@ -590,7 +496,6 @@ border-radius: 100%;
     box-sizing: border-box;
     z-index: 2;
 	color: #0072BC;
-    font-family: 'GmarketSans';
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 15px;
@@ -599,7 +504,6 @@ border-radius: 100%;
 .searchlayer .recent ul li a {
     display: inline-block;
 	color: #717B8A;
-    font-family: 'GmarketSans';
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: -0.56px;
@@ -659,7 +563,6 @@ border-radius: 100%;
 #left .name h2 {
     padding: 18px 15px 15px;
 	color: #717B8A;
-	font-family: 'GmarketSans';
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 18px;
@@ -667,42 +570,39 @@ border-radius: 100%;
 }
 #left .name h2 span{
 	color: #222;
-	font-family: 'GmarketSans';
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 18px;
 	letter-spacing: -0.72px;
 }
-#left .categorybox h3 {
+.categorybox h3 {
     height: 53px;
     padding: 17px 15px 0;
     border-bottom: 1px solid #059ad9;
     box-sizing: border-box;
 	color: #0072BC;
-	font-family: 'GmarketSans';
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 15px;
     letter-spacing: -1.28px;
 }
-#left .categorybox ul .depth1 ul {
+.categorybox ul .depth1 ul {
     display: none;
     padding: 11px 15px 11px 20px;
     border-top: 1px solid #e8e8e8;
     background: #f9f9fb;
 } 
-#left .categorybox ul .depth1 ul li {
+.categorybox ul .depth1 ul li {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     line-height: 35px;
 	color: #222;
-	font-family: 'GmarketSans';
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: -0.56px;
 }
-#left .categorybox ul .depth1 button {
+.categorybox ul .depth1 button {
     position: relative;
     display: block;
     width: 100%;
@@ -710,14 +610,13 @@ border-radius: 100%;
     padding: 0 15px;
     box-sizing: border-box;
     color: #222;
-	font-family: 'GmarketSans';
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 14px;
 	letter-spacing: -0.56px;
 }
-#left .categorybox ul .depth1 button a{
+.categorybox ul .depth1 button a{
 	display: block;
     width: 90%;
     height: 40px;
@@ -738,7 +637,6 @@ border-radius: 100%;
     text-align: center;
     color: #000;
     background: #fff;
-	font-family: 'GmarketSans';
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 14px;
@@ -766,7 +664,6 @@ border-radius: 100%;
     text-align: center;
     color: #000;
     background: #fff;
-	font-family: 'GmarketSans';
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 14px;
@@ -1813,6 +1710,8 @@ input[type="checkbox"]:checked:after {
 	top:0;
 	left:50%;
 	width:100%;
+	height:100%;
+	overflow:auto;
 }
 .categorybox .list li>ul a{
 	color:#000;
@@ -1820,6 +1719,176 @@ input[type="checkbox"]:checked:after {
 	background-size:16px auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+#gnb_menu {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 59px);
+    min-height: auto !important;
+    background: #fff;
+    z-index: 101;
+    -webkit-transition: left 0.2s;
+    -moz-transition: left 0.2s;
+    transition: left 0.2s;
+    -webkit-overflow-scrolling: touch;
+}
+
+#gnb_menu .name {
+    position: relative;
+    border-bottom: 1px solid #e8e8e8;
+}
+#gnb_menu .name .close {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    width: 32px;
+    height: 53px;
+    font-size: 0;
+    text-indent: -9999em;
+}
+#gnb_menu .name h2 {
+    padding: 18px 15px 15px;
+	color: #717B8A;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+	letter-spacing: -0.72px;
+}
+#gnb_menu .name h2 span{
+	color: #222;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+	letter-spacing: -0.72px;
+}
+#gnb_menu .categorybox h3 {
+    height: 53px;
+    padding: 17px 15px 0;
+    border-bottom: 1px solid #059ad9;
+    box-sizing: border-box;
+	color: #0072BC;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 15px;
+    letter-spacing: -1.28px;
+}
+#gnb_menu .categorybox ul .depth1 ul {
+    display: none;
+    padding: 11px 15px 11px 20px;
+    border-top: 1px solid #e8e8e8;
+    background: #f9f9fb;
+} 
+#gnb_menu .categorybox ul .depth1 ul li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 35px;
+	color: #222;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: -0.56px;
+}
+#gnb_menu .categorybox ul .depth1 button {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 54px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    color: #222;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 14px;
+	letter-spacing: -0.56px;
+}
+#gnb_menu .categorybox ul .depth1 button a{
+	display: block;
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+}
+body.leftmode2 {
+    height: 100vh;
+}
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.layer_space{height: calc(100% - 59px) !important;}
 
 /* 영업담당자, 고객센터 */
 .info_cont{
@@ -1839,7 +1908,6 @@ input[type="checkbox"]:checked:after {
 }
 .info_cont .gray_box .name{
     color: #222;
-    font-family: 'GmarketSans';
     font-size: 14px;
     font-weight: 500;
 }
@@ -1859,7 +1927,6 @@ input[type="checkbox"]:checked:after {
     padding-top:20px;
     position:relative;
     color: #222;
-    font-family: 'GmarketSans';
     font-size: 20px;
     font-weight: 500;
 }
@@ -2620,6 +2687,7 @@ input[type="radio"] {
 .tag_box2.selected .btn_remove_x {width: 16px;height:16px;background: url('../img/ico/ico_del_box32.png') no-repeat center;background-size: 16px auto;position: absolute;right:0;top:0;}
 
 
+.product_detail_wrap .img_box{}
 
 
 /*  */

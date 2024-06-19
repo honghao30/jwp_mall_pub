@@ -1160,7 +1160,7 @@
                     <button type="button" class="btn_go_back">
                         <span class="ir-text">뒤로가기</span>
                     </button>
-                    <div class="cate_tit_top">상품 상세정보</div>
+                    <div class="cate_tit_top">예치금 구매</div>
                 </div>
                 <div class="top_header_right">
                     <button type="button" class="btn_search_top" onclick="searchLayer(this);">
@@ -1173,16 +1173,6 @@
                 </div>
 			</div>
 			<!--// 메인리뉴얼 - 수정 -->
-
-            <div class="gnbmenu touchscrollwrap">
-                <ul>
-                    <li class="bar"><a href="https://m.jwpmall.co.kr/mw/goods/search.do?sword=%EB%B9%84%EA%B8%89%EC%97%AC" target="">영양수액(비급여)</a></li class="bar">
-                    <li class="bar"><a href="https://m.jwpmall.co.kr/mw/goods/category.do?cate=1637" target="">철분주사제</a></li class="bar">
-                    <li class="bar"><a href="https://m.jwpmall.co.kr/mw/event/special.do?idx=331" target="">체스트메이트</a></li class="bar">
-                    <li class="bar"><a href="https://m.jwpmall.co.kr/mw/goods/search.do?sword=%EC%9C%84%EB%84%88%ED%94%84" target="">위너프페리</a></li>
-                    <li><a href="https://m.jwpmall.co.kr/mw/goods/category.do?cate=1638" target="">일반수액(급여)</a></li>
-                </ul>
-            </div>
         </header>
 		<!--// 메인리뉴얼 - 수정 -->
 
@@ -1466,391 +1456,442 @@
         <!-- content_wrap -->
         <div class="content_wrap">  
             <!-- html 마크업 -->
-            <div class="product_detail_wrap">
-                <div class="product_slider_wrap">
-                    <div class="swiper_wrap img_box">
-                        <div class="tag_box">
-                            <span><img src="img/badge/badge_best.png" alt=""></span>
-                            <span><img src="img/badge/badge_md.png" alt=""></span>
-                            <span><img src="img/badge/badge_new1.png" alt=""></span>
+            <div class="balance_area">
+                <!-- Swiper -->
+                <div class="swiper_wrap type01">
+                    <div class="swiper category_banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><img src="img/banner/banner_mid_02.png" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/banner/banner_mid_02.png" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/banner/banner_mid_02.png" alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/banner/banner_mid_02.png" alt=""></a></div>
                         </div>
-                        <!-- <div class="badge_area">
-                            <span class="badge badge_best">베스트</span>
-                            <span class="badge badge_md">MD추천</span>
-                            <span class="badge badge_new_prod">신상품</span>
-                        </div>                         -->
-                        <div class="swiper mySwiper goods_imgs">
-                            <div class="swiper-wrapper soldout">
-                                <div class="swiper-slide img_box no_radius">
-                                    <a href="#"><img src="./img/sample/product_sample_img.png" alt=""></a>
-                                    <div class="tag_box">
-                                        <span><img src="img/badge/badge_best.png" alt=""></span>
-                                        <span><img src="img/badge/badge_md.png" alt=""></span>
-                                        <span><img src="img/badge/badge_new1.png" alt=""></span>
-                                    </div>
-                                    <div class="wish_box">
-                                        <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/sample/product_sample_img.png" alt=""></a>
-                                    <div class="tag_box">
-                                        <span><img src="img/badge/badge_best.png" alt=""></span>
-                                        <span><img src="img/badge/badge_md.png" alt=""></span>
-                                        <span><img src="img/badge/badge_new1.png" alt=""></span>
-                                    </div>
-                                    <div class="wish_box">
-                                        <a href="#" class="link_wish"><span class="hidden">관심상품</span></a>
-                                    </div>
-                                </div>
+                        <div class="control_box">
+                            <div class="swiper-pagination type01"></div>
+                            <div class="swiper-pagination type01" style="display:none"></div>
+                            <!-- <div class="swiper-button-prev"><img src="img/common/btn_left.png" alt=""></div>
+                            <div class="swiper-button-next"><img src="img/common/btn_right.png" alt=""></div> -->
+                            <div class="swiper-autoplay-button">
+                                <img src="img/common/btn_pause.png" alt="" class="pause">
+                                <img src="img/common/btn_play.png" alt="" class="play">
                             </div>
-                            <div class="swiper_control_box">
-                                <div class="pagination"></div>
-                            </div>
-                        </div>
-                        <script>
-                            var medical_banner_01 = new Swiper(".goods_imgs.swiper", {
-                                slidesPerView: 1,
-                                slidesPerGroup: 1,
-                                // spaceBetween: 4,
-                                pagination: {
-                                    el: ".swiper_control_box .pagination",
-                                    type: "fraction",
-                                },
-                                loop: true,
-                                navigation: {
-                                    nextEl: ".goods_imgs .button-next",
-                                    prevEl: ".goods_imgs .button-prev",
-                                },
-                                // autoplay: {
-                                // delay: 2000, // Autoplay delay in milliseconds
-                                // disableOnInteraction: false, // Autoplay continues after user interaction
-                                // },
-                            });
-                            </script>                          
-                    </div>
-                    <!-- 상품 슬라이드 -->
-                    <div class="product_information_area">
-                        <div class="product_information_title flex_between">
-                            <div class="product_name_area">
-                                <p class="cate">
-                                    <span><a href="#">GMC건강</a></span>
-                                </p>
-                                <p class="name">마이코드 비타민C골드 60포 (1개월분)</p>
-                            </div>
-                            <button type="button" class="btnwish active"><span class="ir-text">wish</span></button>
-                        </div>
-    
-                        <div class="product_price_area flex_start">
-                            <div class="sale_percent">23%</div>
-                            <div class="price">                                
-                                <div class="new_price"><span>23,000</span>원</div>
-                                <div class="origin_price"><span>23,000</span>원</div>
-                            </div>
-                            <!-- <div class="sold_out_text">품절</div> -->
-                        </div>
-    
-                        <div class="product_information_list">
-                            <ul>
-                                <li>제조사 : JW중외제약</li>
-                                <li>품목코드 : G0000132419</li>
-                                <li>포장단위 : BOX</li>
-                                <li>규격/단위 : 2MLX1V/BOX/160EA</li>
-                                <li>최소 주문수량 : 1개 / 최대 주문수량 : 1,000개</li>
-                            </ul>
-                        </div>
-    
-                        <div class="product_order_table">
-                            <table>
-                                <colgroup>
-                                    <col width="88" />
-                                    <col width="" />
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">이벤트/기획전
-                                            <a href="#" class="btn_text_arrow_right">자세히 보기</a>
-                                        </th>
-                                        <td>
-                                            <p>인기상품을 특가로 만나보세요!</p>
-                                            <p>묶음상품 할인전</p>
-                                            <p>타임세일 3차 2024-05-01</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">수량할인</th>
-                                        <td>
-                                            <p>10개 이상 구매 시 개당 할인<br>
-                                                <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong>
-                                            </p>
-                                            <p>20개 이상 구매 시 개당 할인<br>
-                                                <span class="sale">3%</span> <strong class="price"><span>35,800</span>원</strong>
-                                            </p>                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">배송정보</th>
-                                        <td>
-                                            <p>
-                                                도착예정 시간은 영업일 기준으로, <br>
-                                                토/일요일, 공휴일, 전사휴무 제외입니다.                                                
-                                            </p>
-                                            <p>
-                                                최소주문 금액<br>
-                                                30,000원 이상 구매 시 무료배송                                                
-                                            </p>
-                                            <p>
-                                                배송방법 : 택배배송 (롯데택배)
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <!-- <tr>
-                                        <th scope="row">수량</th>
-                                        <td>
-                                          <div class="count_controller_wrap">
-                                            <div class="count_controller">
-                                              <button type="button" class="btn_minus"></button>
-                                              <input type="text" title="구매수량" value="1" id="quantityInput">
-                                              <button type="button" class="btn_plus"></button>                            
-                                            </div>
-                                            <div class="order_cout_text">주문단위 : 50개</div> 
-                                          </div>                                        
-                                        </td>
-                                    </tr>                                                                                                                               -->
-                                </tbody>
-                            </table>
-                        </div>
-    
-                        <!-- <div class="order_button_wrap flex_between">
-                          <button type="button" class="btn_blue_line">재입고 알림 신청</button>
-                          <button type="button" class="btn_blue_line">재입고 알림 헤제</button>
-                          <button type="button" class="btn_blue_line">장바구니</button>
-                          <button type="button" class="btn_blue">바로구매</button>
-                        </div> -->
-                    </div>
-                    <!-- //상품 정보 -->
-                    <!-- 상품 기본 정보 -->
-                    <div class="product_detail_info">
-                        <div class="product_detail_tab_menu flex_justfy">
-                            <button type="button" go="detail_basic" class="active" onclick="detailtab(this)">상품 기본정보</button>
-                            <button type="button" go="detail_detail" onclick="detailtab(this)">상품설명</button>
-                            <button type="button" go="detail_delivery" onclick="detailtab(this)">배송정보</button>
-                            <button type="button" go="detail_retun" onclick="detailtab(this)">교환/환불정보</button>
-                        </div>
-                        <div class="tab-content">
-                            <div class="product_detail_tab_cont active" id="detail_basic">
-                                <div class="mo_tit_ft15">상품 기본정보</div>
-                                <div class="product_table_wrap">
-                                <table>
-                                    <colgroup>
-                                        <col width="35%" />
-                                        <col width="" />
-                                    </colgroup>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row">제품구분</th>
-                                        <td>전문</td>                                           
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">규격</th>
-                                        <td></td>                                             
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">제품명</th>
-                                        <td>상공 탈지면(절단솜) 20g 1EA</td>                   
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">포장단위</th>
-                                        <td></td>                   
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">단위</th>
-                                        <td >1EA</td>                     
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">부가세</th>
-                                        <td>과세상품</td>                      
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">낱알수량</th>
-                                        <td></td>                    
-                                    </tr>   
-                                    <tr>
-                                        <th scope="row">대표코드</th>
-                                        <td></td>                                      
-                                    </tr>                                                                                                           
-                                    </tbody>
-                                </table>
-                                </div>
-                                <div class="mo_tit_ft15">의약품 상세정보</div>
-                                <div class="product_table_wrap">
-                                <table>
-                                    <colgroup>
-                                        <col width="35%" />
-                                        <col width="" />
-                                    </colgroup>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row">제품명(영문)</th>
-                                        <td>Livalo Tab. 1mg</td>                                           
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">표준코드</th>
-                                        <td>-</td>                                          
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">식약처 품목코드</th>
-                                        <td>-</td>                                          
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">보험급여코드</th>
-                                        <td>-</td>                                         
-                                    </tr>     
-                                    <tr>
-                                        <th scope="row">성분</th>
-                                        <td>-</td>                                           
-                                    </tr>                 
-                                    <tr>
-                                        <th scope="row">성분함량</th>
-                                        <td >-</td>                     
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">KPCI 약효분류</th>
-                                        <td>-</td>                      
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">ATC코드</th>
-                                        <td>-</td>                      
-                                    </tr>                                                                                                            
-                                    </tbody>
-                                </table>
-                                </div>                
-                                <div class="mo_tit_ft15">보험약가 정보</div>
-                                <div class="product_table_wrap">
-                                <table>
-                                    <colgroup>
-                                        <col width="35%" />
-                                        <col width="" />
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">보험코드</th>
-                                            <td>-</td>                      
-                                        </tr>   
-                                        <tr>
-                                            <th scope="row">시행일자</th>
-                                            <td>-</td>                      
-                                        </tr>   
-                                        <tr>
-                                            <th scope="row">급여구분</th>
-                                            <td>-</td>                      
-                                        </tr>   
-                                        <tr>
-                                            <th scope="row">변경가</th>
-                                            <td>-</td>                      
-                                        </tr>                                                                                                                           
-                                    </tbody>
-                                </table>
-                                </div>                 
-                                <div class="mo_tit_ft15">의약품 기타 정보</div>                
-                                <div class="product_table_wrap">
-                                <table>
-                                    <colgroup>
-                                    <col width="35%" />
-                                    <col width="" />
-                                    </colgroup>
-                                    <tbody>                                          
-                                    <tr>
-                                        <th scope="row">효능/효과</th>
-                                        <td>-</td>                     
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">용법/용량</th>
-                                        <td>-</td>                      
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">사용상 주의사항</th>
-                                        <td>-</td>                      
-                                    </tr>                                                                                                            
-                                    </tbody>
-                                </table>
-                                </div>                  
-                                <div class="mo_tit_ft15">상품정보고시</div>
-                                <div class="product_table_wrap">
-                                <table>
-                                    <colgroup>
-                                    <col width="35%" />
-                                    <col width="" />
-                                    </colgroup>
-                                    <tbody>                                          
-                                    <tr>
-                                        <th scope="row">항목1</th>
-                                        <td>-</td>                     
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">항목2</th>
-                                        <td>-</td>                      
-                                    </tr>                                                                                                            
-                                    </tbody>
-                                </table>
-                                </div>                  
-                            </div>
-                            <!-- 상품 기본 정보 -->
-                            <div class="product_detail_tab_cont" id="detail_detail">
-                                상품설명
-                            </div>
-                            <div class="product_detail_tab_cont" id="detail_delivery">
-                                배송정보
-                            </div>  
-                            <div class="product_detail_tab_cont" id="detail_retun">
-                                교환/환불정보
-                            </div>                                 
                         </div>
                     </div>
-                    <script>
-                        function detailtab(target){
-                            var id = $(target).attr('go');
-                            $('.product_detail_info .product_detail_tab_menu button').removeClass('active');
-                            $('.product_detail_info .product_detail_tab_cont').removeClass('active');
-                            $(target).addClass('active');
-                            $('#'+id).addClass('active');
-                        }
-                    </script>
-                    
-                    <!-- <div class="order_button_wrap flex_justfy">                        
-                        <button type="button" class="btn_blue">확인</button>
-                    </div> -->
-
-                    <div class="order_floating_bottom">
-                        <div class="order_util_area">
-                            <div class="store_name"><span>입점사명 : JW중외제약</span> <span>재고 99개</span></div>
-                            <div class="order_counter_control">
-                                <div class="count_controller_wrap">
-                                    <div class="count_controller">
-                                        <button type="button" class="btn_minus"></button>
-                                        <input type="text" title="구매수량" value="1" id="quantityInput">
-                                        <button type="button" class="btn_plus"></button>                            
-                                    </div>
-                                </div>
-                                <div class="total_price">
-                                    <strong>1,586,000</strong> 원
-                                </div>
-                            </div>
-                            <div class="order_cout_text mt10">주문단위 : 10개</div> 
-                            <!-- <div class="shortage_message">
-                                주문불가 <strong class="price"><span>-90,705</span> 원</strong> 부족
-                            </div>    -->
-                        </div>
-                        <div class="order_button_wrap flex_justfy">
-                            <button type="button" class="btn_blue_line">장바구니</button>
-                            <button type="button" class="btn_blue">바로구매</button>
-                        </div>
-                    </div>                    
-
-
                 </div>
-
+                <script>
+                    var category_banner = new Swiper(".category_banner.swiper", {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    spaceBetween: 4,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                    loop: true,
+                    navigation: {
+                        nextEl: ".category_banner .swiper-button-next",
+                        prevEl: ".category_banner .swiper-button-prev",
+                    },
+                    autoplay: {
+                        delay: 2000, // Autoplay delay in milliseconds
+                        disableOnInteraction: false, // Autoplay continues after user interaction
+                    },
+                    });
+                
+                    // Pause/Play button functionality
+                    $(".category_banner .swiper-autoplay-button").click(function(){
+                    $(this).toggleClass("paused");
+                    if( $(this).is(".paused") ){
+                        category_banner.autoplay.stop();
+                    }
+                    else{
+                        category_banner.autoplay.start();
+                    };
+                    });
+                </script>
+                <div class="inner">
+                    <div class="tit_cont">
+                        <strong class="m_tit">구매금액 선택</strong>
+                        <p class="m_txt">예치금은 1,000원 단위로<br>
+                            1만원 ~ 1,000만원까지 구매가 가능합니다.</p>
+                    </div>
+                    <ul class="balance_list">
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>1</strong><span>만원</span></p>
+                            </div> 
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>3</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>5</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>10</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>20</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>30</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>50</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>100</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>150</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>200</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>300</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="radio" name="product">
+                            <div>
+                                <span class="tit">예치금</span>
+                                <p class="txt"><strong>500</strong><span>만원</span></p>
+                            </div>
+                            </label>
+                        </li>
+                    </ul>
+                    
+                    <!-- 결제수단 -->
+                    <div class="pay_cont">
+                        <div class="tit_cont">
+                            <strong class="m_tit">결제수단</strong>
+                            <label class="checkbox txt right">
+                            <input type="checkbox" class="type03">
+                                결제방법 저장
+                            </label>
+                        </div>
+                        <ul class="pay_list">
+                            <li class="ico_pay_naver">
+                                <label>
+                                    <input type="radio" name="pay">
+                                    <div>
+                                    <span>네이버페이</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="ico_pay_kakao">
+                                <label>
+                                    <input type="radio" name="pay">
+                                    <div>
+                                    <span>카카오페이</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="ico_pay_sspay">
+                                <label>
+                                    <input type="radio" name="pay">
+                                    <div>
+                                    <span>삼성페이</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="ico_pay_payco">
+                                <label>
+                                    <input type="radio" name="pay">
+                                    <div>
+                                    <span>페이코</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="ico_pay_simple">
+                                <label>
+                                    <input type="radio" name="pay">
+                                    <div>
+                                    <span>간편결제</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="ico_pay_card">
+                                <label>
+                                    <input type="radio" name="pay">
+                                    <div>
+                                    <span>신용카드</span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- 유의사항 -->
+                    <div class="warning_cont">
+                        <span class="tit">유의사항</span>
+                        <ul class="list">
+                            <li>예치금은 결제완료 이후 취소가 불가능하며, 예치금의 현금 전환은 불가능합니다.</li>
+                            <li>예치금은 결제완료 즉시 적립되며, 바로 사용이 가능합니다</li>
+                            <li>예치금은 ‘마이페이지 > 예치금 내역’에서 확인이 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+            <div class="order_floating_bottom">
+                <div class="order_util_area">
+                    <button class="btn_arrow"></button>
+                    <div class="info_detail">
+                        <dl>
+                          <dt>보유 예치금</dt>
+                          <dd><strong class="">0</strong> 원</dd>
+                        </dl>
+                        <dl>
+                          <dt>구매 예치금</dt>
+                          <dd><strong class="">10,000</strong> 원</dd>
+                        </dl>
+                        <dl>
+                          <dt>즉시할인 금액</dt>
+                          <dd><strong class="colorR">-10,000</strong> 원</dd>
+                        </dl>
+                        <dl>
+                          <dt>구매 후 예치금</dt>
+                          <dd><strong class="">10,000</strong> 원</dd>
+                        </dl>
+                    </div>
+                    <div class="order_counter_control">
+                        <div class="txt">최종 결제 금액</div>
+                        <div class="total_price">
+                            <strong>1,586,000</strong> 원
+                        </div>
+                    </div>
+                </div>
+                <div class="order_button_wrap flex_justfy">
+                    <button type="button" class="btn_blue">예치금 구매하기</button>
+                </div>
+            </div>
+            
+            <!-- 필터 모달 -->
+            <section class="modal_new modal_overlay" id="">
+                <div class="filter-layer active layer_wrap">
+                    <div class="inner_cont">
+                        <div class="filter_layer_title">
+                            <strong class="colorB">JW중외제약</strong>님
+                        </div>
+                        <div class="filter_store_result">
+                            <div class="categorybox">
+                                <h3>전문의약품</h3>
+                                <ul class="list">
+                                    <li>
+                                        <a href="#none" class="active">영양수액</a>
+                                        <ul>
+                                            <li><a href="#none">전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">일반수액</a>
+                                        <ul>
+                                            <li><a href="#none">일반수액 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">주사제</a>
+                                        <ul>
+                                            <li><a href="#none">주사제 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">백신/생물학적제제</a>
+                                        <ul>
+                                            <li><a href="#none">백신 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">경구의약품</a>
+                                        <ul>
+                                            <li><a href="#none">경구의약품 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">대사의약품</a>
+                                        <ul>
+                                            <li><a href="#none">대사의약품 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">항정신성</a>
+                                        <ul>
+                                            <li><a href="#none">항정신성 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">외용제</a>
+                                        <ul>
+                                            <li><a href="#none">외용제 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">성형/미용</a>
+                                        <ul>
+                                            <li><a href="#none">성형 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">진단키트/용약</a>
+                                        <ul>
+                                            <li><a href="#none">진단키트 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#none">기타</a>
+                                        <ul>
+                                            <li><a href="#none">기타 전체보기</a></li>
+                                            <li><a href="#none">비급여</a></li>
+                                            <li><a href="#none">급여</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- Swiper -->
+                                <div class="swiper_wrap type01">
+                                    <div class="swiper category_banner">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><a href="#"><img src="img/banner/banner_mid_02.png" alt=""></a></div>
+                                            <div class="swiper-slide"><a href="#"><img src="img/banner/banner_mid_02.png" alt=""></a></div>
+                                            <div class="swiper-slide"><a href="#"><img src="img/banner/banner_mid_02.png" alt=""></a></div>
+                                            <div class="swiper-slide"><a href="#"><img src="img/banner/banner_mid_02.png" alt=""></a></div>
+                                        </div>
+                                        <div class="control_box">
+                                            <div class="swiper-pagination type01"></div>
+                                            <div class="swiper-pagination type01" style="display:none"></div>
+                                            <!-- <div class="swiper-button-prev"><img src="img/common/btn_left.png" alt=""></div>
+                                            <div class="swiper-button-next"><img src="img/common/btn_right.png" alt=""></div> -->
+                                            <div class="swiper-autoplay-button">
+                                                <img src="img/common/btn_pause.png" alt="" class="pause">
+                                                <img src="img/common/btn_play.png" alt="" class="play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    var category_banner = new Swiper(".category_banner.swiper", {
+                                    slidesPerView: 1,
+                                    slidesPerGroup: 1,
+                                    spaceBetween: 4,
+                                    pagination: {
+                                        el: ".swiper-pagination",
+                                        type: "fraction",
+                                    },
+                                    loop: true,
+                                    navigation: {
+                                        nextEl: ".category_banner .swiper-button-next",
+                                        prevEl: ".category_banner .swiper-button-prev",
+                                    },
+                                    autoplay: {
+                                        delay: 2000, // Autoplay delay in milliseconds
+                                        disableOnInteraction: false, // Autoplay continues after user interaction
+                                    },
+                                    });
+                                
+                                    // Pause/Play button functionality
+                                    $(".category_banner .swiper-autoplay-button").click(function(){
+                                    $(this).toggleClass("paused");
+                                    if( $(this).is(".paused") ){
+                                        category_banner.autoplay.stop();
+                                    }
+                                    else{
+                                        category_banner.autoplay.start();
+                                    };
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <button type="button" class="btn_close" onclick="modalControl('c')">
+                            <span class="ir-text">닫기</span>
+                        </button>
+                    </div>         
+                </div>
+            </section>
             <!-- //html 마크업 -->
         </div>
 
@@ -1862,47 +1903,47 @@
 <!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  -->
 <!-- //컨텐츠 마크업 하는곳 -->
 
-    <footer id="footer" class="footer_cont">
-        <!-- 고객센터 -->
-        <div class="user_cont">
-            <p class="txt">고객센터</p>
-            <p class="tel_cont"><a href="tel:02-840-6907"><strong>02-840-6907</strong></a>(유료)</p>
-            <p class="time_cont">
-            평일 <span class="time">09:00 ~ 1800</span><br>
-            점심시간 <span class="time">12:00 ~ 13:00</span><br>
-            <span class="colorGray">토, 일, 공휴일 휴무</span>
-            </p>
-        </div>
-        <div class="menu_cont top_line">
+<footer id="footer" class="footer_cont">
+    <!-- 고객센터 -->
+    <div class="user_cont">
+        <p class="txt">고객센터</p>
+        <p class="tel_cont"><a href="tel:02-840-6907"><strong>02-840-6907</strong></a>(유료)</p>
+        <p class="time_cont">
+           평일 <span class="time">09:00 ~ 1800</span><br>
+           점심시간 <span class="time">12:00 ~ 13:00</span><br>
+           <span class="colorGray">토, 일, 공휴일 휴무</span>
+        </p>
+    </div>
+    <div class="menu_cont top_line">
+        <ul>
+            <li class="bar"><a href="#none">회사소개</a></li>
+            <li class="bar"><a href="#none">이용안내</a></li>
+            <li class="bar"><a href="#none">배송/결제안내</a></li>
+            <li class="bar"><a href="#none">1:1문의</a></li>
+            <li class="bar"><a href="#none">이용약관</a></li>
+            <li class="bar"><a href="#none" class="colorG">개인정보처리방침</a></li>
+            <li class="bar"><a href="#none">FAQ</a></li>
+            <li><a href="#none">공지사항</a></li>
+        </ul>
+    </div>
+    <div class="address_cont top_line">
+        <a href="#none"><img src="imgs/global/footerlogo.png" alt="jw 중외제약"></a>
+        <div class="info">
             <ul>
-                <li class="bar"><a href="#none">회사소개</a></li>
-                <li class="bar"><a href="#none">이용안내</a></li>
-                <li class="bar"><a href="#none">배송/결제안내</a></li>
-                <li class="bar"><a href="#none">1:1문의</a></li>
-                <li class="bar"><a href="#none">이용약관</a></li>
-                <li class="bar"><a href="#none" class="colorG">개인정보처리방침</a></li>
-                <li class="bar"><a href="#none">FAQ</a></li>
-                <li><a href="#none">공지사항</a></li>
+                <li class="bar">대표자명 : 신영섭</li>
+                <li class="bar"><a href="tel:028406907">TEL : 02-840-6907</a></li>
+                <li>사업자등록번호 : 118-81-02477</li>
             </ul>
+            <address>주소 : (13840) 경기도 과천시 과천대로7길 38 (갈현동) JW과천사옥</address>
+            <p>통신판매업신고 : 제2012-서울서초-1380호</p>
+            <ul>
+                <li class="bar">건강식품판매신고 : 동작 제00008호</li>
+                <li>의료기기판매업신고 : 동작 제166호</li>
+            </ul>
+            <p class="copylight">ⓒ 2020 JW중외제약 All rights reserved.</p>
         </div>
-        <div class="address_cont top_line">
-            <a href="#none"><img src="imgs/global/footerlogo.png" alt="jw 중외제약"></a>
-            <div class="info">
-                <ul>
-                    <li class="bar">대표자명 : 신영섭</li>
-                    <li class="bar"><a href="tel:028406907">TEL : 02-840-6907</a></li>
-                    <li>사업자등록번호 : 118-81-02477</li>
-                </ul>
-                <address>주소 : (13840) 경기도 과천시 과천대로7길 38 (갈현동) JW과천사옥</address>
-                <p>통신판매업신고 : 제2012-서울서초-1380호</p>
-                <ul>
-                    <li class="bar">건강식품판매신고 : 동작 제00008호</li>
-                    <li>의료기기판매업신고 : 동작 제166호</li>
-                </ul>
-                <p class="copylight">ⓒ 2020 JW중외제약 All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
     </wrap><!-- //wrap -->
     <!-- <a href="#header" id="top">맨위로</a> -->
     <script type="text/javascript" src="js/common.js"></script>

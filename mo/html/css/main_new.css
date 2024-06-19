@@ -297,7 +297,6 @@
     bottom:0;
     left:0;
     color: #32B6BD;
-    font-family: 'GmarketSans';
     font-size: 14x;
     font-weight: 400;
     line-height: 18px;
@@ -314,7 +313,6 @@
     display:block;
     margin-top:5px;
     color: #FF4949;
-    font-family: 'GmarketSans';
     font-size: 13px;
     font-weight: 500;
 }
@@ -348,7 +346,6 @@
 }
 .find_product_cont .find_title span{
     color: #092D74;
-    font-family: 'GmarketSans';
     font-size: 18px;
     line-height:28px;
     font-weight: 500;    
@@ -367,7 +364,6 @@
 .find_product_cont .location_cont .location li{
     float:left;
     color: #222;
-    font-family: 'GmarketSans';
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -436,12 +432,10 @@
     line-height:43px;
     letter-spacing: -0.52px;
     color: #AEB7C6;
-    font-family: 'GmarketSans';
     display:block;
 }
 .find_product_cont .category_list>ul>li.on a{
     color:#0072BC;
-    font-family: 'GmarketSans';
 }
 
 /* 추천상품 */
@@ -455,7 +449,6 @@
     display:table-cell;
     text-align:center;
     color:#717B8A;
-    font-family: 'GmarketSans';
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
@@ -533,12 +526,11 @@
     padding: 0 16px;
     color: #717B8A;
     text-align: center;
-    /* font-family: 'GmarketSans'; */
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -0.52px;
 
-    border: 1px solid #F2F5FA;
+    /* border: 1px solid #F2F5FA; */
     background:#fff;    
 }
 .tab-group.type03 .tab-menu .tab-item1.active{
@@ -583,7 +575,6 @@
     text-align:center;
     width:100%;
     color: #717B8A;
-    font-family: 'GmarketSans';
     font-size: 14px;
     font-weight: 500;
     letter-spacing: -0.84px;

@@ -62,8 +62,6 @@
 .category_title_area .mypage_title .tit.blue_type {color:#0072BC;font-weight: 700;}
 .category_title_area .member_level {display:inline-block;vertical-align: middle;margin-right: 8px; width:32px;height: 32px;background: url('../img/common/ico/ico_membership_vip.png') no-repeat center;}
 
-.category_title_area .mypage_title{margin-top:50px;}
-
 /* 카테고리 검색 결과 없음 */
 .category_list_wrap {margin-top: 32px;}
 .category_list_wrap .product_list_wrap {margin-top: 8px;border-top: 1px solid #222;}
@@ -272,7 +270,7 @@
 .product_price_area .price .origin_price {font-size: 18px;font-weight: 600;line-height: 18px;color:#AEB7C6;text-decoration: line-through;}
 .product_price_area .price .origin_price span {font-family: 'Montserrat';}
 .product_price_area .price .new_price {color:222;font-size: 24px;font-weight: 600;line-height: 24px;}
-.product_price_area .sold_out_text {width: 100%;text-align: right;font-size: 24px;font-weight: 600;line-height: 24px;color: #FF4949;}
+.product_price_area .sold_out_text {width: 100%;font-size: 24px;font-weight: 600;line-height: 24px;color: #FF4949;}
 
 .product_information_list {margin-top: 16px;border-top: 1px solid #E1E3E9;padding: 16px 0;}
 .product_information_list  li {position: relative;padding-left: 6px; font-size: 14px; font-weight: 300; line-height: 14px; color:#717B8A; }

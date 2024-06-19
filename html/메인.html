@@ -650,10 +650,103 @@ $(document).on("click", function (event) {
         </script>
 
         <div class="txt_list">
-          <div class="interest_list_shot">
+          <!-- <div class="interest_list_shot">
             <a href="#" class="txt"><strong class="colorR">1.</strong>수액세트</a>
             <strong class="ico up"></strong>
+          </div> -->
+
+          <div class="swiper mySwiper slide_noti">
+            <!-- 240617 수정 -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong class="colorR">1.</strong>수액세트</a>
+                  <strong class="ico up"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>2.</strong>수액</a>
+                  <strong class="ico down"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>3.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>4.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>5.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>6.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>7.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>8.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>9.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>10.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>11.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="interest_list_shot">
+                  <a href="#" class="txt"><strong>12.</strong>모아랩밴드</a>
+                  <strong class="ico new"></strong>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- Initialize Swiper -->
+          <script>
+              var swiper = new Swiper(".slide_noti", {
+                direction: "vertical",
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                loop: true, // 무한 루프 활성화
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                }
+              });
+          </script>
 
           <div class="search_txt_banner">
             <!-- 인기 검색어 영역 -->
@@ -789,7 +882,6 @@ $(document).on("click", function (event) {
             });
           </script>
         </div>
-
 
         <div class="search_menu">
           <ul>
@@ -2944,7 +3036,12 @@ $(document).on("click", function (event) {
               navigation: {
                 nextEl: ".sw02 .swiper-button-next",
                 prevEl: ".sw02 .swiper-button-prev",
-              }
+              },
+                  // loop: true,
+                  // loopFillGroupWithBlank: true,
+                  // spaceBetween: 8,     // 슬라이드 간격 
+                  // slidesPerView: 1.08,   // 한번에 보이는 슬라이드 갯수
+                  // centeredSlides: true,  // 양쪽 미리보기
             });
           </script>
         </div>
