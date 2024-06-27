@@ -246,7 +246,7 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', '�
 .sales_info_detail tbody td .delivery_time li.today {font-weight: 400;color:#0072BC;}
 
 /* 플로팅 장바구니 */
-.order_floating_bottom {z-index: 100; width: 100%;border-radius: 12px 12px 0px 0px;box-shadow: 0px -8px 40px 0px #0000001A;background: #fff;position: fixed;bottom: 0;left:0;}
+.order_floating_bottom {z-index: 106; width: 100%;border-radius: 12px 12px 0px 0px;box-shadow: 0px -8px 40px 0px #0000001A;background: #fff;position: fixed;bottom: 0;left:0;}
 .order_util_area {padding: 20px 16px;}
 .order_util_area .store_name {font-size: 13px;font-weight: 400;line-height: 13px;color:#AEB7C6;display: flex;align-items: center;}
 .order_util_area .store_name span:first-child {border-right: 1px solid #E1E3E9;margin-right: 8px;padding-right: 8px;}

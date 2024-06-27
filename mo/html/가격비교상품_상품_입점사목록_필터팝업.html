@@ -1950,6 +1950,10 @@
                                 <div class="mo_tit_ft18">입점사 전체 목록</div>
                                 <div class="tag_wrap">
                                     <span class="tag_box">
+                                        <button type="button" class="btn_tag_name">(주)상길메디칼상길메디칼</button>                              
+                                        <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>  
+                                    </span>                                    
+                                    <span class="tag_box">
                                         <button type="button" class="btn_tag_name">중외제약</button>                              
                                         <button type="button" class="btn_remove_x"><span class="ir-text">해제</span> </button>  
                                     </span>
@@ -1985,87 +1989,87 @@
                     </div>   
                     <!-- 태그 선택 스크립트 -->
                     <script>
-                            const tagAll = document.querySelectorAll('.tag_list_wap .btn_tag_name');
-                            const selectedTagWrap = document.querySelector('.selectd_tag_wap .tag_wrap');
-                            const originalTagWrap = document.querySelector('.tag_list_wap .tag_wrap');
-                            const noSelectMsg = document.querySelector('.no-select');
-                            const removeAllBtn = document.querySelector('.btn_clear_all_text');
-                            
-                            tagAll.forEach((tag, index) => {
-                                tag.addEventListener('click', () => {
+                        const tagAll = document.querySelectorAll('.tag_list_wap .btn_tag_name');
+                        const selectedTagWrap = document.querySelector('.selectd_tag_wap .tag_wrap');
+                        const originalTagWrap = document.querySelector('.tag_list_wap .tag_wrap');
+                        const noSelectMsg = document.querySelector('.no-select');
+                        const removeAllBtn = document.querySelector('.btn_clear_all_text');
+
+                        tagAll.forEach((tag, index) => {
+                            tag.addEventListener('click', () => {
+                                if (!tag.classList.contains('is_disabled')) {
                                     moveToSelected(tag, index);
-                                });
-                            });
-
-                            function addRemoveEvent(removeBtn) {
-                                removeBtn.addEventListener('click', () => {
-                                    moveToOriginal(removeBtn);
-                                });
-                            }
-
-                            function moveToSelected(tag, index) {
-                                const newTag = tag.parentElement.cloneNode(true);
-                                newTag.classList.add('selected');
-                                newTag.setAttribute('data-original-index', index);
-                                selectedTagWrap.appendChild(newTag);
-                                tag.parentElement.remove();
-                                addRemoveEvent(newTag.querySelector('.btn_remove_x'));
-                                noSelectMsg.classList.add('hide');
-                            }
-
-                            function moveToOriginal(removeBtn) {
-                                const parentTag = removeBtn.parentElement;
-                                const originalIndex = parentTag.getAttribute('data-original-index');
-                                parentTag.classList.remove('selected');
-                                const originalTag = parentTag.cloneNode(true);
-                                originalTag.removeAttribute('data-original-index');
-                                originalTag.querySelector('.btn_remove_x').remove();
-                                insertTagAtOriginalPosition(originalTag, originalIndex);
-                                parentTag.remove();
-                                addTagEvent(originalTag.querySelector('.btn_tag_name'));
-                                checkNoSelectMsg();
-                            }
-
-                            function insertTagAtOriginalPosition(tag, index) {
-                                const allTags = originalTagWrap.children;
-                                if (index >= allTags.length) {
-                                    originalTagWrap.appendChild(tag);
-                                } else {
-                                    originalTagWrap.insertBefore(tag, allTags[index]);
+                                    tag.classList.add('is_disabled');
                                 }
+                            });
+                        });
+
+                        function addRemoveEvent(removeBtn) {
+                            removeBtn.addEventListener('click', () => {
+                                moveToOriginal(removeBtn);
+                                console.log(selectedTagWrap.children.length)
+                            });
+                        }
+
+                        function moveToSelected(tag, index) {
+                            const newTag = tag.parentElement.cloneNode(true);
+                            newTag.classList.add('selected');
+                            newTag.setAttribute('data-original-index', index);
+                            selectedTagWrap.appendChild(newTag);
+                            addRemoveEvent(newTag.querySelector('.btn_remove_x'));
+                            noSelectMsg.classList.add('hide');
+                        }
+
+                        function moveToOriginal(removeBtn) {
+                            const parentTag = removeBtn.parentElement;
+                            const originalIndex = parentTag.getAttribute('data-original-index');
+                            
+                            const originalTag = originalTagWrap.children[originalIndex].querySelector('.btn_tag_name');
+                            if (originalTag) {
+                                originalTag.classList.remove('is_disabled');
                             }
 
-                            function addTagEvent(tag) {
-                                tag.addEventListener('click', () => {
-                                    const originalIndex = tag.parentElement.getAttribute('data-original-index');
+                            parentTag.remove();
+                            checkNoSelectMsg();
+                        }
+
+                        function addTagEvent(tag) {
+                            tag.addEventListener('click', () => {
+                                const originalIndex = Array.prototype.indexOf.call(originalTagWrap.children, tag.parentElement);
+                                if (!tag.classList.contains('is_disabled')) {
                                     moveToSelected(tag, originalIndex);
-                                });
-                            }
-
-                            function checkNoSelectMsg() {
-                                if (selectedTagWrap.children.length === 1) {
-                                    noSelectMsg.classList.remove('hide');
+                                    tag.classList.add('is_disabled');
                                 }
-                            }
-                            
-                            document.querySelectorAll('.selectd_tag_wap .btn_remove_x').forEach(removeBtn => {
-                                addRemoveEvent(removeBtn);
                             });
-                            
-                            removeAllBtn.addEventListener('click', () => {
-                                const selectedTags = selectedTagWrap.querySelectorAll('.selected');                                
-                                selectedTags.forEach(tag => {
-                                    const originalIndex = tag.getAttribute('data-original-index');
-                                    console.log(tag);
-                                    tag.classList.remove('selected');
-                                    const originalTag = tag.cloneNode(true);
-                                    originalTag.removeAttribute('data-original-index');
-                                    insertTagAtOriginalPosition(originalTag, originalIndex);                                    
-                                    tag.remove();
-                                    addTagEvent(originalTag.querySelector('.btn_tag_name'));  
-                                });
+                        }
+
+                        function checkNoSelectMsg() {
+                            if (selectedTagWrap.children.length === 1) {
                                 noSelectMsg.classList.remove('hide');
-                            });           
+                            }
+                        }
+
+                        document.querySelectorAll('.selectd_tag_wap .btn_remove_x').forEach(removeBtn => {
+                            addRemoveEvent(removeBtn);
+                        });
+
+                        removeAllBtn.addEventListener('click', () => {
+                            const selectedTags = selectedTagWrap.querySelectorAll('.selected');
+                            selectedTags.forEach(tag => {
+                                const originalIndex = tag.getAttribute('data-original-index');
+
+                                // Find the original tag and remove the 'is_disabled' class
+                                const originalTag = originalTagWrap.children[originalIndex].querySelector('.btn_tag_name');
+                                if (originalTag) {
+                                    originalTag.classList.remove('is_disabled');
+                                }
+
+                                tag.remove();
+                            });
+                            noSelectMsg.classList.remove('hide');
+                        });
+
+                            
                     </script>
                     <!-- //태그 선택 스크립트 -->
                 </div>
