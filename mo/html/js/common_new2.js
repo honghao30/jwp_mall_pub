@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleButtons && toggleButtons.forEach(toggle => {
           toggle.addEventListener("click", function (e) {
                 const activeButton = document.querySelector('.is-toggle.is-active')
-                activeButton && activeButton.classList.remove('is-active')                
+                activeButton && activeButton.classList.remove('is-active')
                 toggle.classList.toggle('is-active');
           });
         });
@@ -86,11 +86,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // sale acc
         const saleAccs = document.querySelectorAll('.sales_info_scroll ul > .sale_item');
-        saleAccs && saleAccs.forEach(acc => {
+        /*saleAccs && saleAccs.forEach(acc => {
           acc.addEventListener("click", function (e) {
-                acc.classList.toggle('is-active');            
+                acc.classList.toggle('is-active');
           });
-        });
+        });*/
 
         const viewDeliveryTimes = document.querySelectorAll('.btn_open_sale_detail');
 

@@ -1499,9 +1499,13 @@
                             <dd><strong>5</strong>장</dd>
                         </div>
                         <div>
+                            <dt>다음 분기 예상 등급</dt>
+                            <dd><strong>FAMILY</strong></dd>
+                        </div>
+                        <!-- <div>
                             <dt>출석체크</dt>
                             <dd><strong>13</strong>회</dd>
-                        </div>
+                        </div> -->
                     </dl>
                 </div>
                 <div class="step-bar">
@@ -1513,6 +1517,10 @@
                         max="100"
                     ></progress>
                     <div class="bar-notibox">
+                        <div class="bar-noti">
+                            <img src="../html/img/ico/icon_memebership_basic.png" class="member-step">
+                            <p class="active">BASIC</p>
+                        </div>
                         <div class="bar-noti">
                             <img src="../html/img/ico/icon_memebership_family.png" class="member-step">
                             <p class="active">FAMILY</p>
@@ -1544,6 +1552,7 @@
                         <li>멤버십 등급 기준을 충족하지 못할 경우 등급이 하향될 수 있으며, 등급별 혜택은 당사 정책에 따라 변동될 수 있습니다.</li>
                     </ul>
                 </div>
+                <!-- BASIC -->
                 <div class="membertype-box">
                     <div class="member-type">
                         <img src="../html/img/ico/icon_memebership_basic.png" class="member-step">
@@ -1553,7 +1562,7 @@
                         <div>
                             <p>&#60;공통혜택&#62;</p>
                             <ul>
-                                <li>예치금 선구매 및 카드 즉시할인 제공</li>
+                                <li>카드 즉시할인 제공</li>
                                 <li>기획전 및 프로모션을 통한 추가 혜택 제공</li>
                             </ul>
                         </div>
@@ -1571,14 +1580,9 @@
                                 <li>무료 반품쿠폰</li>
                             </ul>
                         </div>
-                        <div>
-                            <p>&#60;혜택 3&#62;</p>
-                            <ul>
-                                <li>예치금 선구매 정책 확정 후 내용 추가 예정</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
+                <!-- FAMILY -->
                 <div class="membertype-box">
                     <div class="member-type">
                         <img src="../html/img/ico/icon_memebership_family.png" class="member-step">
@@ -1588,15 +1592,15 @@
                         <div>
                             <p>&#60;공통혜택&#62;</p>
                             <ul>
-                                <li>예치금 선구매 및 카드 즉시할인 제공</li>
+                                <li>카드 즉시할인 제공</li>
                                 <li>기획전 및 프로모션을 통한 추가 혜택 제공</li>
                             </ul>
                         </div>
                         <div>
                             <p>&#60;혜택 1&#62; 주문할인 쿠폰 총 5만원 지급</p>
                             <ul>
-                                <li>승급 첫 주문할인 3만원</li>
-                                <li>1차 재주문 할인 1만원</li>
+                                <li>승급 시 3만원</li>
+                                <li>승급 후 첫 주문 시 2만원</li>  
                             </ul>
                         </div>
                         <div>
@@ -1605,10 +1609,123 @@
                                 <li>월 1회 무료 반품 쿠폰 지급 (공급사 제품만 가능)</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+                <!-- SILVER -->
+                <div class="membertype-box">
+                    <div class="member-type">
+                        <img src="../html/img/ico/icon_memebership_silver.png" class="member-step">
+                        <p>SILVER</p>
+                    </div>
+                    <div class="member-notic">
                         <div>
-                            <p>&#60;혜택 3&#62;</p>
+                            <p>&#60;공통혜택&#62;</p>
                             <ul>
-                                <li>예치금 선구매 정책 확정 후 내용 추가 예정</li>
+                                <li>카드 즉시할인 제공</li>
+                                <li>기획전 및 프로모션을 통한 추가 혜택 제공</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>&#60;혜택 1&#62; 주문할인 쿠폰 총 5만원 지급</p>
+                            <ul>
+                                <li>승급 시 3만원</li>
+                                <li>승급 후 첫 주문 시 2만원</li>  
+                            </ul>
+                        </div>
+                        <div>
+                            <p>&#60;혜택 2&#62;</p>
+                            <ul>
+                                <li>월 1회 무료 반품 쿠폰 지급 (공급사 제품만 가능)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- GOLD -->
+                <div class="membertype-box">
+                    <div class="member-type">
+                        <img src="../html/img/ico/icon_memebership_gold.png" class="member-step">
+                        <p>GOLD</p>
+                    </div>
+                    <div class="member-notic">
+                        <div>
+                            <p>&#60;공통혜택&#62;</p>
+                            <ul>
+                                <li>카드 즉시할인 제공</li>
+                                <li>기획전 및 프로모션을 통한 추가 혜택 제공</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>&#60;혜택 1&#62; 주문할인 쿠폰 총 7만원 지급</p>
+                            <ul>
+                                <li>승급 시 3만원</li>
+                                <li>승급 후 첫 주문 시 2만원</li>   
+                                <li>2차 재주문 할인 2만원</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>&#60;혜택 2&#62;</p>
+                            <ul>
+                                <li>월 1회 무료 반품 쿠폰 지급 (공급사 제품만 가능)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- DIAMOND -->
+                <div class="membertype-box">
+                    <div class="member-type">
+                        <img src="../html/img/ico/icon_memebership_diamond.png" class="member-step">
+                        <p>DIAMOND</p>
+                    </div>
+                    <div class="member-notic">
+                        <div>
+                            <p>&#60;공통혜택&#62;</p>
+                            <ul>
+                                <li>카드 즉시할인 제공</li>
+                                <li>기획전 및 프로모션을 통한 추가 혜택 제공</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>&#60;혜택 1&#62; 주문할인 쿠폰 총 7만원 지급</p>
+                            <ul>
+                                <li>승급 시 3만원</li>
+                                <li>승급 후 첫주문 2만원</li>
+                                <li>2차 재주문 할인 2만원</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>&#60;혜택 2&#62;</p>
+                            <ul>
+                                <li>월 1회 무료 반품 쿠폰 지급 (공급사 제품만 가능)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- VIP -->
+                <div class="membertype-box">
+                    <div class="member-type">
+                        <img src="../html/img/ico/icon_memebership_vip.png" class="member-step">
+                        <p>VIP</p>
+                    </div>
+                    <div class="member-notic">
+                        <div>
+                            <p>&#60;공통혜택&#62;</p>
+                            <ul>
+                                <li>카드 즉시할인 제공</li>
+                                <li>기획전 및 프로모션을 통한 추가 혜택 제공</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>&#60;혜택 1&#62; 주문할인 쿠폰 총 7만원 지급</p>
+                            <ul>
+                                <li>승급 시 3만원</li>
+                                <li>승급 후 첫 주문 시 2만원</li>
+                                <li>2차 재주문 할인 2만원</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>&#60;혜택 2&#62;</p>
+                            <ul>
+                                <li>월 1회 무료 반품 쿠폰 지급 (공급사 제품만 가능)</li>
                             </ul>
                         </div>
                     </div>

@@ -61,7 +61,7 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 .mo_tit_description {font-size: 14px;font-weight: 400;line-height: 18px;color: #717B8A;margin-top: 8px;}
 /* badge */
 .badge_area {display: flex;flex-wrap: wrap;gap:4px;}
-.badge {color:#fff;border-radius: 12px;padding: 0 8px;height: 24px;font-size: 12px;font-weight: 700;line-height: 12px;display: flex;align-items: center;}
+.badge {color:#fff;border-radius: 12px;height: 24px;font-size: 12px;font-weight: 700;line-height: 12px;display: flex;align-items: center;}
 .badge.badge_best {background-color: #8cd2ff;}
 .badge.badge_md {background-color: #ffb37b;}
 .badge.badge_new_prod {background-color: #74d69b;}
@@ -78,9 +78,11 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 .count_controller_wrap {display: flex;align-items: center;}
 .count_controller_wrap .order_cout_text {font-size: 14px;font-weight: 400;line-height: 14px;color:#717B8A;}
 .count_controller {width: auto;height:36px;margin-right: 8px; border:1px solid #E1E3E9;border-radius: 20px;display: flex;align-items: center;justify-content: center;padding:0 12px;}
-.count_controller .btn_minus {width:16px;height: 16px;background: url('../img/ico/ico_minus.png') no-repeat center;  background-size: 16px auto;}
+.count_controller .btn_minus,
+.count_controller .btn_minus_02 {width:16px;height: 16px;background: url('../img/ico/ico_minus.png') no-repeat center;  background-size: 16px auto;}
 .count_controller input {border:0;width: 49px; padding:0; flex:1;text-align: center;height: 30px;font-family: 'Montserrat';font-size: 16px;font-weight: 500;line-height: 16px;color:#222;}
-.count_controller .btn_plus {width:16px;height: 16px;background: url('../img/ico/ico_plus.png') no-repeat center; background-size: 16px auto;}
+.count_controller .btn_plus,
+.count_controller .btn_plus_02 {width:16px;height: 16px;background: url('../img/ico/ico_plus.png') no-repeat center; background-size: 16px auto;}
 .count_controller.sold_out input {opacity: 0.3;}
 .count_controller.sold_out button {opacity: 0.5;}
 
@@ -122,10 +124,10 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 .btn_store_info {width:24px;height:24px;}
 .btn_store_info::before {content: ''; display: block;width: 100%;height: 100%; background: url('../img/ico/ico_filter_b98.png') no-repeat center; background-size: 24px auto;}
 
-.tag_wrap_gray {background: #F2F5FA;padding: 16px 0;overflow-x: scroll;}
+.tag_wrap_gray {background: #F2F5FA;padding: 16px;overflow-x: scroll;display:flex;}
 .tag_wrap_gray {-ms-overflow-style: none;scrollbar-width: none;}
 .tag_wrap_gray::-webkit-scrollbar {display: none;}
-.tag_wrap_gray .tag_inner {white-space: nowrap;display: flex;gap:8px;padding-left: 16px;}
+.tag_wrap_gray .tag_inner {white-space: nowrap;display: flex;gap:8px;}
 
 /* ÌÉúÍ∑∏ */
 .product_tag {font-size: 14px;font-weight: 300;line-height: 14px;white-space: nowrap;align-items: center;display: flex;gap:2px;color:#717B8A;}
@@ -173,8 +175,8 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 .product_list_item {border-bottom: 1px solid #E1E3E9;border-top: 1px solid #E1E3E9;overflow: hidden;background-color: #fff;}
 .product_list_item+.product_list_item {border-top: 0;}
 .product_list_item .item_summary_info {display: flex;justify-content: space-between;padding: 24px 16px 12px;gap: 12px;}
-.product_list_item .item_summary_info .product_thumbnail {width: 101px;height: 101px;overflow: hidden;}
-.product_list_item .item_summary_info .product_thumbnail img {width: 100%;}
+.product_list_item .item_summary_info .product_thumbnail {width: 101px;height: 101px;overflow: hidden;border-radius: 12px;border: 1px solid #EFF3F9;box-sizing: border-box;display: flex;align-items: center;justify-content: center;}
+.product_list_item .item_summary_info .product_thumbnail img {width: auto;height:auto;max-width: 100%;max-height:100%;}
 .product_list_item .product_info {flex:1;}
 .product_tit {font-size: 15px;font-weight: 500;line-height: 20px;color:#000;margin-top: 12px;}
 .item_summary_info ul {margin-top: 12px;}
@@ -268,7 +270,7 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 .order_button_wrap .btn_blue[disabled] {opacity: 0.5;}
 
 /* ÌïÑÌÑ∞ Î†àÏù¥Ïñ¥ */
-.filter-layer {overflow-x:hidden;overflow-y:auto;position:fixed;left:-100%;top:0;width:100%;height:100vh;background:#fff;z-index:101;-webkit-transition:left 0.2s;-moz-transition:left 0.2s;transition:left 0.2s;-webkit-overflow-scrolling:touch;}
+.filter-layer {overflow-x:hidden;overflow-y:auto;position:fixed;left:-101%;top:0;width:100%;height:100vh;background:#fff;z-index:101;-webkit-transition:left 0.2s;-moz-transition:left 0.2s;transition:left 0.2s;-webkit-overflow-scrolling:touch;}
 .filter-layer.active {left:0;}
 .filter_layer_inner {position: relative;height:100vh;display: flex;flex-direction: column;}
 .filter_layer_title {padding: 0 16px;font-size: 18px;font-weight: 400;line-height: 18px;color:#000000;height: 56px;display: flex;align-items: center;border-bottom: 1px solid #E1E3E9;}
@@ -474,6 +476,11 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 .pagination a {display: flex;align-items: center; width: 24px; height: 24px; text-decoration: none;font-family: 'Montserrat';font-size: 15px;font-weight: 300;line-height: 15px;color:#222;justify-content: center;} 
 .pagination a:hover:not(.active) {color:#0072BC;font-weight: 700; } 
 .pagination a.active { color:#0072BC;font-weight: 700;}
+
+.pagination_02 { display: flex;align-items: center; justify-content: center;margin: 32px 0;} 
+.pagination_02 li {width: 24px; height: 24px; text-decoration: none;font-family: 'Montserrat';font-size: 15px;font-weight: 300;line-height: 15px;color:#222;float:left;}
+.pagination_02 a strong { color:#0072BC;font-weight: 700;}
+
 .btn_pagination_first::before,
 .btn_pagination_prev::before,
 .btn_pagination_next::before,
@@ -660,7 +667,7 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 .mypage_infobox dl.mypage_info-des>div:not(:first-child) {border-left: 2px solid #E1E3E9;}
 .mypage_infobox dl.mypage_info-des>div {width: 33.333%; display: flex; flex-direction: column; gap:12px; padding:0 12px; justify-content: space-between;}
 .mypage_infobox dl.mypage_info-des.whalf>div {width: 50%;}
-.mypage_infobox dl.mypage_info-des dt {font-size: 13px; line-height: 13px; letter-spacing: -0.52px; color:#717B8A; text-align: left;}
+.mypage_infobox dl.mypage_info-des dt {font-size: 13px; line-height: 15px; letter-spacing: -0.52px; color:#717B8A; text-align: left;}
 .mypage_infobox dl.mypage_info-des dd {font-size: 15px; line-height: 15px; text-align: right;}
 .mypage_infobox dl.mypage_info-des dd strong {font-size: 15px; font-weight: 700; line-height: 15px;font-family: 'Montserrat';}
 .mypage_infobox dl.mypage_info-des .flx-box img {width: 20px; height: 20px;}
@@ -671,6 +678,7 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 .mypage_menu {display: flex; flex-wrap: wrap;}
 .mypage_menu li {padding: 16px 0 16px 16px; border-bottom: 1px solid #E1E3E9; position: relative; width: calc(50% - 17px);}
 .mypage_menu li::after {content: ''; position: absolute; background: url(../img/ico/ico_arrow_right_b36.png) center no-repeat; width: 16px; height: 16px; right: 16px; top: 16px;}
+.mypage_menu li.no::after{display: none;}
 .mypage_menu li:nth-child(2n) {border-left: 1px solid #E1E3E9; width: calc(49.5% - 16px);}
 .same {background-color: #F7F8FA; padding: 92.5px 0; text-align: center;}
 .touchscrollwrap.type04 .tab-menu.no_scroll {padding: 27px 28px 15px 16px; border-bottom: 1px solid #E1E3E9;}
@@ -732,10 +740,10 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 /* datepicker */
 .bank-search .data_period_picker {position: relative; display: flex; align-items: center;}
 .bank-search .data_period_picker input {padding: 8px 8px 8px 12px;text-align: left; width: calc(50% - 12.15px); background-color: #fff; height: 36px; line-height: 13px; border: 1px solid #E1E0E5; font-size: 13px; font-weight: 400; color:#000;}
-.bank-search .data_period_picker #datepicker_end {margin-left: 34px;}
+.bank-search .data_period_picker #datepicker_end {margin-left: 32px;}
 .bank-search .data_period_picker .end_data {margin-left: 34px;}
 .bank-search .data_period_picker img {width:20px; height:20px; margin-left: -29px;}
-.bank-search .data_period_picker span {position: absolute; top: 50%; transform: translateY(-50%); left: 50%;}
+.bank-search .data_period_picker span {position: absolute; top: 50%; transform: translateY(-50%); left: 50%;margin-left:-4px;}
 .ui-datepicker-title {display: flex; align-items: center; justify-content: center; margin: 0;}
 .ui-datepicker-title select {padding-top: 0; padding-bottom: 0; height: 35px;}
 

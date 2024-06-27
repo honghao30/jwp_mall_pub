@@ -93,6 +93,8 @@ $(document).ready(function(){
 
 // 탑버튼
 $(document).ready(function() {
+  var lastScrollTop = 0; // 마지막 스크롤 위치를 저장할 변수
+
   // 'top' 버튼 클릭 시 화면 최상단으로 스크롤
   $('#top').click(function() {
     window.scroll({
@@ -100,31 +102,49 @@ $(document).ready(function() {
        left: 0,
        behavior: "smooth"
      });
-});
+  });
 
   // 스크롤 위치에 따라 'top' 버튼 표시/숨김
   $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-          $('#top').fadeIn();
-      } else {
-          $('#top').fadeOut();
+    var currentScrollTop = $(this).scrollTop();
+
+    // 스크롤 위치가 상위 100 이하인 경우 버튼 숨김
+    if (currentScrollTop <= 100) {
+      $('#top').fadeOut();
+    } else {
+      // 스크롤 내리기: 버튼 숨김
+      if (currentScrollTop > lastScrollTop) {
+        $('#top').fadeOut();
+      } else { // 스크롤 올리기: 버튼 보임
+        $('#top').fadeIn();
       }
+    }
+
+    // 현재 스크롤 위치를 마지막 스크롤 위치로 업데이트
+    lastScrollTop = currentScrollTop;
   });
 });
 
 // 카테고리 메뉴
-$(document).ready(function(){
-  $('.list > li > a').click(function(e){
-      e.preventDefault();
-      $('.list > li > a').removeClass('active');
-      $('.list > li > ul').slideUp();
-      
-      if (!$(this).hasClass('active')) {
-          $(this).addClass('active');
-          $(this).next('ul').slideDown();
-      }
+$(document).ready(function() {
+  $('.categorybox .list > li > a').not('.oneDepth').click(function(e) {
+    e.preventDefault();
+
+    // 클릭된 요소의 부모 categorybox를 선택
+    var $categoryBox = $(this).closest('.categorybox');
+
+    // 해당 categorybox 내의 모든 링크에서 active 클래스 제거 및 모든 ul을 슬라이드 업
+    $categoryBox.find('.list > li > a').removeClass('active');
+    $categoryBox.find('.list > li > ul').slideUp();
+
+    // 클릭된 링크에 active 클래스 추가 및 인접한 ul을 슬라이드 다운
+    if (!$(this).hasClass('active')) {
+      $(this).addClass('active');
+      $(this).next('ul').slideDown();
+    }
   });
 });
+
 
 // 예치금 구매 하단 플로팅 버튼
 $(document).ready(function(){
@@ -136,14 +156,14 @@ $(document).ready(function(){
 // 즐겨찾기
 $(document).ready(function() {
   // link_wish 클래스가 있는 a 태그를 클릭했을 때
-  $("a.link_wish").click(function(e) {
+  $(".heart").click(function(e) {
     e.preventDefault(); // 기본 클릭 이벤트 방지
 
-    // 클릭된 요소에 active 클래스 추가 및 제거
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
+    // 클릭된 요소에 on 클래스 추가 및 제거
+    if ($(this).hasClass("on")) {
+      $(this).removeClass("on");
     } else {
-      $(this).addClass("active"); // 클릭된 요소에 active 클래스 추가
+      $(this).addClass("on"); // 클릭된 요소에 on 클래스 추가
     }
   });
 });

@@ -700,8 +700,8 @@ $(document).ready(function (){
 //   });
 // });
 
-// 퀵메뉴 장바구니 미리보기 (중복되지 않는 경우)
-/*$(document).ready(function(){
+// 퀵메뉴 장바구니 미리보기 (중복되지 않는 경우) 
+$(document).ready(function(){
   $(".btn_sub_cont").click(function(){
       var stBodyCont = $(this).closest(".st_body_cont");
       var btnSubCont = $(this);
@@ -722,7 +722,7 @@ $(document).ready(function (){
           btnSubCont.removeClass("on");
       }
   });
-});*/
+});
 
 
 // 레이어팝업
@@ -778,4 +778,39 @@ $(document).ready(function() {
   );
 });
 
+// gnb 메뉴 스크롤 동작시 클래스 hover 가 되는 쿼리
+$(document).ready(function() {
+  // header 또는 fixed_box에 마우스가 올라갈 때
+  $('.header, .fixed_box').mouseenter(function() {
+    $('.fixed_box').addClass('hover');
+  });
 
+  // header 또는 fixed_box에서 마우스가 벗어날 때
+  $('.header, .fixed_box').mouseleave(function() {
+    if ($(window).scrollTop() !== 0 && !$('.header:hover').length && !$('.fixed_box:hover').length) {
+      $('.fixed_box').removeClass('hover');
+    }
+  });
+
+  // 스크롤할 때 상태 체크
+  $(window).scroll(function() {
+    if ($(window).scrollTop() === 0) {
+      $('.fixed_box').addClass('hover');
+    } else {
+      if (!$('.header:hover').length && !$('.fixed_box:hover').length) {
+        $('.fixed_box').removeClass('hover');
+      }
+    }
+  });
+
+  // 페이지 로드 시 상태 체크
+  if ($(window).scrollTop() === 0) {
+    $('.fixed_box').addClass('hover');
+  } else {
+    $('.fixed_box').removeClass('hover');
+  }
+});
+
+
+
+// floating_cont 동작

@@ -1551,15 +1551,15 @@
                           <strong>5</strong> 장
                         </div>
                       </div>                      
-                    </li>         
-                    <li>
+                    </li>
+                    <!-- <li>
                       <div class="tit">출석체크</div>
                       <div class="info">
                         <div class="price">
                           <strong>5</strong> 회
                         </div>
-                      </div>                      
-                    </li>                                                                          
+                      </div>
+                    </li> -->
                   </ul>
                 </div>
                 <div class="member_level_status_board">
@@ -1575,6 +1575,12 @@
                     </div>
                     <ul class="level_list">
                       <li class="active">
+                        <div class="mem_label">
+                          <span class="level_icon new"></span>
+                        </div>
+                        <div class="mem_label_name">BASIC</div>                          
+                      </li>
+                      <li>
                         <div class="mem_label">
                           <span class="level_icon family"></span>
                         </div>
@@ -1615,15 +1621,17 @@
                     <colgroup>
                         <col style="width:17%">
                         <col style="width:18%">
-                        <col style="width:18%">
+                        <col style="width:15%">
+                        <col style="width:15%">
                         <col>         
-                        <col style="width:18%">                                            
+                        <col style="width:15%">                                            
                     </colgroup>
                     <thead>
                         <tr>
                             <th>등급</th>
                             <th>선정기준</th>
                             <th>선정기간</th>
+                            <th>공동혜택</th>
                             <th>혜택 1</th>
                             <th>혜택 2</th>                                
                         </tr>
@@ -1632,17 +1640,17 @@
                         <tr>
                             <th>
                                 <div class="mem_label">
-                                    <span class="level_icon new"></span> 가입 시
+                                    <span class="level_icon new"></span> BASiC
                                 </div>
                             </th>
-                            <td>신규 가입 시</td>  
+                            <td>신규 가입 시</td>
+                            <td class="txt_center">-</td>
                             <td class="text-c order_line" rowspan="6">
-                                분기별 말일 산정<br>
-                                1분기 : 1~3월<br>
-                                2분기 : 4~6월<br>
-                                3분기 : 7~9월<br>
-                                4분기 : 10~12월
-                            </td>                 
+                              <ul>
+                                <li>카드 즉시할인 제공</li>
+                                <li>기획전 및 프로모션을 통한 추가 혜택 제공</li>
+                              </ul>
+                            </td>
                             <td>
                                 <dl>
                                     <dt>주문할인 쿠폰 총 5만원 지급</dt>
@@ -1658,13 +1666,20 @@
                                 <div class="mem_label">
                                     <span class="level_icon family"></span> FAMILY
                                 </div>
-                            </th>                                                        
-                            <td>주문금액 300만원 이상</td>                  
+                            </th>               
+                            <td>주문금액 300만원 이상</td>
+                            <td class="text-c order_line" rowspan="5">
+                              분기별 말일 산정<br>
+                              1분기 : 1~3월<br>
+                              2분기 : 4~6월<br>
+                              3분기 : 7~9월<br>
+                              4분기 : 10~12월
+                            </td>
                             <td>
                                 <dl>
                                     <dt>주문할인 쿠폰 총 5만원 지급</dt>
-                                    <dd>승급 첫 주문할인 3만원</dd>
-                                    <dd>1차 재주문 할인 2만원</dd>                                            
+                                    <dd>승급 시 3만원</dd>
+                                    <dd>승급 후 첫 주문 시 2만원</dd>   
                                 </dl>
                             </td>  
                             <td  rowspan="5"  class="text-c order_line">
@@ -1678,13 +1693,13 @@
                                 <div class="mem_label">
                                     <span class="level_icon silver"></span> SILVER
                                 </div>
-                            </th>                                                        
+                            </th>               
                             <td>주문금액 500만원 이상</td>                
                             <td>
                                 <dl>
                                     <dt>주문할인 쿠폰 총 5만원 지급</dt>
-                                    <dd>승급 첫 주문할인 3만원</dd>
-                                    <dd>1차 재주문 할인 2만원</dd>                                            
+                                    <dd>승급 시 3만원</dd>
+                                    <dd>승급 후 첫 주문 시 2만원</dd>   
                                 </dl>
                             </td> 
                         </tr>  
@@ -1693,14 +1708,14 @@
                                 <div class="mem_label">
                                     <span class="level_icon gold"></span> GOLD
                                 </div>
-                            </th>                                                         
+                            </th>                
                             <td>주문금액 1,000만원 이상</td>              
                             <td>
                                 <dl>
                                     <dt>주문할인 쿠폰 총 7만원 지급</dt>
-                                    <dd>승급 첫 주문할인 3만원</dd>
-                                    <dd>1차 재주문 할인 2만원</dd>   
-                                    <dt>2차 재주문 할인 2만원</dt>                                         
+                                    <dd>승급 시 3만원</dd>
+                                    <dd>승급 후 첫 주문 시 2만원</dd>   
+                                    <dd>2차 재주문 할인 2만원</dd>
                                 </dl>
                             </td> 
                         </tr> 
@@ -1709,14 +1724,14 @@
                                 <div class="mem_label">
                                     <span class="level_icon diamond"></span> DIAMOND
                                 </div>
-                            </th>                                                           
+                            </th>                  
                             <td>주문금액 1,500만원 이상</td>                 
                             <td>
                                 <dl>
                                     <dt>주문할인 쿠폰 총 7만원 지급</dt>
-                                    <dd>승급 첫 주문할인 3만원</dd>
-                                    <dd>1차 재주문 할인 2만원</dd>   
-                                    <dt>2차 재주문 할인 2만원</dt>                                         
+                                    <dd>승급 시 3만원</dd>
+                                    <dd>승급 후 첫주문 2만원</dd>   
+                                    <dd>2차 재주문 할인 2만원</dd>
                                 </dl>
                             </td> 
                         </tr>  
@@ -1725,17 +1740,17 @@
                                 <div class="mem_label">
                                     <span class="level_icon vip"></span> VIP
                                 </div>
-                            </th>                                                         
+                            </th>                
                             <td>주문금액 2,000만원 이상</td>                  
                             <td> 
                                 <dl>
                                     <dt>주문할인 쿠폰 총 7만원 지급</dt>
-                                    <dd>승급 첫 주문할인 3만원</dd>
-                                    <dd>1차 재주문 할인 2만원</dd>   
-                                    <dt>2차 재주문 할인 2만원</dt>                                         
+                                    <dd>승급 시 3만원</dd>
+                                    <dd>승급 후 첫 주문 시 2만원</dd>   
+                                    <dd>2차 재주문 할인 2만원</dd>
                                 </dl>
                             </td> 
-                        </tr>                                                                                                                                                                                                                                                                                                                                                                                                     
+                        </tr>
                     </tbody>
                 </table>
             </div>
