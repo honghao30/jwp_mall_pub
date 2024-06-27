@@ -289,6 +289,7 @@ html,body {letter-spacing: -0.04em;font-family: 'NotoSans', 'Malgun Gothic', 'Îè
 .tag_wrap .no-select {font-size: 14px;line-height: 14px;font-weight: 400;text-align: center;width: 100%;}
 .tag_wrap .no-select.hide {display: none;}
 .btn_clear_all_text {font-size: 14px;line-height: 14px;font-weight: 400;}
+.tag_box .btn_tag_name.is_disabled {box-shadow: 0px 4px 4px 0px #0072BC33;background: linear-gradient(101.56deg, #1293E7 0%, #32B6BD 100%);color:#fff;}
 .tag_box.selected {position: relative;padding-right: 20px;}
 .tag_box.selected .btn_tag_name {box-shadow: 0px 4px 4px 0px #0072BC33;background: linear-gradient(101.56deg, #1293E7 0%, #32B6BD 100%);color:#fff;}
 .tag_box.selected .btn_remove_x {width: 16px;height:16px;background: url('../img/ico/ico_del_box32.png') no-repeat center;background-size: 16px auto;position: absolute;right:0;top:0;}
